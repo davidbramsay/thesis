@@ -1,4 +1,91 @@
-\contentsline {chapter}{1. Introduction}{15}{chapter*.4}
-\contentsline {section}{Section 1}{16}{section*.5}
-\contentsline {chapter}{Appendix A}{19}{appendix*.6}
+\contentsline {chapter}{1. Introduction}{19}{chapter*.4}
+\contentsline {chapter}{2. Background and Motivation}{23}{chapter*.5}
+\contentsline {section}{Air Monitoring}{23}{section*.6}
+\contentsline {subsection}{Air Pollutants}{23}{subsection*.7}
+\contentsline {subsection}{Sensor Technologies for Particulate Matter}{25}{subsection*.8}
+\contentsline {subsection}{Sensor Technologies for Gas Sensing}{27}{subsection*.9}
+\contentsline {subsection}{Measurement Strategies and Complications}{28}{subsection*.10}
+\contentsline {section}{Sensor Networks}{30}{section*.11}
+\contentsline {subsection}{Air Quality Sensor Networks}{30}{subsection*.12}
+\contentsline {subsection}{Large Scale Data Sharing}{32}{subsection*.13}
+\contentsline {subsection}{ChainAPI}{32}{subsection*.14}
+\contentsline {subsection}{Machine Learning}{33}{subsection*.15}
+\contentsline {section}{Motivation}{33}{section*.16}
+\contentsline {chapter}{3. Related Work}{37}{chapter*.17}
+\contentsline {section}{Air Quality}{37}{section*.18}
+\contentsline {subsection}{Safecast}{37}{subsection*.19}
+\contentsline {subsection}{Aclima/Google}{37}{subsection*.20}
+\contentsline {subsection}{Copenhagen Wheel Project}{37}{subsection*.21}
+\contentsline {subsection}{OpenSense}{38}{subsection*.22}
+\contentsline {subsection}{Cheap Sensor Development and Testing Groups}{38}{subsection*.23}
+\contentsline {subsection}{Other}{39}{subsection*.24}
+\contentsline {section}{Data Sharing Solutions}{39}{section*.25}
+\contentsline {subsection}{The Semantic Web - RDF, HAL, and JSON-LD}{40}{subsection*.26}
+\contentsline {subsection}{IoTivity and AllJoyn}{41}{subsection*.27}
+\contentsline {subsection}{ChainAPI and TidMarsh}{41}{subsection*.28}
+\contentsline {chapter}{4. Overview of Design and Contributions}{43}{chapter*.29}
+\contentsline {section}{Machine Learning Validation}{44}{section*.30}
+\contentsline {section}{ChainAPI Instance and Tools}{45}{section*.31}
+\contentsline {section}{A Provocative Example}{46}{section*.32}
+\contentsline {chapter}{5. Hardware Design and Analysis}{49}{chapter*.33}
+\contentsline {section}{LearnAir Version 1}{50}{section*.34}
+\contentsline {section}{MassDEP Site}{53}{section*.35}
+\contentsline {section}{LearnAir Version 2}{56}{section*.36}
+\contentsline {section}{LearnAir Version 3}{59}{section*.37}
+\contentsline {section}{Hardware Comparison and Analysis}{61}{section*.38}
+\contentsline {subsection}{Temperature and Humidity}{61}{subsection*.39}
+\contentsline {subsection}{Wind}{63}{subsection*.40}
+\contentsline {chapter}{6. ChainAPI for Air Quality}{67}{chapter*.41}
+\contentsline {section}{A New Ontology for Air Quality}{69}{section*.42}
+\contentsline {section}{Traversing ChainAPI}{74}{section*.43}
+\contentsline {subsection}{chainCrawler - a web-crawler for ChainAPI}{74}{subsection*.44}
+\contentsline {subsection}{chainSearch - a breadth first search tool for ChainAPI}{76}{subsection*.45}
+\contentsline {subsection}{chainTraverser - a stateful spider for ChainAPI}{78}{subsection*.46}
+\contentsline {section}{ChainAPI Tools for Scalable, Automatic Data Analysis}{82}{section*.47}
+\contentsline {subsection}{chainExcelPush - easily add spreadsheet data to ChainAPI}{82}{subsection*.48}
+\contentsline {subsection}{chainProcessor - scalable, automatic learning for ChainAPI ecosystems}{85}{subsection*.49}
+\contentsline {section}{Summary}{93}{section*.50}
+\contentsline {chapter}{7. Data Analysis and Machine Learning}{95}{chapter*.51}
+\contentsline {section}{Test Conditions and Data Collection Summary}{96}{section*.52}
+\contentsline {section}{Overview of Data Pre-Processing and ML Strategy}{98}{section*.53}
+\contentsline {section}{Machine Learning Features}{101}{section*.54}
+\contentsline {section}{SmartCitizen CO}{107}{section*.55}
+\contentsline {subsection}{Pre-processing}{107}{subsection*.56}
+\contentsline {subsection}{Machine Learning}{107}{subsection*.57}
+\contentsline {section}{SmartCitizen NO2}{114}{section*.58}
+\contentsline {subsection}{Pre-processing}{114}{subsection*.59}
+\contentsline {subsection}{Machine Learning}{114}{subsection*.60}
+\contentsline {section}{Sharp Dust Sensor}{121}{section*.61}
+\contentsline {subsection}{Pre-processing}{121}{subsection*.62}
+\contentsline {subsection}{Machine Learning}{121}{subsection*.63}
+\contentsline {section}{AlphaSense CO}{129}{section*.64}
+\contentsline {subsection}{Pre-processing}{129}{subsection*.65}
+\contentsline {subsection}{Machine Learning}{130}{subsection*.66}
+\contentsline {section}{AlphaSense NO2}{141}{section*.67}
+\contentsline {subsection}{Pre-processing}{141}{subsection*.68}
+\contentsline {subsection}{Machine Learning}{141}{subsection*.69}
+\contentsline {section}{AlphaSense O3}{149}{section*.70}
+\contentsline {subsection}{Pre-processing}{149}{subsection*.71}
+\contentsline {subsection}{Machine Learning}{149}{subsection*.72}
+\contentsline {chapter}{8. Conclusions and Future Work}{163}{chapter*.73}
+\contentsline {section}{Applications}{163}{section*.74}
+\contentsline {section}{Insights}{163}{section*.75}
+\contentsline {section}{Future Work}{164}{section*.76}
+\contentsline {section}{Summary}{164}{section*.77}
+\contentsline {chapter}{Appendix A - Notes on Project Selection and Prior Work}{167}{appendix*.78}
+\contentsline {chapter}{Appendix B - Hardware and Firmware}{169}{appendix*.79}
+\contentsline {section}{Schematics}{169}{section*.80}
+\contentsline {section}{Firmware}{174}{section*.81}
+\contentsline {section}{Hardware Analysis}{174}{section*.82}
+\contentsline {chapter}{Appendix C - ChainAPI Code}{177}{appendix*.83}
+\contentsline {chapter}{Appendix D - Machine Learning}{179}{appendix*.84}
+\contentsline {section}{Test Conditions and Data Summary}{179}{section*.85}
+\contentsline {section}{Data Pre-Processing}{183}{section*.86}
+\contentsline {section}{Features}{183}{section*.87}
+\contentsline {section}{SmartCitizen CO}{183}{section*.88}
+\contentsline {section}{SmartCitizen NO2}{183}{section*.89}
+\contentsline {section}{Sharp Dust Sensor}{183}{section*.90}
+\contentsline {section}{AlphaSense CO}{183}{section*.91}
+\contentsline {section}{AlphaSense NO2}{183}{section*.92}
+\contentsline {section}{AlphaSense O3}{183}{section*.93}
 \contentsfinish 

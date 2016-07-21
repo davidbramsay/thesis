@@ -1,5 +1,105 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Check it out, it's a Spin margin figure \url {spin.media.mit.edu}}}{16}{chapter*.4}
-\contentsline {figure}{\numberline {2}{\ignorespaces Check it out, it's a Spin \url {spin.media.mit.edu}}}{16}{section*.5}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces AlphaSense Opitcal PM2.5 Sensors.}}{25}{subsection*.8}
+\contentsline {figure}{\numberline {2}{\ignorespaces AlphaSense Electrochemical Gas Sensors.}}{27}{subsection*.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3}{\ignorespaces LearnAir Sensor installed at MassDEP site, opened.}}{50}{section*.34}
+\contentsline {figure}{\numberline {4}{\ignorespaces LearnAir Sensor installed at MassDEP site.}}{51}{section*.34}
+\contentsline {figure}{\numberline {5}{\ignorespaces Corroded SmartCitizen Kit on the right, Conformal-coated new kit on the left. Relevant sensors on the new kit were taped off before coating to prevent contamination.}}{51}{section*.34}
+\contentsline {figure}{\numberline {6}{\ignorespaces A picture of the Roxbury MassDEP measurement site where the LearnAir sensor was installed.}}{53}{section*.35}
+\contentsline {figure}{\numberline {7}{\ignorespaces LearnAir Sensor (box on left) installation next to MassDEP inlet (top of pole on right).}}{55}{section*.35}
+\contentsline {figure}{\numberline {8}{\ignorespaces Main and daughter boards of learnAir V2.0.}}{56}{section*.35}
+\contentsline {figure}{\numberline {9}{\ignorespaces Second revision, Atmel based learnAir main board mated with the AlphaSense sensor frontend.}}{57}{section*.36}
+\contentsline {figure}{\numberline {10}{\ignorespaces Final design of the portable system.}}{58}{section*.36}
+\contentsline {figure}{\numberline {11}{\ignorespaces Layouts for revisions 2.0 and 3.0 of the learnAir board.}}{59}{section*.36}
+\contentsline {figure}{\numberline {12}{\ignorespaces Third revision, STM32L152-based learnAir main board next to the AlphaSense sensors.}}{60}{section*.37}
+\contentsline {figure}{\numberline {13}{\ignorespaces Humidity Comparison of SmartCitizen (orange) and ForecastIO (green) over 4 days}}{61}{subsection*.39}
+\contentsline {figure}{\numberline {14}{\ignorespaces Humidity Comparison, SmartCitizen and ForecastIO}}{62}{subsection*.39}
+\contentsline {figure}{\numberline {15}{\ignorespaces Alphasense Raw Temperature Data (green) with 15-minute averaging (orange)}}{62}{subsection*.39}
+\contentsline {figure}{\numberline {16}{\ignorespaces Temperature Close up}}{63}{subsection*.39}
+\contentsline {figure}{\numberline {17}{\ignorespaces Temperature Comparison, SmartCitizen and ForecastIO}}{63}{subsection*.39}
+\contentsline {figure}{\numberline {18}{\ignorespaces A picture of a simple laminar flow test setup for rough wind directivity characterization.}}{64}{subsection*.40}
+\contentsline {figure}{\numberline {19}{\ignorespaces Wind Directivity Polar Pattern, Axis = 1}}{64}{subsection*.40}
+\contentsline {figure}{\numberline {20}{\ignorespaces Wind Directivity Polar Pattern, Axis = 2}}{64}{subsection*.40}
+\contentsline {figure}{\numberline {21}{\ignorespaces Wind Speed Measurement with 10\% Accuracy, Zoomed}}{65}{subsection*.40}
+\contentsline {figure}{\numberline {22}{\ignorespaces Windspeed Error vs Wind Direction}}{66}{subsection*.40}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {23}{\ignorespaces Summary of New ChainAPI Infrastructure.}}{67}{chapter*.41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {24}{\ignorespaces Weather during Test Period}}{96}{section*.52}
+\contentsline {figure}{\numberline {25}{\ignorespaces Temperature and Humidity during Test Period}}{97}{section*.52}
+\contentsline {figure}{\numberline {26}{\ignorespaces All ML features plotted with WEKA Tool}}{104}{section*.54}
+\contentsline {figure}{\numberline {27}{\ignorespaces Temperature during Test Period}}{105}{section*.54}
+\contentsline {figure}{\numberline {28}{\ignorespaces Humidity during Test Period}}{105}{section*.54}
+\contentsline {figure}{\numberline {29}{\ignorespaces Temperature Derivative Feature Creation}}{106}{section*.54}
+\contentsline {figure}{\numberline {30}{\ignorespaces Humidity Derivative Feature Creation}}{106}{section*.54}
+\contentsline {figure}{\numberline {31}{\ignorespaces SmartCitizen CO Raw Data}}{107}{subsection*.56}
+\contentsline {figure}{\numberline {32}{\ignorespaces SmartCitizen CO after LMSE Calibration}}{108}{subsection*.56}
+\contentsline {figure}{\numberline {33}{\ignorespaces SmartCitizen CO with 7.5\% Accuracy Threshold}}{109}{subsection*.57}
+\contentsline {figure}{\numberline {34}{\ignorespaces SmartCitizen CO with 5\% Accuracy Threshold}}{109}{subsection*.57}
+\contentsline {figure}{\numberline {35}{\ignorespaces SmartCitizen CO ROC Curve}}{111}{subsection*.57}
+\contentsline {figure}{\numberline {36}{\ignorespaces SmartCitizen CO ROC Using Top 15 Features}}{112}{subsection*.57}
+\contentsline {figure}{\numberline {37}{\ignorespaces SmartCitizen CO Prediction Accuracy}}{112}{subsection*.57}
+\contentsline {figure}{\numberline {38}{\ignorespaces SmartCitizen NO2 Raw Data}}{114}{subsection*.59}
+\contentsline {figure}{\numberline {39}{\ignorespaces SmartCitizen NO2 after LMSE Calibration}}{115}{subsection*.59}
+\contentsline {figure}{\numberline {40}{\ignorespaces SmartCitizen NO2 with 10\% Accuracy Threshold}}{115}{subsection*.60}
+\contentsline {figure}{\numberline {41}{\ignorespaces SmartCitizen NO2 with 4\% Accuracy Threshold}}{116}{subsection*.60}
+\contentsline {figure}{\numberline {42}{\ignorespaces SmartCitizen NO2 ROC Curve}}{117}{subsection*.60}
+\contentsline {figure}{\numberline {43}{\ignorespaces SmartCitizen NO2 ROC Using Top 15 Features}}{118}{subsection*.60}
+\contentsline {figure}{\numberline {44}{\ignorespaces SmartCitizen NO2 Prediction Accuracy}}{119}{subsection*.60}
+\contentsline {figure}{\numberline {45}{\ignorespaces Sharp Raw Particulate Data}}{121}{subsection*.62}
+\contentsline {figure}{\numberline {46}{\ignorespaces Sharp Particulate LMSE Calibration}}{122}{subsection*.62}
+\contentsline {figure}{\numberline {47}{\ignorespaces 2 day Average Sharp Particulate LMSE Calibration}}{123}{subsection*.62}
+\contentsline {figure}{\numberline {48}{\ignorespaces Sharp Particulate with 30\% Accuracy Threshold}}{123}{subsection*.63}
+\contentsline {figure}{\numberline {49}{\ignorespaces Sharp Particulate ROC Curve}}{124}{subsection*.63}
+\contentsline {figure}{\numberline {50}{\ignorespaces Sharp Particulate ROC Using Top 15 Features}}{126}{subsection*.63}
+\contentsline {figure}{\numberline {51}{\ignorespaces Sharp Particulate Prediction Accuracy}}{127}{subsection*.63}
+\contentsline {figure}{\numberline {52}{\ignorespaces AlphaSense CO Sensor ####1 Raw Data}}{129}{subsection*.65}
+\contentsline {figure}{\numberline {53}{\ignorespaces AlphaSense CO Sensor ####1 Raw Data Zoomed}}{130}{subsection*.65}
+\contentsline {figure}{\numberline {54}{\ignorespaces AlphaSense CO Sensor ####1 after LMSE Calibration}}{131}{subsection*.65}
+\contentsline {figure}{\numberline {55}{\ignorespaces AlphaSense CO Sensor ####2 after LMSE Calibration}}{132}{subsection*.65}
+\contentsline {figure}{\numberline {56}{\ignorespaces AlphaSense CO Sensor ####1 and ####2 with 7.5\% Accuracy Threshold}}{132}{subsection*.66}
+\contentsline {figure}{\numberline {57}{\ignorespaces AlphaSense CO Sensor ####1 and ####2 with 5\% Accuracy Threshold}}{133}{subsection*.66}
+\contentsline {figure}{\numberline {58}{\ignorespaces AlphaSense CO Sensor ####1 ROC Curve}}{133}{subsection*.66}
+\contentsline {figure}{\numberline {59}{\ignorespaces AlphaSense CO Sensor ####1 ROC Using Top 15 Features}}{135}{subsection*.66}
+\contentsline {figure}{\numberline {60}{\ignorespaces AlphaSense CO Sensor ####1 Prediction Accuracy}}{136}{subsection*.66}
+\contentsline {figure}{\numberline {61}{\ignorespaces AlphaSense CO Sensor ####2 ROC Curve}}{136}{subsection*.66}
+\contentsline {figure}{\numberline {62}{\ignorespaces AlphaSense CO Sensor ####2 ROC Using Top 15 Features}}{139}{subsection*.66}
+\contentsline {figure}{\numberline {63}{\ignorespaces AlphaSense CO Sensor ####2 Prediction Accuracy}}{140}{subsection*.66}
+\contentsline {figure}{\numberline {64}{\ignorespaces AlphaSense NO2 Raw Data}}{141}{subsection*.68}
+\contentsline {figure}{\numberline {65}{\ignorespaces AlphaSense NO2 Raw Data Zoomed}}{142}{subsection*.68}
+\contentsline {figure}{\numberline {66}{\ignorespaces AlphaSense NO2 after LMSE Calibration}}{143}{subsection*.68}
+\contentsline {figure}{\numberline {67}{\ignorespaces AlphaSense NO2 with 10\% Accuracy Threshold}}{143}{subsection*.69}
+\contentsline {figure}{\numberline {68}{\ignorespaces AlphaSense NO2 with 4\% Accuracy Threshold}}{144}{subsection*.69}
+\contentsline {figure}{\numberline {69}{\ignorespaces AlphaSense NO2 ROC Curve}}{146}{subsection*.69}
+\contentsline {figure}{\numberline {70}{\ignorespaces AlphaSense NO2 ROC Using Top 15 Features}}{147}{subsection*.69}
+\contentsline {figure}{\numberline {71}{\ignorespaces AlphaSense NO2 Prediction Accuracy}}{147}{subsection*.69}
+\contentsline {figure}{\numberline {72}{\ignorespaces AlphaSense O3 Sensor ####1 Raw Data}}{150}{subsection*.71}
+\contentsline {figure}{\numberline {73}{\ignorespaces AlphaSense O3 Sensor ####1 Raw Data Zoomed}}{151}{subsection*.71}
+\contentsline {figure}{\numberline {74}{\ignorespaces AlphaSense O3 Sensor ####1 after LMSE Calibration}}{151}{subsection*.71}
+\contentsline {figure}{\numberline {75}{\ignorespaces AlphaSense O3 Sensor ####2 after LMSE Calibration}}{152}{subsection*.71}
+\contentsline {figure}{\numberline {76}{\ignorespaces AlphaSense O3 Sensor ####1 and ####2 with 7.5\% Accuracy Threshold}}{152}{subsection*.72}
+\contentsline {figure}{\numberline {77}{\ignorespaces AlphaSense O3 Sensor ####1 and ####2 with 5\% Accuracy Threshold}}{153}{subsection*.72}
+\contentsline {figure}{\numberline {78}{\ignorespaces AlphaSense O3 Sensor ####1 ROC Curve}}{155}{subsection*.72}
+\contentsline {figure}{\numberline {79}{\ignorespaces AlphaSense O3 Sensor ####1 ROC Using Top 15 Features}}{156}{subsection*.72}
+\contentsline {figure}{\numberline {80}{\ignorespaces AlphaSense O3 Sensor ####1 Prediction Accuracy}}{156}{subsection*.72}
+\contentsline {figure}{\numberline {81}{\ignorespaces AlphaSense O3 Sensor ####2 ROC Curve}}{159}{subsection*.72}
+\contentsline {figure}{\numberline {82}{\ignorespaces AlphaSense O3 Sensor ####2 ROC Using Top 15 Features}}{160}{subsection*.72}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {84}{\ignorespaces Original Concept \#1}}{167}{appendix*.78}
+\contentsline {figure}{\numberline {85}{\ignorespaces Original Concept \#2}}{168}{appendix*.78}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {86}{\ignorespaces Wind Speed Measurement with 10\% Accuracy}}{175}{section*.82}
+\contentsline {figure}{\numberline {87}{\ignorespaces Wind Direction with 10\% Accuracy WindSpeed Measurements Denoted}}{176}{section*.82}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {88}{\ignorespaces Precipitation Intensity during Test Period}}{179}{section*.85}
+\contentsline {figure}{\numberline {89}{\ignorespaces Ambient Pressure during Test Period}}{180}{section*.85}
+\contentsline {figure}{\numberline {90}{\ignorespaces Cloud Cover during Test Period}}{180}{section*.85}
+\contentsline {figure}{\numberline {91}{\ignorespaces Dew during Test Period}}{181}{section*.85}
+\contentsline {figure}{\numberline {92}{\ignorespaces Lux during Test Period}}{181}{section*.85}
+\contentsline {figure}{\numberline {93}{\ignorespaces Lux during Test Period}}{182}{section*.85}
 \contentsfinish 

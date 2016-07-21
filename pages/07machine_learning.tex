@@ -1,0 +1,77 @@
+\chapter{7. Data Analysis and Machine Learning}
+
+In the last two chapters we outlined the portable hardware that was built to measure air quality and push it up to ChainAPI.  We discussed our new backend infrastructure to support air quality data, as well as the tools that were created to allow automatic and extensible machine learning algorithms.  The final element of the system-- and the key element of this project-- is the evaluation of predictive machine learning algorithms in the air quality space.
+ 
+For this test, we were able to co-locate six types of cheap air quality sensor next to EPA reference-level equipment for two months.  In most cases we collected minute-resolution data.  The testing occurred over the course of spring (with high variation in weather as we transitioned from the end of the cold/snowy season to the summer).   
+
+This experimental design gives us the ability to take the difference between our cheap sensor signals and the EPA reference to generate an error signal.  Based on measurements from other sensors on the device in concert with data from external weather APIs, we can apply supervised learning techniques that attempt to predict the magnitude of the error for every reading.  
+
+While there are many potential algorithms we could apply to this problem, for this experiment we simplified our error readings to a binary feature-- indicating whether the cheap sensor was in error or not, based on an appropriate tolerance around the ground truth value.  A logistic regression model-- commonly used for engineering failure prediction-- was selected to predict whether the sensor was in error, as well as assign a probability to this prediction.
+
+<Summary of interesting take aways and results.>
+
+\section{Test Conditions and Data Collection Summary}
+ \input{pages/ml_conditions}
+\FloatBarrier
+
+\section{Overview of Data Pre-Processing and ML Strategy}
+\input{pages/ml_overview}
+\FloatBarrier
+
+\section{Machine Learning Features}
+\input{pages/ml_features}
+\FloatBarrier
+
+\section{SmartCitizen CO}
+\input{pages/ml_sck_co}
+\FloatBarrier
+
+\section{SmartCitizen NO2}
+\input{pages/ml_sck_no2}
+\FloatBarrier
+
+\section{Sharp Dust Sensor}
+\input{pages/ml_sharp}
+\FloatBarrier
+
+\section{AlphaSense CO}
+\input{pages/ml_as_co}
+\FloatBarrier
+
+\section{AlphaSense NO2}
+\input{pages/ml_as_no2}
+\FloatBarrier
+
+\section{AlphaSense O3}
+\input{pages/ml_as_o3}
+\FloatBarrier
+
+
+%here's text referencing the (Table \ref{tab:sample_table}).
+%
+%\begin{table}
+%  \centering
+%  \begin{tabular}{l l l l l}
+%    Column A & Column B & Column C & Column D & Column E \\
+%    \toprule
+%    A & B & C & D & E
+%  \end{tabular}
+%  \caption{A meaningless table}
+%  \label{tab:sample_table}
+%\end{table}
+
+%Here's text referencing the margin figure (Figure \ref{fig:spin_margin}).
+%
+%\marginnote{\textbf{Margin Note:} Check it out, here's a margin note.}
+%
+%\begin{marginfigure}[{-10cm}]
+% 	\includegraphics[width=\textwidth]{chap1/spin}               
+% 	 \caption{Check it out, it's a Spin margin figure \url{spin.media.mit.edu}}
+%  	\label{fig:spin_margin}
+%\end{marginfigure}
+
+%\begin{figure}[htb]
+% 	\includegraphics[width=\textwidth]{chap1/spin}               
+% 	 \caption{Check it out, it's a Spin \url{spin.media.mit.edu}}
+%  	\label{fig:spin}
+%\end{figure}

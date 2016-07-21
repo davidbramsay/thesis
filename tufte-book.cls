@@ -137,14 +137,14 @@
 \par
 \@prevdegrees
 \par
-\choosecase{Submitted to the} \choosecase{\@department} \choosecase{in partial fulfillment of the requirements for the} \choosecase{\@degreeword} \choosecase{of} \choosecase{\@degree} at the Massachusetts Institute of Technology
+\choosecase{Submitted to the} \choosecase{\@department} \choosecase{in partial fulfillment of the requirements for the degree of Master of Science at the Massachusetts Institute of Technology}
 \par
 \@degreemonth\ \@degreeyear
 \par
 \copyright Massachusetts Institute of Technology 2016.  All right reserved.
 \par
 \vskip 3\baselineskip
-\signature{Author}{\@department \\ \@thesisdate}
+\signature{Author}{\\MIT Media Lab \\ \@thesisdate}
 \par
 \vfill
 \unvbox\@titlesupervisor
