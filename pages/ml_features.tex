@@ -1,8 +1,8 @@
-In most of these applications, around 150 features were used to train our machine learning algorithms.  Features were either measured from the learnAir system or harvested from the Forecast.IO weather API.  A few additional features (the EPA reference Black Carbon measurements and Wind Speed and Wind Direction measurements) were all included as training features.  Raw sensor signals are included as well as their calibrated versions.  Many of these signals were further manipulated or processed to give more derived features.  
+In most of these applications, around 150 features were used to train our machine learning algorithms.  Features were either measured from the learnAir system or harvested from the Forecast.IO weather API.  A few additional features (the EPA reference black carbon, wind speed, and wind direction measurements) were all included as training features.  Raw sensor signals are included as well as their calibrated versions.  Many of these signals were further manipulated or processed to give more derived features.  
 
-The measured set of features represents data collected from on-board sensors-- temperature, humidity, noise, light, vibration, pressure/airflow, and other air pollution sensors.  We include the signal from the sensor whose quality we're trying to predict as well (if it reads in certain ranges or slews at a certain rate, we may be able to assume that the sensor is out of its useful range).  
+The measured set of features represents data collected from on-board sensors-- temperature, humidity, noise, light, vibration, pressure/airflow, and other air pollution sensors.  We also include the signal from the sensor whose quality we're trying to predict as well (if it reads in certain ranges or slews at a certain rate, we may be able to assume that the sensor is out of its useful range).  
 
-For most of the main features, we created derivative features to capture inaccuracies that may come with too rapid a change in environmental conditions (which anecdotally, we know to be true for electrochemical sensors).  We also looked at intelligently chosen averages over time- ones that helped minimize quantization errors, helped smooth data to match the EPA reference, or whose averaging gave evidence of longer term trends that might also be important in analyzing sensor state and measurement quality.
+For most of the main features, we created derivative features to predict errors resulting from rapid changes in environmental conditions (anecdotally, we know this to be true for electrochemical sensors).  We also looked at intelligently chosen averages over time-- ones that minimized quantization errors, smoothed data to match the EPA reference, or whose averaging gave evidence of longer term trends that might also be important in analyzing sensor state and measurement quality.
 
 \begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/humidity_derivative}               
@@ -11,34 +11,39 @@ For most of the main features, we created derivative features to capture inaccur
 \end{marginfigure}
 
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/temp_derivative}               
+\centering
+ 	\includegraphics[width=\textwidth-2cm]{figs/temp_derivative}               
  	 \caption{Temperature Derivative Feature Creation}
   	\label{fig:temp_derivative}
 \end{figure}
 
 
 
-Several API's were evaluated for use in this project, and Forecast.IO stood out as a well-reputed option.  They use machine learning to combine many weather forecast APIs into one highly accurate dataset.  The Forecast.IO data comes in hourly intervals, so a running 60 minute average was used to interpolate the values to minute resolution (most of the measured fields, like temperature, are relatively slow-moving, so this technique seems to work).  For class based indicators (for instance, the `weather-summary' field indicating `cloudy', `windy', `foggy', `rainy', etc) we processed the API data as several binary fields.   
+Several API's were evaluated for use in this project, and Forecast.IO stood out as a well-reputed option.  They use machine learning to combine many weather forecast APIs into one highly accurate dataset.  The Forecast.IO data comes in hourly intervals, so a running 60 minute average was used to interpolate the values to minute resolution (most of the measured fields, like temperature, are relatively slow-moving).  For class-based indicators (for instance, the `weather-summary' field indicating `cloudy', `windy', `foggy', `rainy', etc) we converted the API value into binary fields that matched each class.   
 
-Create differential measurements compare measured with API- temp in the box vs. out of the box, as well as humidity in the box vs. out of the box.
-
+We created features such as `temperature differential' and `humidity differential' -- a constructed feature that corresponds to the difference in measurement between the ambient conditions (as measured by Forecast.IO) and the conditions in the box (as measured by the SmartCitizen Kit).  While these features are linear combinations of other features (and thus won't improve our model's predictive power), they serve an intuitive purpose, and may help reduce the feature set (mapping two features to one) if they turn out to be important indicators of performance.
+ 
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/temp_daily}               
- 	 \caption{Temperature during Test Period}
+\centering
+ 	\includegraphics[width=\textwidth-2cm]{figs/temp_daily}               
+ 	 \caption{Temperature Inside vs. Outside the Device during Test Period}
   	\label{fig:temp_daily}
 \end{figure}
 
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/humidity_daily}               
- 	 \caption{Humidity during Test Period}
+\centering
+ 	\includegraphics[width=\textwidth - 2cm]{figs/humidity_daily}               
+ 	 \caption{Humidity Inside vs. Outside the Device during Test Period}
   	\label{fig:humidity_daily}
 \end{figure}
 
-In general, some small subset of features was removed for each training session.  For instance, the higher quality Alphasense CO sensor was removed as a feature when training the less capable SmartCitizen CO sensor.  Training with this feature gives incredibly high accuracy at predicting failure, because it is effectively training itself with the answer.  By training with comparable or cheaper sensors, we can assess the likelihood of a cheap system working predictably.
+Finally, we added some features to represent other potentially important quantities.  These features include the time of day (including features for morning and evening rush hours), the day of the year (mapping to the season), and the elapsed time since the device was plugged in (for `warming up' effects).
 
-In most cases, the EPA reference black carbon sensor data was left as a feature- while this is not feasible as a portable, cheap sensor, if this figures prominently in determining a sensor's failure, we can infer something about how the sensor is failing, and what type of sensor we might want to pair it with.  In this way, the machine learning process is not evaluative of a current system's success-- instead, it works as an exploratory tool that might inform a potential system design.
+In general, some small subset of features was removed for each training session.  For instance, the higher quality Alphasense CO sensor was removed as a feature when training the less capable SmartCitizen CO sensor.  (Training with this feature gives incredibly high accuracy at predicting failure, because it is effectively training itself with the answer.)  By training with comparable or cheaper sensors, we can assess the likelihood of a cheap system working predictably.
 
-The next page includes a list of the main features.  Processed, calibrated, and other derived features extend this list to the complete.  For histogram plots of many of the main features (made using Weka), see Appendix D.
+In most cases, the EPA reference black carbon sensor data was left as a feature-- while this is not a feasible measurement for a portable, cheap device, it is still useful to know if black carbon is a strong predictor of a sensor's failure.  This knowledge allows us to infer something about how the sensor is failing, and what type of sensor we might want to pair it with.  With this technique, the machine learning process is not evaluative of a current system's success-- instead, it works as an exploratory tool that might inform a potential system design.
+
+The next page includes a list of the main features.  Processed, calibrated, and other derived features extend this list to the complete set.  For histogram plots of many of the main features (made using Weka), see Appendix D.
 
 \begin{table}[H]
 \small

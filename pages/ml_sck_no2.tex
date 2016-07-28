@@ -1,35 +1,19 @@
-This is about the smartcitizen NO2 results.
-
-One SmartCitizen NO2 sensor was tested against the EPA reference.  It was 1 month old at the time of installation, and ran for 52 days (from 4/15 - 6/6 2016) with two ~40 minute service interruptions.  This test gave 74,961 samples of minute resolution data.
+One SmartCitizen NO2 sensor was tested against the EPA reference.  Like the SmartCitizen CO test, it was 1 month old at the time of installation, and ran for 52 days (from 4/15 - 6/6 2016) with two ~40 minute service interruptions.  It gave 74,961 samples of minute resolution data.
 
 
 \subsection{Pre-processing}
 
-Talk about process for taking raw aux/working electrodes and making the basic calibration data.
+Like the SmartCitizen CO data, the NO2 sensor comes uncalibrated, as a mV value.  The first step was to run a bounded LMSE minimization on the data in order to scale and offset it appropriately to match the real data.  You can see the final result of such a scaling in Figure \ref{fig:sck_no2_with_10_accuracy_zoomed}.  Once again, the LMSE minimization scaled the sensor values down to a minimal amount of variation.  This suggests that the sensor data itself is relatively useless in this context, which is relatively unsurprising given its working range and the near constant <1 ppm exposure.  This agrees with test spurious findings for three SmartCitizen NO2 sensors tested by SCAQMD.   
 
-
-\begin{figure}[htb]
+\begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/no2_sck_zoomed}               
  	 \caption{SmartCitizen NO2 Raw Data}
   	\label{fig:sck_no2_raw_zoomed}
-\end{figure}
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/sck_no2_lmse}               
- 	 \caption{SmartCitizen NO2 after LMSE Calibration}
-  	\label{fig:sck_no2_lmse}
-\end{figure}
-
-
-
-
-
-
-
+\end{marginfigure}
 
 \subsection{Machine Learning}
 
+This case is similar to the SmartCitizen CO sensor, as machine learning will tell us nothing of the sensor's accuracy.  It reduces to a different problem, instead-- predicting NO2 transients and elevated levels based on metrological and other sensor data. 
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/sck_no2_with_10_accuracy_zoomed}               
@@ -37,26 +21,13 @@ Talk about process for taking raw aux/working electrodes and making the basic ca
   	\label{fig:sck_no2_with_10_accuracy_zoomed}
 \end{figure}
 
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/sck_no2_with_4_accuracy_zoomed}               
- 	 \caption{SmartCitizen NO2 with 4\% Accuracy Threshold}
-  	\label{fig:sck_no2_with_4_accuracy_zoomed}
-\end{figure}
 
 
+The threshold for accuracy was set at 10\% (or $\pm$5\%) of the full range of values detected for the actual NO2 levels, ~50 ppb ($\pm$25 ppb).   Figure \ref{fig:sck_no2_with_10_accuracy_zoomed} shows the Smart Citizen values against the reference, with `accurate' measurements highlighted with a green background.  The `inaccurate' readings are the peaks and large diversions from the baseline.
 
+As with all of the machine learning models, scikit learn was used to conduct a parameterized search for the optimal logistic regression was conducted using parameters C = [0.001, 0.1, 10, 1000] and penalty-type=['L1', 'L2'] with a 2-fold cross-validation.  An L1 penalty and C=1000 regularization term gave the best ROC\_AUC score of 0.91.  
 
-%%%%
-
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
-
-===== best ROC\_AUC score 0.907260610395
-
-===== best params {'penalty': 'L1', 'C': 1000}
-
-
-
-\begin{table}[H]
+\begin{table}[]
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
@@ -72,9 +43,22 @@ max & 0.03 & 0.08 & 0.04 & 0.06 \\
 \caption{Error Rates for Predicting SmartCitizen NO2 Accuracy with Logistic Regression}
 \end{table}
 
+We see very low error rates of 3-4\% on average with our predictions, regardless of the size of our feature set and whether the validation was randomized or chunked.  This is corroborated by very strong performance in the average confusion matrix (Table \ref{tab:sck_no2_confusion}).  Our ROC curves show tight agreement for the shuffled test sets of 0.90-0.92 AUC-ROC, while the chunked version lags behind slightly with scores from 0.69-0.83.  These results show evidence of extremely strong predictive power, though they hint that we haven't collected quite enough data to completely account for seasonal variation (even though we're doing well enough with the chunked test sets to predict with good confidence).
 
 
-\begin{margintable}[H]
+
+\begin{figure}[htb]
+ 	\includegraphics[width=\textwidth]{figs/sck_no2_10_roc}               
+ 	 \caption{SmartCitizen NO2 ROC Curve}
+  	\label{fig:sck_no2_10_roc}
+\end{figure}
+
+
+We see similar error rates with all features as for a subset of the top fifteen.  Examining the AUC-ROC shows that when training only with the top features, the score drops from 0.9 to 0.8 -- a substantial drop, but proof that the top fifteen account for a very strong prediction on their own.
+ 
+The top features are similar to those that predicted the CO transients, but with a stronger relationship-- black carbon is a leading indicator, as well as humidity, the hour of the day, and CO level.  These all make sense as correlates-- CO and black carbon are produced by traffic, which has a predictable pattern with the time of day.  Table \ref{tab:sck_no2_top_features}) shows the top features given seven feature selection algorithms.
+
+\begin{margintable}
 \centering
 \offinterlineskip
 \hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
@@ -88,66 +72,11 @@ max & 0.03 & 0.08 & 0.04 & 0.06 \\
 \caption{Average SmartCitizen NO2 Confusion Matrix w/Shuffled K-Fold}
 \end{margintable}
 
+Once again, there seems to be strong evidence that NO2 transients are highly predictable if there are other, good quality sensors that measure related phenomena (like black carbon and CO) to rely on.  The relationship is a complex one that requires a larger feature set and a lot of training data for optimal performance, but it appears that even in the short two month period we were able to train a model that would work well under realistic conditions.
 
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/sck_no2_10_roc}               
- 	 \caption{SmartCitizen NO2 ROC Curve}
-  	\label{fig:sck_no2_10_roc}
-\end{figure}
-
-
-here's text referencing the (Table \ref{tab:sck_no2_randomforest_features}).
-
-\begin{table}[H]
+\begin{table}[]
 \centering
-\begin{tabular}{lllllllll}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
-
-bkcarbon & 0.0459890536212 \\
-avg\_60\_bkcarbon & 0.0433384018273 \\
-avg\_720\_bkcarbon & 0.024690468695 \\
-avg\_1440\_bkcarbon & 0.0210702674105 \\
-avg\_60\_forecastio\_windSpeed & 0.0207714428351 \\
-min\_since\_plugged\_in & 0.0173782542533 \\
-avg\_60\_forecastio\_windBearing & 0.0172875801677 \\
-forecastio\_windSpeed & 0.0170176630128 \\
-avg\_1440\_lmse\_calib\_as\_co & 0.0162266191466 \\
-daily\_avg\_sck\_humidity & 0.0160827543221 \\
-avg\_60\_forecastio\_pressure & 0.0157403595739 \\
-avg\_720\_lmse\_scaled\_sharpDust & 0.0154263296837 \\
-avg\_1440\_lmse\_scaled\_sharpDust & 0.0153038668128 \\
-daily\_avg\_as\_temperature & 0.0151434934355 \\
-daily\_avg\_forecastio\_temperature & 0.0148922895233 \\
-\bottomrule
-\end{tabular}
-\label{tab:sck_no2_randomforest_features}
-\caption{Top 15 Features from Random Forest for SmartCitizen NO2, used in Pruned Logistic Regression}
-\end{table}
-
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/sck_no2_10_roc_pruned_features}               
- 	 \caption{SmartCitizen NO2 ROC Using Top 15 Features}
-  	\label{fig:sck_no2_10_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/sck_no2_10_logistic_predictions}               
- 	 \caption{SmartCitizen NO2 Prediction Accuracy}
-  	\label{fig:sck_no2_10_logistic_predictions}
-\end{figure}
-
-
-
-here's text referencing the (Table \ref{tab:sck_no2_top_features}).
-
-\begin{table}[H]
-\centering
+\small
 \begin{tabular}{lllllllll}
 \\
 \\
@@ -180,7 +109,7 @@ avg\_15\_derivative\_sck\_temperature      & 0     & 0          & 0    & 0.04 & 
 avg\_720\_lmse\_scaled\_sharpDust          & 0.01  & 0          & 0    & 0.16 & 0.58  & 0.41      & 0    & 0.17 \\
 \bottomrule
 \end{tabular}
-\label{tab:as1_co_top_features}
+\label{tab:sck_no2_top_features}
 \caption{Top Features for Predicting SmartCitizen NO2}
 \end{table}
 

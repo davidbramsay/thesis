@@ -1,22 +1,12 @@
-This is about the alphasense CO results.
-
 Two AlphaSense CO sensors were tested against the EPA reference.  The first sensor was 2.5 years old at the time of installation,  which ran for 38 days (from 4/15 to 5/23 2016 with one 40 minute service interruption).  The second sensor was 2 months old at the time of installation, and ran for 21 days (from 5/23 - 6/13 2016).  Our first test gave 55,589 minute-resolution samples to compare, our second test gave 30,150 samples.
 
-Age is an important distinction between the two sensors, which makes this an interesting comparison.  Additionally, while the first CO sensor was only calibrated for CO measurement.
+These two tests give us a chance to compare manufacturer reliability and sensor aging effects.  The two datasets can also be combined after calibration to draw overall conclusions about the AlphaSense model CO-A4 sensor.  
 
 \subsection{Pre-processing}
 
-Talk about process for taking raw aux/working electrodes and making the basic calibration data.
+AlphaSense sensors give two main readings-- from an auxilary and a working electrode.  Additionally, they come with a calibration for sensitivity, as well as offset voltages for both electrodes.  The calibration function combines all of these using a non-linear temperature-dependent term.  
 
-Old sensor, raw data with simple calibration based on datasheet.
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_co_raw}               
- 	 \caption{AlphaSense CO Sensor #1 Raw Data}
-  	\label{fig:as_co_raw}
-\end{figure}
-
+While we used the provided calibration data to create one version of `corrected data', we've found from talking with faculty in the Evironmental Engineering group that it is not uncommon for these laboratory based calibrations to be poor quality.  It is generally best practice to calibrate the sensors using co-location data.  The provided calibration provides results as seen in Figure \ref{fig:as_co_raw_zoomed}.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_co_raw_zoomed}               
@@ -24,13 +14,7 @@ Old sensor, raw data with simple calibration based on datasheet.
   	\label{fig:as_co_raw_zoomed}
 \end{figure}
 
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_co_lmse}               
- 	 \caption{AlphaSense CO Sensor #1 after LMSE Calibration}
-  	\label{fig:as1_co_lmse}
-\end{figure}
+We tried three LMSE minimzation techniques for better calibration after applying the datasheet calibration information-- once again we simply scale/offset the data, we scale/offset using only the data within one standard deviation of the mean (in order to remove outliers), and finally we solve for optimal sensitivity and offset voltages using the actual calibration equation and seeding it with the AlphaSense supplied values.  The third method-- solving for new calibration terms in the provided (non-linear, temperature dependent) calibration equation-- gave the best results by a significant margin.  The results of this technique for both the older and newer sensors can be seen in Figures \ref{fig:as2_co_lmse} and \ref{fig:as_co_with_5_accuracy_zoomed}.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as2_co_lmse}               
@@ -38,20 +22,14 @@ Old sensor, raw data with simple calibration based on datasheet.
   	\label{fig:as2_co_lmse}
 \end{figure}
 
-
-
-
-
-
-
 \subsection{Machine Learning}
 
+These sensors have some 
 
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_co_with_7p5_accuracy_zoomed}               
- 	 \caption{AlphaSense CO Sensor #1 and #2 with 7.5\% Accuracy Threshold}
-  	\label{fig:as_co_with_7p5_accuracy_zoomed}
-\end{figure}
+5V / (2^10) = 4.88 mV resolution on the ADC.  Sensor speced for ~0.3 mV/ppb. We expect a quantization to limit our resolution to ~16 ppb steps.  The AFE is speced for a noise level of ~20 ppb.  
+
+
+Both sensors were treated independently to start, and their output was compared.  Agreement between the two can provide us with high confidence about underlying mechanisms.  Both were optimized using a grid based parameter search of C = [0.001, 0.1, 10, 1000] and penalty-type=['L1', 'L2'] with a 2-fold cross-validation.  Both gave the same.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_co_with_5_accuracy_zoomed}               
@@ -72,7 +50,7 @@ parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
 
 
 
-\begin{table}[H]
+\begin{table}[]
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
@@ -90,18 +68,19 @@ max & 0.18 & 0.28 & 0.20 & 0.28 \\
 
 
 
-\begin{table}[H]
+\begin{margintable}[]
 \centering
 \offinterlineskip
-\hspace*{-5cm}\raisebox{-3.5cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace*{1cm}\MyHBox[\dimexpr5.1cm+6\fboxsep\relax]{Predicted Values}\par
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
 \hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
 \MyTBox{0}{4751.0}{943.0}
-\MyTBox{1}{1023.4}{4400.4}
+\vspace{-.35cm}\MyTBox{1}{1023.4}{4400.4}\raisebox{-1cm}
 }
 \label{tab:as1_co_confusion}
 \caption{Average AlphaSense CO Sensor #1 Confusion Matrix w/Shuffled K-Fold}
-\end{table}
+\end{margintable}
 
 
 \begin{figure}[htb]
@@ -111,57 +90,11 @@ max & 0.18 & 0.28 & 0.20 & 0.28 \\
 \end{figure}
 
 
-here's text referencing the (Table \ref{tab:as1_co_randomforest_features}).
-
-\begin{table}[H]
-\centering
-\begin{tabular}{lllllllll}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
-lmse\_calib\_as\_co & 0.0331983839664 \\
-avg\_15\_lmse\_calib\_as\_co & 0.0331946346979 \\
-avg\_15\_as\_co & 0.0322602817136 \\
-as\_co & 0.0310204625161 \\
-sck\_temperature & 0.0271023795431 \\
-avg\_15\_as\_temperature & 0.0251288063362 \\
-Temperature ( C RAW) & 0.024693128613 \\
-avg\_60\_forecastio\_temperature_c & 0.0207050630804 \\
-forecastio\_temperature\_c & 0.0192957142054 \\
-as\_temperature & 0.018952457567 \\
-avg\_60\_forecastio\_apparentTemperature & 0.017952895033 \\
-alphaTemp & 0.0177934801727 \\
-temp\_as\_box\_differential & 0.017581796276 \\
-forecastio\_temperature & 0.0159096583245 \\
-temp\_sck\_box\_differential & 0.0150463135619 \\
-\bottomrule
-\end{tabular}
-\label{tab:as1_co_randomforest_features}
-\caption{Top 15 Features from Random Forest for CO Sensor #1, used in Pruned Logistic Regression}
-\end{table}
-
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_co_5_roc_pruned_features}               
- 	 \caption{AlphaSense CO Sensor #1 ROC Using Top 15 Features}
-  	\label{fig:as1_co_5_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_co_5_logistic_predictions}               
- 	 \caption{AlphaSense CO Sensor #1 Prediction Accuracy}
-  	\label{fig:as1_co_5_logistic_predictions}
-\end{figure}
-
-
-
 here's text referencing the (Table \ref{tab:as1_co_top_features}).
 
-\begin{table}[H]
+\begin{table}[]
 \centering
+\tiny
 \begin{tabular}{lllllllll}
 \\
 \\
@@ -207,7 +140,7 @@ parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
 
 ===== best params {'penalty': 'L1', 'C': 1000}
 
-\begin{table}[H]
+\begin{table}[]
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
@@ -224,18 +157,19 @@ max & 0.14 & 0.28 & 0.16 & 0.22 \\
 \end{table}
 
 
-\begin{table}[H]
+\begin{margintable}[]
 \centering
 \offinterlineskip
-\hspace*{-5cm}\raisebox{-3.5cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace*{1cm}\MyHBox[\dimexpr5.1cm+6\fboxsep\relax]{Predicted Values}\par
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
 \hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
 \MyTBox{0}{1326.2}{623.0}
-\MyTBox{1}{200.4}{3880.4}
+\vspace{-.35cm}\MyTBox{1}{200.4}{3880.4}\raisebox{-1cm}
 }
 \label{tab:as2_co_confusion}
 \caption{Average AlphaSense CO Sensor #2 Confusion Matrix w/Shuffled K-Fold}
-\end{table}
+\end{margintable}
 
 
 \begin{figure}[htb]
@@ -246,55 +180,13 @@ max & 0.14 & 0.28 & 0.16 & 0.22 \\
 
 
 
-here's text referencing the (Table \ref{tab:as2_o3_randomforest_features}).
-
-\begin{table}[H]
-\centering
-\begin{tabular}{lllllllll}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
-lmse\_calib\_as\_co & 0.0518584805682 \\
-avg\_15\_lmse\_calib\_as\_co & 0.0404238890793 \\
-avg\_720\_bkcarbon & 0.0222537733125 \\
-avg\_60\_bkcarbon & 0.0216045744972 \\
-avg\_1440\_bkcarbon & 0.0198813295966 \\
-as\_o3 & 0.0198510401658 \\
-lmse\_as\_no2 & 0.0197364055605 \\
-avg\_10\_as\_o3 & 0.0196965727088 \\
-bkcarbon & 0.0194862747741 \\
-as\_no2 & 0.0192353467551 \\
-avg\_15\_lmse\_as\_no2 & 0.0180978893662 \\
-lmse\_avg\_15\_as\_no2 & 0.0172526534474 \\
-avg\_15\_as\_no2 & 0.0162905415767 \\
-avg\_15\_as\_co & 0.0158810645781 \\
-as\_co & 0.0158442759727 \\
-\bottomrule
-\end{tabular}
-\label{tab:as2_co_randomforest_features}
-\caption{Top 15 Features from Random Forest for CO Sensor #2, used in Pruned Logistic Regression}
-\end{table}
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_co_5_roc_pruned_features}               
- 	 \caption{AlphaSense CO Sensor #2 ROC Using Top 15 Features}
-  	\label{fig:as2_o3_7p5_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_co_5_logistic_predictions}               
- 	 \caption{AlphaSense CO Sensor #2 Prediction Accuracy}
-  	\label{fig:as2_co_5_logistic_predictions}
-\end{figure}
 
 
 here's text referencing the (Table \ref{tab:as2_co_top_features}).
 
 \begin{table}[H]
 \centering
+\tiny
 \begin{tabular}{lllllllll}
 \\
 \\

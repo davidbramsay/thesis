@@ -48,44 +48,45 @@
 \contentsline {chapter}{7. Data Analysis and Machine Learning}{95}{chapter*.51}
 \contentsline {section}{Test Conditions and Data Collection Summary}{96}{section*.52}
 \contentsline {section}{Overview of Data Pre-Processing and ML Strategy}{98}{section*.53}
-\contentsline {section}{Machine Learning Features}{101}{section*.54}
-\contentsline {section}{SmartCitizen CO}{107}{section*.55}
-\contentsline {subsection}{Pre-processing}{107}{subsection*.56}
-\contentsline {subsection}{Machine Learning}{107}{subsection*.57}
-\contentsline {section}{SmartCitizen NO2}{114}{section*.58}
-\contentsline {subsection}{Pre-processing}{114}{subsection*.59}
-\contentsline {subsection}{Machine Learning}{114}{subsection*.60}
-\contentsline {section}{Sharp Dust Sensor}{121}{section*.61}
-\contentsline {subsection}{Pre-processing}{121}{subsection*.62}
-\contentsline {subsection}{Machine Learning}{121}{subsection*.63}
-\contentsline {section}{AlphaSense CO}{129}{section*.64}
-\contentsline {subsection}{Pre-processing}{129}{subsection*.65}
-\contentsline {subsection}{Machine Learning}{130}{subsection*.66}
-\contentsline {section}{AlphaSense NO2}{141}{section*.67}
-\contentsline {subsection}{Pre-processing}{141}{subsection*.68}
-\contentsline {subsection}{Machine Learning}{141}{subsection*.69}
-\contentsline {section}{AlphaSense O3}{149}{section*.70}
-\contentsline {subsection}{Pre-processing}{149}{subsection*.71}
-\contentsline {subsection}{Machine Learning}{149}{subsection*.72}
-\contentsline {chapter}{8. Conclusions and Future Work}{163}{chapter*.73}
-\contentsline {section}{Applications}{163}{section*.74}
-\contentsline {section}{Insights}{163}{section*.75}
-\contentsline {section}{Future Work}{164}{section*.76}
-\contentsline {section}{Summary}{164}{section*.77}
-\contentsline {chapter}{Appendix A - Notes on Project Selection and Prior Work}{167}{appendix*.78}
-\contentsline {chapter}{Appendix B - Hardware and Firmware}{169}{appendix*.79}
-\contentsline {section}{Schematics}{169}{section*.80}
-\contentsline {section}{Firmware}{174}{section*.81}
-\contentsline {section}{Hardware Analysis}{174}{section*.82}
-\contentsline {chapter}{Appendix C - ChainAPI Code}{177}{appendix*.83}
-\contentsline {chapter}{Appendix D - Machine Learning}{179}{appendix*.84}
-\contentsline {section}{Test Conditions and Data Summary}{179}{section*.85}
-\contentsline {section}{Data Pre-Processing}{183}{section*.86}
-\contentsline {section}{Features}{183}{section*.87}
-\contentsline {section}{SmartCitizen CO}{183}{section*.88}
-\contentsline {section}{SmartCitizen NO2}{183}{section*.89}
-\contentsline {section}{Sharp Dust Sensor}{183}{section*.90}
-\contentsline {section}{AlphaSense CO}{183}{section*.91}
-\contentsline {section}{AlphaSense NO2}{183}{section*.92}
-\contentsline {section}{AlphaSense O3}{183}{section*.93}
+\contentsline {section}{Machine Learning Features}{102}{section*.54}
+\contentsline {section}{General Trends in the Data}{106}{section*.55}
+\contentsline {section}{SmartCitizen CO}{108}{section*.56}
+\contentsline {subsection}{Pre-processing}{108}{subsection*.57}
+\contentsline {subsection}{Machine Learning}{109}{subsection*.58}
+\contentsline {section}{SmartCitizen NO2}{113}{section*.59}
+\contentsline {subsection}{Pre-processing}{113}{subsection*.60}
+\contentsline {subsection}{Machine Learning}{113}{subsection*.61}
+\contentsline {section}{Sharp Dust Sensor}{116}{section*.62}
+\contentsline {subsection}{Pre-processing}{117}{subsection*.63}
+\contentsline {subsection}{Machine Learning}{118}{subsection*.64}
+\contentsline {section}{AlphaSense CO}{122}{section*.65}
+\contentsline {subsection}{Pre-processing}{122}{subsection*.66}
+\contentsline {subsection}{Machine Learning}{122}{subsection*.67}
+\contentsline {section}{AlphaSense NO2}{134}{section*.68}
+\contentsline {subsection}{Pre-processing}{134}{subsection*.69}
+\contentsline {subsection}{Machine Learning}{134}{subsection*.70}
+\contentsline {section}{AlphaSense O3}{142}{section*.71}
+\contentsline {subsection}{Pre-processing}{142}{subsection*.72}
+\contentsline {subsection}{Machine Learning}{142}{subsection*.73}
+\contentsline {chapter}{8. Conclusions and Future Work}{155}{chapter*.74}
+\contentsline {section}{Applications}{155}{section*.75}
+\contentsline {section}{Insights}{155}{section*.76}
+\contentsline {section}{Future Work}{156}{section*.77}
+\contentsline {section}{Summary}{156}{section*.78}
+\contentsline {chapter}{Appendix A - Notes on Project Selection and Prior Work}{159}{appendix*.79}
+\contentsline {chapter}{Appendix B - Hardware and Firmware}{161}{appendix*.80}
+\contentsline {section}{Schematics}{161}{section*.81}
+\contentsline {section}{Firmware}{166}{section*.82}
+\contentsline {section}{Hardware Analysis}{166}{section*.83}
+\contentsline {chapter}{Appendix C - ChainAPI Code}{169}{appendix*.84}
+\contentsline {chapter}{Appendix D - Machine Learning}{171}{appendix*.85}
+\contentsline {section}{Test Conditions and Data Summary}{171}{section*.86}
+\contentsline {section}{Data Pre-Processing}{175}{section*.87}
+\contentsline {section}{Features}{175}{section*.88}
+\contentsline {section}{SmartCitizen CO}{177}{section*.89}
+\contentsline {section}{SmartCitizen NO2}{180}{section*.90}
+\contentsline {section}{Sharp Dust Sensor}{183}{section*.91}
+\contentsline {section}{AlphaSense CO}{188}{section*.92}
+\contentsline {section}{AlphaSense NO2}{188}{section*.93}
+\contentsline {section}{AlphaSense O3}{188}{section*.94}
 \contentsfinish 
