@@ -2,13 +2,14 @@ In most of these applications, around 150 features were used to train our machin
 
 The measured set of features represents data collected from on-board sensors-- temperature, humidity, noise, light, vibration, pressure/airflow, and other air pollution sensors.  We also include the signal from the sensor whose quality we're trying to predict as well (if it reads in certain ranges or slews at a certain rate, we may be able to assume that the sensor is out of its useful range).  
 
-For most of the main features, we created derivative features to predict errors resulting from rapid changes in environmental conditions (anecdotally, we know this to be true for electrochemical sensors).  We also looked at intelligently chosen averages over time-- ones that minimized quantization errors, smoothed data to match the EPA reference, or whose averaging gave evidence of longer term trends that might also be important in analyzing sensor state and measurement quality.
-
 \begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/humidity_derivative}               
  	 \caption{Humidity Derivative Feature Creation}
   	\label{fig:humidity_derivative}
 \end{marginfigure}
+
+For most of the main features, we created derivative features to predict errors resulting from rapid changes in environmental conditions (anecdotally, we know this to be true for electrochemical sensors).  We also looked at intelligently chosen averages over time-- ones that minimized quantization errors, smoothed data to match the EPA reference, or whose averaging gave evidence of longer term trends that might also be important in analyzing sensor state and measurement quality.
+
 
 \begin{figure}[htb]
 \centering

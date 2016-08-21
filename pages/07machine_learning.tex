@@ -1,14 +1,12 @@
 \chapter{7. Data Analysis and Machine Learning}
 
-In the last two chapters we outlined the portable hardware that was built to measure air quality and push it up to ChainAPI.  We discussed our new backend infrastructure to support air quality data, as well as the tools that were created to allow automatic and extensible machine learning algorithms.  The final element of the system-- and the key element of this project-- is the evaluation of predictive machine learning algorithms in the air quality space.
+In the last two chapters we outlined the portable hardware we built to measure air quality and push it up to ChainAPI.  We discussed our new backend infrastructure to support air quality data, as well as the tools that were created to allow automatic and extensible machine learning algorithms.  The final element of the system-- and the key element of this project-- is the evaluation of predictive machine learning algorithms in the air quality space.  In practice, proximity to quality sensors may be transient and at varying ranges and angles.  Here we lay a preliminary foundation for such a system using optimal conditions.
  
-For this test, we were able to co-locate six types of cheap air quality sensor next to EPA reference-level equipment for two months.  In most cases we collected minute-resolution data.  The testing occurred over the course of spring (with high variation in weather as we transitioned from the end of the cold/snowy season to the summer).   
+For this test, we co-located six types of low-cost air quality sensor next to EPA reference-level equipment for two months.  In most cases we collected minute-resolution data.  The testing occurred over the course of spring (with high variation in weather as we transitioned from the end of the cold/snowy winter to the summer).  
 
-This experimental design gives us the ability to take the difference between our cheap sensor signals and the EPA reference to generate an error signal.  Based on measurements from other sensors on the device in concert with data from external weather APIs, we can apply supervised learning techniques that attempt to predict the magnitude of the error for every reading.  
+This experimental design gives us the ability to take the difference between our low-cost sensor signals and the EPA reference to generate an error signal.  Based on measurements from other sensors on the device in concert with data from external weather APIs, we can apply supervised learning techniques that attempt to predict the magnitude of the error for every reading.  
 
-While there are many potential algorithms we could apply to this problem, for this experiment we simplified our error readings to a binary feature-- indicating whether the cheap sensor was in error or not, based on an appropriate tolerance around the ground truth value.  A logistic regression model-- commonly used for engineering failure prediction-- was selected to predict whether the sensor was in error, as well as assign a probability to this prediction.
-
-<Summary of interesting take aways and results.>
+While there are many potential algorithms we could apply to this problem, for this experiment we simplified our error readings to a binary feature-- indicating whether the cheap sensor was in error or not, based on an appropriate tolerance around the ground truth value.  This tolerance is empirically chosen based on the `noise level' of the device to be the smallest tolerance possible that still provides predictable results (i.e., the tolerance is the smallest it can be while remaining dominated by systematic failure modes instead of the intrinsic measurement imprecision).  A logistic regression model-- commonly used for engineering failure prediction-- was selected to predict whether the sensor was in error, as well as assign a probability to this prediction.  This results could be used for many applications, for example the creation of a pollution map that optimally leverages data from all pollution sensors everywhere.
 
 \section{Test Conditions and Data Collection Summary}
  \input{pages/ml_conditions}
@@ -49,6 +47,50 @@ While there are many potential algorithms we could apply to this problem, for th
 \section{AlphaSense O3}
 \input{pages/ml_as_o3}
 \FloatBarrier
+
+\section{Results Summary}
+
+Logistic Regression was used to predict the accuracy of six types of sensors.  The primary metrics for success were the AUC-ROC values for the shuffled and chunked cross validation sets, the error rates from our confusion matrices, and the believability/consistency of the top predictive features after feature reduction.  The AUC-ROC is the only metric that takes into account our prediction of the likelihood that our classification of each reading (and thus AUC-ROC is the strongest indicator of algorithmic success).  
+
+After working with the data, we found a few important trends.  (1) Using both shuffled and chunked cross-validation techniques, we found that divergence in their results suggests that we haven't collected enough data to account for time-variant, seasonal effects.  (2) We found that calibration was a difficult step, especially when considering sensors that clearly work some of the time, and are largely in error at others.  LMSE might not be the best solution in this case, because it assigns extra weight to large errors (when it would be most beneficial to our calibration if we ignored them).  While we tried several techniques to achieve get around this (mean absolute error, ignoring large errors, throwing out outlier values and doing a LMSE fit on just the values close to the average), this stage of data processing is heavily manual, requires intuition, and can break in unexpected ways.  (3) We saw our sensors missing high-concentration transient events, though the one or two they did capture demonstrate the ability of the sensors themselves to measure such occurances.  This is likely an airflow problem, and something important to address in the future.  Finally, (4) we can ascertain interesting insights about sensor quality and self-noise (as oppose to predictable, systematic failures) by examining the relationship between tolerance and the machine learning success.  These tolerances were chosen empirically in this thesis, but this step could be automated by training models for several tolerances and exploiting inflection points in the prediction results.  
+
+Besides these insights about the machine learning process, we were able to predict the accuracy of our sensors with success.  All of the results are summarized in table \ref{tab:ml_summary}, and discussed briefly below.
+
+We noticed that the Smart Citizen sensor provided little useful information at these pollution levels, and prediction in this case reduced to a different problem-- the prediction of transient events (instead of the prediction of sensor accuracy).  The results of this analysis show that we are reasonably able to predict transients, especially NO2 transients.  In both cases, seasonal variation appears to have a slight effect on the quality of our results.  Both CO and NO2 transient prediction rely on black carbon measurements as their main feature-- the only reference grade sensor used as a training value.  This fits our expectations (since all three result from combustion), and the commonality gives us confidence that this is a real phenomena.  This result suggests that one high quality sensor could ground strong data quality predictions for cheaper sensors measuring related pollutants.
+
+The raw sharp data shows that it closely tracks the federal reference most of the time, but for some periods it diverges greatly.  This behavior is suggestive of a systematic failure (and thus promising for our techniques).  Unforunately, this is our smallest dataset, because reference data is only available on an hourly basis.  Our results show that we need more data for predicting across seasons.  Despite this, we see incredibly strong oredictions in the shuffled case, especially for 48 hour averages.  These data are very promising.
+
+The AlphaSense CO sensors clearly demonstrate responsiveness to fine changes in pollution concentration.  While the detail matches our reference data, there are still issues with the relatively coarse temperature compensation and calibration.  It would be beneficial to explore new methods for temperature-based calibration techniques.  
+
+Regardless of the pre-processing, we achieved strong predictive results for both AlphaSense CO sensors tested.  Both gave similar results, and both had their own signal as their top feature (indicating that the AlphaSense CO sensor has data ranges that were very reliable as well as ranges that were more likely to be inaccurate).  Based on the shared features between the two sensors tested, it appears that wind and temperature likely factor into the CO predictions.  There is some discrepency as to whether black carbon and NO2 are strong predictors, so more data would be useful.
+
+The AlphaSense NO2 results were unique. We see low error rates and very strong predictions when shuffling the data, but the results are highly variable when not shuffled.  It does not appear to be a random relationship, either-- the shuffled results can be very strong (AUC-ROC of .93) or very poor (.14, .28).  This suggests that there are useful predictive trends that vary drastically with the seasons.  (For example, humidity may be a strong predictor in the cold months, but not in warm ones.  If you try to apply the principles learned in the cold as it gets warm, you will confidently assert incorrect predictions and do much worse than guessing.)  Despite the variability in the chunked data, we see strong results in the shuffled data that imply success across the seasons with more data collection.
+
+Finally, the AlphaSense O3 raw data (like CO) tracked small variations in the reference grade equipment quite well.  Like the CO and NO2 sensors, the main issue in the quality of the results was the lack of captured transients.  In this test, we saw slight differences in results from the newer and older sensors.  The newer sensor provided better results, with AUC-ROC scores averaging 0.81 versus 0.73, though this is confounded by the changing weather.
+
+We used the tighest tolerance for the AlphaSense O3 sensor ($\pm$15 ppb when the front end board is only spec'ed for $\pm$10 ppb), which is why the results aren't the strongest of the set.  They are still quite good considering this decision.  Loosening this tolerance would likely improve predictive behavior.  More data is required to make strong O3 predictions across seasons.
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+\multicolumn{5}{|c|}{Summary of Results} \\
+&\multicolumn{2}{|c|}{avg prediction error} & \multicolumn{2}{|c|}{avg AUC-ROC} \\
+&shuffled & chunked & shuffled & chunked \\
+SmartCitizen CO & 0.09 & 0.09 & 0.82 & 0.61  \\
+SmartCitizen NO2 & 0.03 & 0.03 & 0.90 & 0.77 \\
+Sharp Dust & 0.17 & 0.22 & 0.87 & 0.79 \\
+48hr avg Sharp Dust & 0.08 & 0.25 & 0.98 & 0.79 \\
+AlphaSense CO & 0.16 & 0.21 & 0.90 & 0.81  \\
+AlphaSense NO2 & 0.03 & 0.06 & 0.96 & 0.46 \\
+AlphaSense O3 & 0.30 & 0.45 & 0.77 & 0.58 \\
+
+\bottomrule
+\end{tabular}
+\label{tab:ml_summary}
+\caption{Summary of Machine Learning Results}
+\end{table}
+
 
 
 %here's text referencing the (Table \ref{tab:sample_table}).

@@ -3,7 +3,7 @@ One Sharp optical particulate sensor was tested against the EPA black carbon ref
 
 \subsection{Pre-processing}
 
-The Sharp sensor is a common choice for cheap air quality sensing projects, but is generally known as a simple device that can stuggle in outdoor conditions.  The signal from the sensor is a raw light magnitude, so to convert it to $\mu g/m^3$ requies an inversion and basic scaling.  After inversion, a LMSE optimization was applied against the reference sensor.  Instead of a straight LMSE algorithm, though, the cost function was modified to included only the values that were within 5\% of the reference signal.  This eliminates minimization errors due to regions where the sensors are mis-reading and mismatched.  This technique clearly out-performed the standard LMSE techniques tried (overall LMSE, LMSE without `outliers' more than one standard deviation away, etc).    This method worked well, and the sensor clearly followed the general trend of the EPA reference in many cases.  See Figure \ref{fig:sharpDust_lmse} for an example.
+The Sharp sensor is a common choice for cheap air quality sensing projects, but is generally known as a simple device that can struggle in outdoor conditions.  The signal from the sensor is a raw light magnitude, so to convert it to $\mu g/m^3$ requires an inversion and basic scaling.  After inversion, a LMSE optimization was applied against the reference sensor.  Instead of a straight LMSE algorithm, though, the cost function was modified to include only the values that were within 5\% of the reference signal.  This eliminates minimization errors due to regions where the sensors are mis-reading and mismatched.  This technique clearly out-performed the standard LMSE techniques tried (overall LMSE, LMSE without `outliers' more than one standard deviation away, etc).    This method worked well, and the sensor clearly followed the general trend of the EPA reference in many cases.  See Figure \ref{fig:sharpDust_lmse} for an example.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/sharpDust_lmse}               
@@ -36,7 +36,7 @@ Since this test uses hourly data, it is much faster to train and test a model.  
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
-\multicolumn{5}{|c|}{Error Rates for CO Sensor #1 with Logistic Regression} \\
+\multicolumn{5}{|c|}{Error Rates for Sharp Sensor with Logistic Regression} \\
 &\multicolumn{2}{|c|}{all features} & \multicolumn{2}{|c|}{top 15 features} \\
 &shuffled & chunked & shuffled & chunked \\
 avg & 0.17 & 0.22 & 0.22 & 0.25 \\
@@ -80,7 +80,7 @@ For 48-hour average data, we half the error rate in the shuffled case (down to 0
   	\label{fig:sharp_30_roc}
 \end{figure}
 
-It appears that our top 15 features do a relatively strong job on their own with these predictions, giving AUC-ROC values of 0.80-0.83 and 0.68-0.94 for the shuffled and chunked cases.  The top features for predicting particulate are derived from the Sharp sensor itself-- it appears that certain ranges of the sensor are more prone to error than others (high readings are less reliable).  The other top features (Table \ref{tab:sharp_top_features}) make sense given the physics of the device-- changes in NO2 seems to be a good indicator of sensor performance, as well as humidity level. (We would expect higher humidity to result in fog and condensation around particles that disperse light and increase reading error).  
+Our top 15 features do a relatively strong job on their own with these predictions, giving AUC-ROC values of 0.80-0.83 and 0.68-0.94 for the shuffled and chunked cases.  The top features for predicting particulate are derived from the Sharp sensor itself-- certain ranges of the sensor are more prone to error than others (high readings are less reliable).  The other top features (Table \ref{tab:sharp_top_features}) make sense given the physics of the device-- changes in NO2 seems to be a good indicator of sensor performance, as well as humidity level. (We would expect higher humidity to result in fog and condensation around particles that disperse light and increase reading error).  
 
 These results are very promising.  They indicate extremely strong prediction performance, especially when comparing long-term averages.  They suggest we need to collect more data under more conditions before we are ready to predict across seasons.  There is one caveat, however.  In this test, the threshold for what is considered a `correct' measurement is quite high, at 30\% of the full range of observed values (0.6 $\mu g/m^3$ for the standard test).  This is a useful resolution, however it is a constrained choice.  When we cut this tolerance in half and retrain our models-- see Appendix D for more details-- the predictive quality starts to drop.  The effect of this threshold on predictive reliability of our model can provide an indication of sensor precision.  We can very accurately predict large errors with this sensor, but the inherent `noise floor' of the device limits that predictive strength as we tighten our tolerance.  
   

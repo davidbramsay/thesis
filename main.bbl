@@ -1,10 +1,431 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[Tseng, 2016]{tseng_dis_spin}
-Tseng, T. (2016).
-\newblock Spin: Examining the role of engagement, integration, and modularity
-  in supporting youth creating documentation.
-\newblock In {\em Proceedings of the 2016 conference on Designing Interactive
-  Systems}. ACM.
+\bibitem{who2014}
+{\relax WHO News Release}.
+\newblock 7 million premature deaths annually linked to air pollution., March
+  2014.
+
+\bibitem{who2014_2}
+{\relax WHO Report}.
+\newblock Burden of disease from air pollution 2012, 2014.
+
+\bibitem{filley1954}
+Giles~F. Filley, Donald~J. MacIntosh, and George~W. Wright.
+\newblock Carbon monoxide uptake and pulmonary diffusing capacity in normal
+  subjects at rest and during exercise.
+\newblock {\em Journal of Clinical Investigation}, 33(4):530, 1954.
+
+\bibitem{allred1989}
+Elizabeth~N. Allred et~al.
+\newblock Short-term effects of carbon monoxide exposure on the exercise
+  performance of subjects with coronary artery disease.
+\newblock {\em New England Journal of Medicine}, 321(21):1426--1432, 1989.
+
+\bibitem{schwartz2005}
+Joel Schwartz et~al.
+\newblock Traffic related pollution and heart rate variability in a panel of
+  elderly subjects.
+\newblock {\em Thorax}, 60(6):455--461, 2005.
+
+\bibitem{williams2014}
+Ron Williams et~al.
+\newblock {\em Evaluation of Field-deployed Low Cost PM Sensors}.
+\newblock EPA Evaluation Report \relax{EPA/600/R-14/464}, 2014.
+
+\bibitem{molenar2005}
+John~V. Molenar.
+\newblock Theoretical analysis of pm2.5 mass measurements by nephelometry -
+  \#110.
+\newblock {\em Colorado State University Press}, 2005.
+
+\bibitem{particulate}
+Alfred~H. Lowrey, Lance~A. Wallace, et~al.
+\newblock {\em Combustion Efficiency and Air Quality}, chapter 10:
+  Concentrations of Combustion Particulates in Outdoor and Indoor Environments,
+  pages 175--211.
+\newblock Plenum Press, 1995.
+
+\bibitem{epa2014}
+Environmental~Protection Agency.
+\newblock National air quality and emissions trends report.
+\newblock 2014.
+
+\bibitem{dep1999}
+{\em Particulate Matter in the UK}, chapter 5: Methods for Monitoring
+  Particulate Concentration.
+\newblock Department for Environment, Food, and Rural Affairs, 1999.
+
+\bibitem{morpurgo2012}
+Anna Morpurgo, Federico Pedersini, and Alessandro Reina.
+\newblock A low-cost instrument for environmental particulate analysis based on
+  optical scattering.
+\newblock In {\em 2012 IEEE International}, 2012.
+
+\bibitem{prabakar2015}
+Jayakarthigeyan Prabakar et~al.
+\newblock Evaluation of low cost particulate matter sensor for indoor air
+  quality measurement.
+\newblock {\em International Journal of Innovative Research in Science,
+  Engineering, and Technology}, 4(2):366--369, 2015.
+
+\bibitem{austin2015}
+Elena Austin et~al.
+\newblock Laboratory evaluation of the shinyei ppd42ns low-cost particulate
+  matter sensor.
+\newblock {\em PloS one}, 10(9):e0137789, 2015.
+
+\bibitem{compact2011}
+\relax{Compact, Low Cost Particle Sensor. Roger L Unger, assignee. Patent US
+  8009290 B2. 30 Aug. 2011. Print.}
+
+\bibitem{personal2015}
+personal communication.
+\newblock \relax{Dr. Jesse Kroll and David Hagan, MIT Department of Civil and
+  Environmental Engineering}.
+
+\bibitem{scaqmd2015}
+Air Quality Sensor Performance~Evaluation Center.
+\newblock Field evaluation alphasense opc-n2 sensor.
+\newblock Technical report, South Coast Air Quality Management District, 2015s.
+
+\bibitem{alpha2014}
+{\relax Alphasense Application Note}.
+\newblock {\relax AAN} 104: How electrochemical gas sensors work.
+\newblock Technical report, 2014.
+
+\bibitem{steinle2013}
+Susanne Steinle, Stefan Reis, and Clive~Eric Sabel.
+\newblock Quantifying human exposure to air pollution---moving from static
+  monitoring to spatio-temporally resolved personal exposure assessment.
+\newblock {\em Science of the Total Environment}, 443:184--193, 2013.
+
+\bibitem{hasen2014}
+David Hasenfratz et~al.
+\newblock Pushing the spatio-temporal resolution limit of urban air pollution
+  maps.
+\newblock In {\em 2014 IEEE International Conference on Pervasive Computing and
+  Communications (PerCom)}, 2014.
+
+\bibitem{vard2003}
+Sotiris Vardoulakis et~al.
+\newblock Modelling air quality in street canyons: A review.
+\newblock {\em Atmospheric Environment}, 37(2):155--182, 2003.
+
+\bibitem{xie2003}
+Shaodong Xie et~al.
+\newblock Spatial distribution of traffic-related pollutant concentrations in
+  street canyons.
+\newblock {\em Atmospheric Environment}, 37(23):3213--3224, 2003.
+
+\bibitem{raw2014}
+Agata Rakowska et~al.
+\newblock Impact of traffic volume and composition on the air quality and
+  pedestrian exposure in urban street canyon.
+\newblock {\em Atmospheric Environment}, 98:260--270, 2014.
+
+\bibitem{kaur2007}
+Soni Kaur, Mark~J. Nieuwenhuijsen, and Roy~N. Colvile.
+\newblock Fine particulate matter and carbon monoxide exposure concentrations
+  in urban street transport microenvironments.
+\newblock {\em Atmospheric Environment}, 41(23):4781--4810, 2007.
+
+\bibitem{batt2014}
+Stuart Batterman, Sarah Chambliss, and Vlad Isakov.
+\newblock Spatial resolution requirements for traffic-related air pollutant
+  exposure evaluations.
+\newblock {\em Atmospheric Environment}, 94:518--528, 2014.
+
+\bibitem{adams2009}
+Colby Adams, Philip Riggs, and John Volckens.
+\newblock Development of a method for personal, spatiotemporal exposure
+  assessment.
+\newblock {\em Journal of Environmental Monitoring}, 11(7):1331--1339, 2009.
+
+\bibitem{hoek2008}
+Gerard Hoek et~al.
+\newblock A review of land-use regression models to assess spatial variation of
+  outdoor air pollution.
+\newblock {\em Atmospheric Environment}, 42(33):7561--7578, 2008.
+
+\bibitem{lai2004}
+H.~K. Lai et~al.
+\newblock Personal exposures and microenvironment concentrations of pm 2.5,
+  voc, no 2 and co in oxford, uk.
+\newblock {\em Atmospheric Environment}, 38(37):6399--6410, 2004.
+
+\bibitem{delga2012}
+Juana~Maria Delgado-Saborit.
+\newblock Use of real-time sensors to characterise human exposures to
+  combustion related pollutants.
+\newblock {\em Journal of Environmental Monitoring}, 14(7):1824--1837, 2012.
+
+\bibitem{goel2014}
+Anju Goel and Prashant Kumar.
+\newblock A review of fundamental drivers governing the emissions, dispersion
+  and exposure to vehicle-emitted nanoparticles at signalised traffic
+  intersections.
+\newblock {\em Atmospheric Environment}, 97:316--331, 2014.
+
+\bibitem{wang2008}
+Yungang Wang et~al.
+\newblock Roadside measurements of ultrafine particles at a busy urban
+  intersection.
+\newblock {\em Journal of the Air & Waste Management Association},
+  58(11):1449--1457, 2008.
+
+\bibitem{cheng2014}
+Yun Cheng, Xiucheng Li, et~al.
+\newblock Aircloud: a cloud-based air-quality monitoring system for everyone.
+\newblock {\em SENSYS}, 2014.
+
+\bibitem{haze2013}
+Vijay Sivaraman, James Carrapetta, et~al.
+\newblock Hazewatch: A participatory sensor system for monitoring air pollution
+  in sydney.
+\newblock {\em Eighth IEEE Workshop on Practical Issues in Building Sensor
+  Network Applications}, pages 56--64, 2013.
+
+\bibitem{dutta2009}
+Prabal Dutta, Paul~M. Aoki, et~al.
+\newblock Common sense: Participatory urban sensing using a network of handheld
+  air quality monitors.
+\newblock {\em Proceedings of the 7th ACM conference on embedded networked
+  sensor systems}, 2009.
+
+\bibitem{hasen2011}
+David Hasenfratz, Olga Saukh, et~al.
+\newblock Opensense zurich: A system for monitoring air pollution.
+\newblock {\em Presented at the Nano-Tera Annual Plenary Meeting in Bern},
+  2011.
+
+\bibitem{sck}
+Smartcitizen sensor.
+\newblock \url{https://smartcitizen.me}, 2013.
+
+\bibitem{london2016}
+Matt Burgess.
+\newblock London gets a flock of air pollution monitoring pigeons.
+\newblock Wired News,
+  \url{http://www.wired.co.uk/article/london-pollution-pigeon-air-patrol},
+  2016.
+
+\bibitem{khan2015}
+Natasha Khan.
+\newblock Are cheap sensors and concerned citizens leading to a shift in air
+  monitoring?
+\newblock PublicSource News,
+  \url{http://publicsource.org/investigations/are-cheap-sensors-and-concerned-citizens-leading-shift-air-monitoring},
+  2015.
+
+\bibitem{scaqmd}
+Air quality sensor performance evaluation center.
+\newblock Technical report, South Coast Air Quality Management District, 2015.
+
+\bibitem{chainGit}
+Spencer Russell.
+\newblock Chainapi repository.
+\newblock \url{https://github.com/ResEnv/chain-api}, 2014.
+
+\bibitem{chainPaper}
+Spencer Russell and Joseph Paradiso.
+\newblock Hypermedia apis for sensor data: A pragmatic approach to the web of
+  things.
+\newblock {\em Proceedings of the 11th International Conference on Mobile and
+  Ubiquitous Systems: Computing, Networking and Services}, pages 30--39, 2014.
+
+\bibitem{tidmarsh}
+\relax{Responsive Environments, MIT Media Lab}.
+\newblock Tidmarsh project.
+\newblock \url{http://tidmarsh.media.mit.edu/}, 2013.
+
+\bibitem{mor2010}
+Alexandra Moraru, Marko Pesko, Maria Porcius, Carolina Fortuna, and Dunja
+  Mladenic.
+\newblock Using machine learning on sensor data.
+\newblock {\em Journal of Computing and Information Technology},
+  18(4):341--347, 2010.
+
+\bibitem{ahmad2010}
+Sajjad Ahmad, Ajay Kalra, and Haroon Stephen.
+\newblock Estimating soil moisture using remote sensing data: A machine
+  learning approach.
+\newblock {\em Advances in Water Resources}, 33(1):69--80, 2010.
+
+\bibitem{smith2013}
+Matt Smith, Charles Castello, and Joshua New.
+\newblock Machine learning techniques applied to sensor data correction in
+  building technologies.
+\newblock {\em 12th International Conference on Machine Learning and
+  Applications (ICMLA)}, pages 305--308, 2013.
+
+\bibitem{logistic}
+M.~Strano and B.M. Colosimo.
+\newblock Logistic regression analysis for experimental determination of
+  forming limit diagrams.
+\newblock {\em International Journal of Machine Tools and Manufacture},
+  46(6):673--682, 2006.
+
+\bibitem{safecast}
+Safecast.
+\newblock \url{http://www.safecast.org}, 2011.
+
+\bibitem{aclima}
+Aclima.
+\newblock \url{http://aclima.io}, 2010.
+
+\bibitem{wheel}
+Copenhagen wheel.
+\newblock \url{http://superpedestrian.com}, 2009.
+
+\bibitem{hasen2012}
+David Hasenfratz, Olga Saukh, and Lothar Thiele.
+\newblock On-the-fly calibration of low-cost gas sensors.
+\newblock {\em Wireless Sensor Networks}, pages 228--244, 2012.
+
+\bibitem{saukh2015}
+Olga Saukh, David Hasenfratz, and Lothar Thiele.
+\newblock Reducing multi-hop calibration errors in large-scale mobile sensor
+  networks.
+\newblock In {\em Proceedings of the 14th International Conference on
+  Information Processing in Sensor Networks}, 2015.
+
+\bibitem{truss}
+Brian Mayton, Gershon Dublon, Sebastian Palacios, and Joseph Paradiso.
+\newblock Truss: Tracking risk with ubiquitous smart sensing.
+\newblock {\em IEEE Sensors}, pages 1--4, 2012.
+
+\bibitem{clarity}
+Clairity.
+\newblock \url{http://clairity.mit.edu/site/html/home.html}, 2014.
+
+\bibitem{tricorder}
+Tricorder project.
+\newblock \url{http://www.tricorderproject.org/}, 2007.
+
+\bibitem{propeller}
+Propeller health.
+\newblock \url{http://www.propellerhealth.com}, 2010.
+
+\bibitem{upod}
+Upod project.
+\newblock \url{http://mobilesensingtechnology.com/}, 2016.
+
+\bibitem{usense}
+Giuseppe Anastasi, Paolo Brushci, et~al.
+\newblock `u-sense', a cooperative sensing system for monitoring air quality in
+  urban areas.
+\newblock {\em ERCIM News}, 2014.
+
+\bibitem{airbeam}
+Airbeam project.
+\newblock \url{http://aircasting.org/}, 2014.
+
+\bibitem{elm}
+Elm project.
+\newblock \url{http://elm.perkinelmer.com/map/}, 2013.
+
+\bibitem{breeze}
+Breezometer project.
+\newblock \url{https://breezometer.com/}, 2015.
+
+\bibitem{cleanspace}
+Cleanspace project.
+\newblock \url{https://our.clean.space/}, 2016.
+
+\bibitem{clarity2}
+Clarity pm2.5 sensor.
+\newblock \url{http://clarity.io}, 2014.
+
+\bibitem{tzoa}
+Tzoa enviro-tracker.
+\newblock \url{http://www.tzoa.com}, 2014.
+
+\bibitem{uhoo}
+uhoo indoor sensor.
+\newblock \url{https://uhooair.com/s}, 2016.
+
+\bibitem{egg}
+Air quality egg project.
+\newblock \url{http://airqualityegg.com/}, 2012.
+
+\bibitem{speck}
+Speck sensor.
+\newblock \url{https://www.specksensor.com/}, 2015.
+
+\bibitem{atmotube}
+Atmotube.
+\newblock \url{http://atmotube.com/}, 2015.
+
+\bibitem{airbox}
+Airbox lab.
+\newblock \url{http://foobot.io/}, 2013.
+
+\bibitem{citizenair}
+Citizenair.io.
+\newblock \url{http://www.citoyenscapteurs.net/2014/03/31/citizenair-io/},
+  2014.
+
+\bibitem{publiclabs}
+Public lab.
+\newblock \url{https://publiclab.org/}, 2010.
+
+\bibitem{django}
+Django framework.
+\newblock \url{https://www.djangoproject.com/}, 2005.
+
+\bibitem{hadoop}
+Apache hadoop.
+\newblock \url{http://hadoop.apache.org/}, 2011.
+
+\bibitem{RDF}
+RDF~Working Group.
+\newblock Rdf 1.1 schema, concepts and abstract syntax.
+\newblock Technical report, World Wide Web Consortium, 2014.
+
+\bibitem{jsonld}
+\relax{JSON-LD}.
+\newblock \url{http://json-ld.org/}, 2010.
+
+\bibitem{hal}
+\relax{HAL} - hypertext application language.
+\newblock \url{http://stateless.co/hal_specification.html}, 2013.
+
+\bibitem{iot}
+Iotivity standard.
+\newblock \url{https://www.iotivity.org/}, 2015.
+
+\bibitem{alljoyn}
+Alljoyn framework.
+\newblock \url{https://allseenalliance.org/framework}, 2011.
+
+\bibitem{evan}
+Evan Lynch and Joseph Paradiso.
+\newblock Sensorchimes: Musical mapping for sensor networks.
+\newblock {\em New Interfaces for Musical Expression}, 2016.
+
+\bibitem{tidviz}
+QianSheng Li, Gershon Dublon, Brian Mayton, and Joseph~A. Paradiso.
+\newblock Marshvis: Visualizing real-time and historical ecological data from a
+  wireless sensor network.
+\newblock {\em IEEE VIS}, 2015.
+
+\bibitem{ozonehouston}
+Steven~G. Brown, Paul~T. Roberts, et~al.
+\newblock Characterization of 2001 ozone event-triggered voc and carbonyl
+  samples in houston.
+\newblock Technical report, Sonoma Technology, Inc. Presented at TCEQ State of
+  the Science Meeting, 2002.
+
+\bibitem{houstonvoc}
+Eduardo~P. Olaguer.
+\newblock Near-source air quality impacts of large olefin flares.
+\newblock {\em Journal of the Air & Waste Management Association},
+  62(8):978--988, 2012.
+
+\bibitem{Trevino1999}
+C.~Trevi{\~n}o and F.~M{\'e}ndez.
+\newblock Simplified model for the prediction of ozone generation in polluted
+  urban areas with continuous precursor species emissions.
+\newblock {\em Atmospheric Environment}, 33(7):1103 -- 1110, 1999.
 
 \end{thebibliography}

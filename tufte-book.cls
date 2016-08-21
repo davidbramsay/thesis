@@ -141,7 +141,7 @@
 \par
 \@degreemonth\ \@degreeyear
 \par
-\copyright Massachusetts Institute of Technology 2016.  All right reserved.
+\copyright Massachusetts Institute of Technology 2016.  All rights reserved.
 \par
 \vskip 3\baselineskip
 \signature{Author}{\\MIT Media Lab \\ \@thesisdate}
@@ -229,12 +229,12 @@ the \@degreeword\ of \@degree}
 
 \@author \\[\baselineskip]}
 \par
-The following people served as readers for this thesis:\\
+The following person served as a reader for this thesis:\\
 \par
 \unvbox\@readers
 \par
 \end{flushleft}
-\newpage
+\cleardoublepage
 }
 
 %%

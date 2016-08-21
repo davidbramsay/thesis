@@ -1,43 +1,21 @@
-This is about the alphasense NO2 results.
-
 One AlphaSense NO2 sensor was tested against the EPA reference.  It was 2 months old at the time of installation, and ran for 21 days (from 5/23 - 6/13 2016).  This test gave 30,150 minute resolved samples.
 
 
 \subsection{Pre-processing}
 
-Talk about process for taking raw aux/working electrodes and making the basic calibration data.
+The AlphaSense NO2 raw data has similar concerns to its CO counterpart-- it appears heavily `quantized' based on the temperature regime it is in.  The NO2 values were much further off than the CO values though, using the raw calculation.  
 
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_no2_raw}               
- 	 \caption{AlphaSense NO2 Raw Data}
-  	\label{fig:as_no2_raw}
-\end{figure}
-
-
-\begin{figure}[htb]
+\begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/as_no2_raw_zoomed}               
  	 \caption{AlphaSense NO2 Raw Data Zoomed}
   	\label{fig:as_no2_raw_zoomed}
-\end{figure}
+\end{marginfigure}
 
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_no2_lmse}               
- 	 \caption{AlphaSense NO2 after LMSE Calibration}
-  	\label{fig:as_no2_lmse}
-\end{figure}
-
-
-
-
-
-
-
+Many techniques were used to tighten up the calibration after applying the initial datasheet equation and values, some of which greatly alter the variation, but at the end of the day a milder form was chosen based on scaling the electrode offsets.  The final results can be seen in Figure \ref{fig:as_no2_with_10_accuracy_zoomed}.  
 
 \subsection{Machine Learning}
 
+NO2 has some of the smallest variations of the pollutants we looked at.  To assess its accuracy, 10\% of its full scale value was used as a tolerance-- this worked out to a very tight tolerance of $\pm$26.25 ppb.  With this tolerance in place, our parameterized search of C = [0.001, 0.1, 10, 1000] and penalty-type=['L1', 'L2'] with a 2-fold cross-validation yielded an optima set of L1 penalty with C = 1000.    
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_no2_with_10_accuracy_zoomed}               
@@ -45,26 +23,11 @@ Talk about process for taking raw aux/working electrodes and making the basic ca
   	\label{fig:as_no2_with_10_accuracy_zoomed}
 \end{figure}
 
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_no2_with_4_accuracy_zoomed}               
- 	 \caption{AlphaSense NO2 with 4\% Accuracy Threshold}
-  	\label{fig:as_no2_with_4_accuracy_zoomed}
-\end{figure}
+
+Even with this extremely tight tolerance, we can see in Table \ref{tab:as_no2_error_rates} that we have very low average error rates in all conditions, though our variability dramatically increases for the chunked cases.  In conjunction with the ROC graphs of Figure \ref{fig:as_no2_10_roc} we can see that our seasonal predictive power is quite poor.  This isn't unexpected, as this test (a three week test) was one of the shortest performed.
 
 
-
-
-%%%%
-
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
-
-===== best ROC\_AUC score 0.961586556822
-
-===== best params {'penalty': 'L1', 'C': 1000}
-
-
-
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
@@ -76,24 +39,27 @@ min & 0.03 & 0.05 & 0.03 & 0.01 \\
 max & 0.03 & 0.14 & 0.04 & 0.14 \\
 \bottomrule
 \end{tabular}
-\label{tab:as1_co_error_rates}
+\label{tab:as_no2_error_rates}
 \caption{Error Rates for Predicting AlphaSense NO2 Accuracy with Logistic Regression}
 \end{table}
 
 
 
-\begin{table}[H]
+\begin{margintable}
 \centering
 \offinterlineskip
-\hspace*{-5cm}\raisebox{-3.5cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace*{1cm}\MyHBox[\dimexpr5.1cm+6\fboxsep\relax]{Predicted Values}\par
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
 \hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
 \MyTBox{0}{116.2}{130.2}
-\MyTBox{1}{34.0}{5749.6}
+\vspace{-.35cm}\MyTBox{1}{34.0}{5749.6}\raisebox{-1cm}
 }
 \label{tab:as_no2_confusion}
 \caption{Average AlphaSense NO2 Confusion Matrix w/Shuffled K-Fold}
-\end{table}
+\end{margintable}
+
+What is incredibly interesting here is that we see excellent predictive power with the shuffled case (AUC-ROC scores in the 0.96-0.97 range), contrasted with terrible scores for the chunked case (more frequently worse than random chance than not).  As alluded to, this points to a lack of data for robust pattern-finding.  The errors that co-occur in each period of time have uniquely defining features, but there are so few of them that no general pattern has emerged yet to define them all.  The incredibly strong results in the shuffled case does not eliminate the possibility that there is a strong relationship to take advantage of here, but in general this test is inconclusive about the predictability of the NO2 sensor.  The divergence of the shuffled and chunked cases strongly points to a need for more data before hard conclusions can be drawn.
 
 
 \begin{figure}[htb]
@@ -103,57 +69,11 @@ max & 0.03 & 0.14 & 0.04 & 0.14 \\
 \end{figure}
 
 
-here's text referencing the (Table \ref{tab:as_no2_randomforest_features}).
+The top features  (Table \ref{tab:as_no2_top_features}) and the effect of reducing the feature set aren't particularly meaningful given our prior conclusion, but the fact that black carbon, cloud cover, and O3 concentration are in the top several features (and these features seem to do a good job predicting robustness in the shuffled case by themselves) bolsters the hypothesis that there is likely a useful, predictable trend underlying this data.  We would expect our high quality correlated sensor to provide a good backbone for prediction, and cloud cover and O3 directly point to one of the most rapid and important reactions that converts NO2 to other by-products.  Since these highly relevant features drive our strong shuffled predictions (as oppose to spurious, coincidental ones),  it seems likely that this AlphaSense NO2 sensor will be highly predictable with a few more weeks of data collection.
 
-\begin{table}[H]
+\begin{table}[]
 \centering
-\begin{tabular}{lllllllll}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
- avg\_60\_bkcarbon & 0.0422524706607 \\
- avg\_1440\_bkcarbon & 0.0417472204692 \\
- bkcarbon & 0.0385594210158 \\
- avg\_720\_bkcarbon & 0.0347584125412 \\
- min\_since\_plugged\_in & 0.0203302045169 \\
- avg\_60\_forecastio\_windSpeed & 0.0164269542704 \\
- derivative\_avg\_1440\_bkcarbon & 0.0162252088513 \\
- avg\_60\_forecastio\_windBearing & 0.0159723111776 \\
- avg\_1440\_lmse\_calib\_as\_co & 0.0149001557286 \\
- avg\_720\_lmse\_scaled\_sharpDust & 0.0148211173957 \\
- day\_of\_year & 0.0145567862081 \\
- avg\_60\_forecastio\_pressure & 0.0142569975814 \\
- daily\_avg\_sck\_humidity & 0.013849933762 \\
- avg\_30\_ws & 0.0137791673751 \\
- daily\_avg\_forecastio\_temperature & 0.0136871069105 \\
-\bottomrule
-\end{tabular}
-\label{tab:as_no2_randomforest_features}
-\caption{Top 15 Features from Random Forest for AlphaSense NO2, used in Pruned Logistic Regression}
-\end{table}
-
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_no2_10_roc_pruned_features}               
- 	 \caption{AlphaSense NO2 ROC Using Top 15 Features}
-  	\label{fig:as_no2_10_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_no2_10_logistic_predictions}               
- 	 \caption{AlphaSense NO2 Prediction Accuracy}
-  	\label{fig:as_no2_10_logistic_predictions}
-\end{figure}
-
-
-
-here's text referencing the (Table \ref{tab:as_no2_top_features}).
-
-\begin{table}[H]
-\centering
+\small
 \begin{tabular}{lllllllll}
 \\
 \\

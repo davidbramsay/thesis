@@ -3,13 +3,13 @@ One SmartCitizen CO sensor was tested against the EPA reference.  It was 1 month
 
 \subsection{Pre-processing}
 
-The SmartCitizen CO sensor data comes uncalibrated, as a mV value that should correlate to CO concentration.  The first step was to run a bounded LMSE minimization on the data in order to scale and offset it appropriately to match the real data.  You can see the final result of such a scaling in Figure \ref{fig:sck_co_with_7p5_accuracy_zoomed}.  You'll notice that the LMSE minimization basically scaled the sensor values down to a minimal amount of variation.  This suggests that the sensor data itself is relatively useless in this context, which is relatively unsurprising given its working range and the near constant <1 ppm exposure.  
-
 \begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/co_sck_zoomed}               
  	 \caption{SmartCitizen CO Raw Data (orange) vs. EPA reference (green)}
   	\label{fig:sck_co_raw_zoomed}
 \end{marginfigure}
+
+The SmartCitizen CO sensor data comes uncalibrated, as a mV value that should correlate to CO concentration.  The first step was to run a bounded LMSE minimization on the data in order to scale and offset it appropriately to match the real data.  You can see the final result of such a scaling in Figure \ref{fig:sck_co_with_7p5_accuracy_zoomed}.  You'll notice that the LMSE minimization basically scaled the sensor values down to a minimal amount of variation.  This suggests that the sensor data itself is relatively useless in this context, which is relatively unsurprising given its working range and the near constant <1 ppm exposure.  
 
 Interestingly, the SCAQMD (South Coast Air Quality Management District) showed good correlation for 5-minute average, 500-1000 ppb range over their ten day co-location study.  Our measurements were a few hundred ppb lower on average.  It's also unclear which version of the Smart Citizen sensor SCAQMD tested, as Smart Citizen released an updated version of their board with completely different CO and NO2 gas sensors.  It appears likely, given the test date, that they were using a different (though similarly priced) sensor module entirely.
 
@@ -115,10 +115,10 @@ Table \ref{tab:sck_co_top_features} shows the top features for predicting CO var
 
 The top features-- combined with our ROC results-- give us insight into the usefulness of this algorithm for predicting transient fluctuations in CO.  The large divergence between shuffled and chunked data suggests we have not collected enough data yet to make seasonally-agnostic predictions in CO.  However, the promising results in our shuffled data lead us to believe it is possible to make fairly robust predictions (within or accounting for the season) with enough data collection.  The relationships we find in our shuffled results are consistent and reliable across test sets.  
 
-The top features include black carbon readings, time of day designations (like evening or night), windspeed measured at the sensor, and temperature.  These are in line with expectation-- as a similar combustion byproduct, we would expect black carbon and CO to be closely related.  Heavy traffic (the main source of both black carbon and CO) has predictable time-of-day patterns.  Temperature and windspeed have been directly correlated to changes in CO concentration, given a constant, predictable source.   Furthermore, we'd expect our prediction to be based on a complex relationship of many underlying features.  The difference in results from the full feature set to the reduce set corrobrates this assumption.   
+The top features include black carbon readings, time of day designations (like evening or night), windspeed measured at the sensor, and temperature.  These are in line with expectation-- as a similar combustion byproduct, we would expect black carbon and CO to be closely related.  Heavy traffic (the main source of both black carbon and CO) has predictable time-of-day patterns.  Temperature and windspeed have been directly correlated to changes in CO concentration, given a constant, predictable source.   Furthermore, we'd expect our prediction to be based on a complex relationship of many underlying features.  The difference in results from the full feature set to the reduce set corroborates this assumption.   
 
 In our test, the SmartCitizen CO sensor provided no meaningful data when compared and fit against the FRM reference.  This changed our machine learning task from a `predict sensor accuracy' problem to a `predict CO transient' one.  Our results indicate a strong likelihood of making good predictions of transient events for CO with a high quality black carbon sensor as part of the device.  However, these predictions are complex, and require a lot of diverse sensor data to tease out a strong prediction.  Furthermore, this relationship appears to be seasonally dependent, and thus an extensive training set-- longer than the two month season change we captured here-- is necessary to predict CO transient behavior with good accuracy.
 
-See Appendix D for more plots outlining the LMSE pre-processing steps, other accuracy thesholds we attempted, a plot of the SmartCitizen data with a correct/incorrect prediction overlay, and the Random Tree reduced-feature selection table and corresponding ROC curves. 
+See Appendix D for more plots outlining the LMSE pre-processing steps, other accuracy thresholds we attempted, a plot of the SmartCitizen data with a correct/incorrect prediction overlay, and the Random Tree reduced-feature selection table and corresponding ROC curves. 
 
 %http://www.aqmd.gov/docs/default-source/aq-spec/field-evaluations/smart-citizen-kit---field-evaluation.pdf?sfvrsn=2

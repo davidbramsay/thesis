@@ -1,0 +1,107 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: pages/00cover.aux
+A level-1 auxiliary file: contents.aux
+A level-1 auxiliary file: pages/01introduction.aux
+A level-1 auxiliary file: pages/02background.aux
+A level-1 auxiliary file: pages/03related_work.aux
+A level-1 auxiliary file: pages/04design_overview.aux
+A level-1 auxiliary file: pages/05hardware.aux
+A level-1 auxiliary file: pages/06chain_for_air_quality.aux
+A level-1 auxiliary file: pages/07machine_learning.aux
+A level-1 auxiliary file: pages/08conclusions_and_future_work.aux
+A level-1 auxiliary file: pages/XX_appa.aux
+A level-1 auxiliary file: pages/XX_appb.aux
+A level-1 auxiliary file: pages/XX_appc.aux
+A level-1 auxiliary file: pages/XX_appd.aux
+A level-1 auxiliary file: pages/XX_biblio.aux
+The style file: unsrt.bst
+Illegal, another \bibstyle command---line 86 of file pages/XX_biblio.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Database file #1: main.bib
+Warning--entry type for "who2014_2" isn't style-file defined
+--line 730 of file main.bib
+Warning--entry type for "who2014" isn't style-file defined
+--line 739 of file main.bib
+Warning--I didn't find a database entry for "hansen2012_2"
+Warning--can't use both author and editor fields in particulate
+Warning--empty note in epa2014
+Warning--empty author and editor in dep1999
+Warning--empty title in compact2011
+Warning--empty journal in compact2011
+Warning--empty year in compact2011
+Warning--empty note in personal2015
+Warning--empty institution in alpha2014
+Warning--empty author in sck
+Warning--empty author in scaqmd
+Warning--empty author in safecast
+Warning--empty author in aclima
+Warning--empty author in wheel
+Warning--empty author in clarity
+Warning--empty author in tricorder
+Warning--empty author in propeller
+Warning--empty author in upod
+Warning--empty author in airbeam
+Warning--empty author in elm
+Warning--empty author in breeze
+Warning--empty author in cleanspace
+Warning--empty author in clarity2
+Warning--empty author in tzoa
+Warning--empty author in uhoo
+Warning--empty author in egg
+Warning--empty author in speck
+Warning--empty author in atmotube
+Warning--empty author in airbox
+Warning--empty author in citizenair
+Warning--empty author in publiclabs
+Warning--empty author in django
+Warning--empty author in hadoop
+Warning--empty author in jsonld
+Warning--empty author in hal
+Warning--empty author in iot
+Warning--empty author in alljoyn
+You've used 81 entries,
+            1791 wiz_defined-function locations,
+            825 strings with 14016 characters,
+and the built_in function-call counts, 12780 in all, are:
+= -- 1146
+> -- 457
+< -- 8
++ -- 194
+- -- 113
+* -- 748
+:= -- 2053
+add.period$ -- 209
+call.type$ -- 81
+change.case$ -- 82
+chr.to.int$ -- 0
+cite$ -- 117
+duplicate$ -- 593
+empty$ -- 1295
+format.name$ -- 113
+if$ -- 2866
+int.to.chr$ -- 0
+int.to.str$ -- 81
+missing$ -- 41
+newline$ -- 374
+num.names$ -- 52
+pop$ -- 159
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 272
+stack$ -- 0
+substring$ -- 643
+swap$ -- 95
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 36
+while$ -- 86
+width$ -- 83
+write$ -- 774
+(There was 1 error message)

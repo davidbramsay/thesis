@@ -4,9 +4,9 @@ These two tests give us a chance to compare manufacturer reliability and sensor 
 
 \subsection{Pre-processing}
 
-AlphaSense sensors give two main readings-- from an auxilary and a working electrode.  Additionally, they come with a calibration for sensitivity, as well as offset voltages for both electrodes.  The calibration function combines all of these using a non-linear temperature-dependent term.  
+AlphaSense sensors give two main readings-- from an auxilary and a working electrode.  Additionally, they come with a calibration for sensitivity, as well as offset voltages for both electrodes.  The calibration function combines all of these using a non-linear temperature-dependent term (which scales the working electrode term differently over a few temperature ranges, linearly interpolated).  
 
-While we used the provided calibration data to create one version of `corrected data', we've found from talking with faculty in the Evironmental Engineering group that it is not uncommon for these laboratory based calibrations to be poor quality.  It is generally best practice to calibrate the sensors using co-location data.  The provided calibration provides results as seen in Figure \ref{fig:as_co_raw_zoomed}.
+While we used the provided calibration data to create one version of `corrected data', we've found from talking with faculty in the Environmental Engineering group that it is not uncommon for these laboratory based calibrations to drift substantially.  It is generally considered best practice to calibrate the sensors using co-location data.  The datasheet calibration provides results as seen in Figure \ref{fig:as_co_raw_zoomed}.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_co_raw_zoomed}               
@@ -14,7 +14,11 @@ While we used the provided calibration data to create one version of `corrected 
   	\label{fig:as_co_raw_zoomed}
 \end{figure}
 
-We tried three LMSE minimzation techniques for better calibration after applying the datasheet calibration information-- once again we simply scale/offset the data, we scale/offset using only the data within one standard deviation of the mean (in order to remove outliers), and finally we solve for optimal sensitivity and offset voltages using the actual calibration equation and seeding it with the AlphaSense supplied values.  The third method-- solving for new calibration terms in the provided (non-linear, temperature dependent) calibration equation-- gave the best results by a significant margin.  The results of this technique for both the older and newer sensors can be seen in Figures \ref{fig:as2_co_lmse} and \ref{fig:as_co_with_5_accuracy_zoomed}.
+One of the first things to notice is what appears to be quantization errors in the data.  This is not a result of the analog to digital conversion process on the Arduino-- we have a 5V, 10-bit input, which gives us 4.88 mV resolution.  Our sensor has around 0.3 mV/ppb sensitivity, so we expect our ADC to quantize the signal in ~16ppb steps.  The AlphaSense analog frontend board for the CO sensor is only capable of a 20 ppb noise level, so the limiting factor is not our ADC.  Examination of the raw Arduino data supports this assumption.  This `quantization' is actually the result of temperature dependent regimes in the calibration equation.  At 10, 20, and 30 degrees Celcius we enter different linear temperature correction regimes-- even though these are interpolated, the temperature dependence rapidly changes in a narrow span.
+
+The proper way to `correct' these calibrations is worthy of a paper by itself.  Several techniques were attempted, mostly based on LMSE.  We tried basic scaling/offset the datasheet calibrated data as well as scaling/offset the data considering only one standard deviation of the mean for each sensor (in order to remove outliers).  We also attempted several more intuitive minimizations-- for instance, solving for a new sensitivity and offset voltages (using the actual calibration equation) seeded with the datasheet values.  Additionally, we tried minimizing by solving for new temperature dependence terms, in case the actual thresholds or scale factors were shifted slightly.  Finally, we tried non-standard minimization strategies-- setting thresholds for the values that are part of the cost minimization calculation, and using absolute error (since LMSE penalizes larger errors more, and we really want to ignore the larger errors without incentivizing a cost function to create larger errors).
+
+In general, the high frequency trends and sensitivity of the sensor are very in line with real pollutant concentration.  The large, nearly step-wise variations due to temperature compensation seem to be the biggest issue with close tracking of the actual data.  Most LMSE techniques aimed specifically at this temperature dependence completely eliminated the behavior-- while this tracks the real signal better, it also gives a less dynamic signal with an unrealistic underlying assumption (that the sensor actually has \textit{no} temperature dependence).  With a more thorough understanding of how these sensors age and change, it may be easier to design an intuitive minimization for better calibration.  For the purposes of this test (and the tests with other AlphaSense gas sensors), we minimized error by solving for new electrode offset voltages only.  The results of this strategy for both the older and newer sensors can be seen in Figures \ref{fig:as2_co_lmse} and \ref{fig:as_co_with_5_accuracy_zoomed}.
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as2_co_lmse}               
@@ -24,12 +28,7 @@ We tried three LMSE minimzation techniques for better calibration after applying
 
 \subsection{Machine Learning}
 
-These sensors have some 
-
-5V / (2^10) = 4.88 mV resolution on the ADC.  Sensor speced for ~0.3 mV/ppb. We expect a quantization to limit our resolution to ~16 ppb steps.  The AFE is speced for a noise level of ~20 ppb.  
-
-
-Both sensors were treated independently to start, and their output was compared.  Agreement between the two can provide us with high confidence about underlying mechanisms.  Both were optimized using a grid based parameter search of C = [0.001, 0.1, 10, 1000] and penalty-type=['L1', 'L2'] with a 2-fold cross-validation.  Both gave the same.
+Both sensors were treated independently to start, and their output was compared.  Agreement between the two can provide us with high confidence about underlying mechanisms.  Both were optimized using a grid based parameter search of C = [0.001, 0.1, 10, 1000] and penalty-type=['L1', 'L2'] with a 2-fold cross-validation.  Both gave the same optimum model using an L1 penalty and C=1000.  The older sensor gave an AUC-ROC of 0.89, while the newer one gave 0.90.  Figure \ref{fig:as_co_with_5_accuracy_zoomed} shows the comparison of the reference with our calibrated data, using a 5\% tolerance (around $\pm$100 ppb, a relatively ambitious tolerance).   
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_co_with_5_accuracy_zoomed}               
@@ -37,18 +36,8 @@ Both sensors were treated independently to start, and their output was compared.
   	\label{fig:as_co_with_5_accuracy_zoomed}
 \end{figure}
 
-
-
-
-
-
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
-
-===== best ROC\_AUC score 0.894883095983
-
-===== best params {'penalty': 'L1', 'C': 1000}
-
-
+The error rates of table \ref{tab:as1_co_error_rates} and \ref{tab:as2_co_error_rates} show relatively robust behavior from the entire feature set to just the top fifteen.  The older sensor has slightly elevated error rates compared to the newer one, but it also saw more dynamic weather conditions.  High variability in the chunked error rates suggests we haven't trained on enough data yet.
+\floatbarrier
 
 \begin{table}[]
 \centering
@@ -66,9 +55,25 @@ max & 0.18 & 0.28 & 0.20 & 0.28 \\
 \caption{Error Rates for Predicting CO Sensor #1 Accuracy with Logistic Regression}
 \end{table}
 
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+\multicolumn{5}{|c|}{Error Rates for CO Sensor #2 with Logistic Regression} \\
+&\multicolumn{2}{|c|}{all features} & \multicolumn{2}{|c|}{top 15 features} \\
+&shuffled & chunked & shuffled & chunked \\
+avg & 0.14 & 0.20 & 0.16 & 0.17 \\
+min & 0.13 & 0.10 & 0.15 & 0.11 \\
+max & 0.14 & 0.28 & 0.16 & 0.22 \\
+\bottomrule
+\end{tabular}
+\label{tab:as2_co_error_rates}
+\caption{Error Rates for Predicting CO Sensor #2 Accuracy with Logistic Regression}
+\end{table}
+\floatbarrier
 
 
-\begin{margintable}[]
+\begin{margintable}[-2cm]
 \centering
 \offinterlineskip
 \hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
@@ -83,18 +88,44 @@ max & 0.18 & 0.28 & 0.20 & 0.28 \\
 \end{margintable}
 
 
+Despite the larger error rates, our AUC-ROC curves show reasonably good results-- 0.89-0.90 for the shuffled, and  0.69-0.91 for the chunked.  This is slightly better for the second, newer sensor (0.90-0.91 and 0.72-0.91).  The results are thus quite promising in their predictive merit.
+
+When we reduce the feature set to 15 features, we drop in accuracy to the mid- to high- 0.8s, but the agreement across sensors and across chunked and shuffled strategies is the highest we've seen so far.  This stands out as a reasonably well executed model-- it has verified predictive value, and it appears to agree with itself across season and across sensor.  The top features-- the sensor itself, NO2, black carbon, humidity, temperature, and windspeed-- are all common sense candidates for this type of sensor.  
+
+\begin{margintable}[]
+\centering
+\offinterlineskip
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
+\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
+\MyTBox{0}{1326.2}{623.0}
+\vspace{-.35cm}\MyTBox{1}{200.4}{3880.4}\raisebox{-1cm}
+}
+\label{tab:as2_co_confusion}
+\caption{Average AlphaSense CO Sensor #2 Confusion Matrix w/Shuffled K-Fold}
+\end{margintable}
+
+
+
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_co_5_roc}               
+ 	\includegraphics[width=\textwidth-1cm]{figs/as1_co_5_roc}               
  	 \caption{AlphaSense CO Sensor #1 ROC Curve}
   	\label{fig:as1_co_5_roc}
 \end{figure}
 
 
-here's text referencing the (Table \ref{tab:as1_co_top_features}).
+\begin{figure}[htb]
+ 	\includegraphics[width=\textwidth-1cm]{figs/as2_co_5_roc}               
+ 	 \caption{AlphaSense CO Sensor #2 ROC Curve}
+  	\label{fig:as2_co_5_roc}
+\end{figure}
 
-\begin{table}[]
+See Appendix D for more plots outlining the raw data, more information on the models with different accuracy thresholds and averaging, plots of the data with a correct/incorrect prediction overlay, and the Random Tree reduced-feature selection table and corresponding ROC curves. 
+
+\begin{table}
 \centering
-\tiny
+\small
 \begin{tabular}{lllllllll}
 \\
 \\
@@ -134,59 +165,10 @@ hour\_of\_day                                 & 0.02  & 0.41  & 0          & 0.0
 
 
 
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }
 
-===== best ROC_AUC score 0.904107344914
-
-===== best params {'penalty': 'L1', 'C': 1000}
-
-\begin{table}[]
+\begin{table}
 \centering
-\begin{tabular}{|c|c|c|c|c|}
-\toprule
-\multicolumn{5}{|c|}{Error Rates for CO Sensor #2 with Logistic Regression} \\
-&\multicolumn{2}{|c|}{all features} & \multicolumn{2}{|c|}{top 15 features} \\
-&shuffled & chunked & shuffled & chunked \\
-avg & 0.14 & 0.20 & 0.16 & 0.17 \\
-min & 0.13 & 0.10 & 0.15 & 0.11 \\
-max & 0.14 & 0.28 & 0.16 & 0.22 \\
-\bottomrule
-\end{tabular}
-\label{tab:as2_co_error_rates}
-\caption{Error Rates for Predicting CO Sensor #2 Accuracy with Logistic Regression}
-\end{table}
-
-
-\begin{margintable}[]
-\centering
-\offinterlineskip
-\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
-\vspace{-.5cm}
-\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
-\MyTBox{0}{1326.2}{623.0}
-\vspace{-.35cm}\MyTBox{1}{200.4}{3880.4}\raisebox{-1cm}
-}
-\label{tab:as2_co_confusion}
-\caption{Average AlphaSense CO Sensor #2 Confusion Matrix w/Shuffled K-Fold}
-\end{margintable}
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_co_5_roc}               
- 	 \caption{AlphaSense CO Sensor #2 ROC Curve}
-  	\label{fig:as2_co_5_roc}
-\end{figure}
-
-
-
-
-
-here's text referencing the (Table \ref{tab:as2_co_top_features}).
-
-\begin{table}[H]
-\centering
-\tiny
+\small
 \begin{tabular}{lllllllll}
 \\
 \\

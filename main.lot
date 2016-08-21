@@ -5,42 +5,44 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Machine Learning Features used to Predict Sensor Accuracy}}{105}{section*.54}
-\contentsline {table}{\numberline {2}{\ignorespaces Error Rates for Predicting SmartCitizen CO Accuracy with Logistic Regression}}{110}{subsection*.58}
-\contentsline {table}{\numberline {3}{\ignorespaces Average SmartCitizen CO Confusion Matrix w/Shuffled K-Fold}}{110}{subsection*.58}
-\contentsline {table}{\numberline {4}{\ignorespaces Top Features for Predicting SmartCitizen CO}}{111}{subsection*.58}
-\contentsline {table}{\numberline {5}{\ignorespaces Error Rates for Predicting SmartCitizen NO2 Accuracy with Logistic Regression}}{114}{subsection*.61}
-\contentsline {table}{\numberline {6}{\ignorespaces Average SmartCitizen NO2 Confusion Matrix w/Shuffled K-Fold}}{115}{subsection*.61}
-\contentsline {table}{\numberline {7}{\ignorespaces Top Features for Predicting SmartCitizen NO2}}{116}{subsection*.61}
-\contentsline {table}{\numberline {8}{\ignorespaces Error Rates for Predicting Sharp Accuracy with Logistic Regression}}{119}{subsection*.64}
-\contentsline {table}{\numberline {9}{\ignorespaces Average Sharp Particulate Confusion Matrix w/Shuffled K-Fold}}{119}{subsection*.64}
-\contentsline {table}{\numberline {10}{\ignorespaces Top Features for Predicting Sharp Particulate}}{121}{subsection*.64}
-\contentsline {table}{\numberline {18}{\ignorespaces Top Features for Predicting AlphaSense CO Sensor ####2}}{123}{subsection*.67}
-\contentsline {table}{\numberline {11}{\ignorespaces Error Rates for Predicting CO Sensor ####1 Accuracy with Logistic Regression}}{126}{subsection*.67}
-\contentsline {table}{\numberline {12}{\ignorespaces Average AlphaSense CO Sensor ####1 Confusion Matrix w/Shuffled K-Fold}}{127}{subsection*.67}
-\contentsline {table}{\numberline {13}{\ignorespaces Top 15 Features from Random Forest for CO Sensor ####1, used in Pruned Logistic Regression}}{128}{subsection*.67}
-\contentsline {table}{\numberline {14}{\ignorespaces Top Features for Predicting AlphaSense CO Sensor ####1}}{130}{subsection*.67}
-\contentsline {table}{\numberline {15}{\ignorespaces Error Rates for Predicting CO Sensor ####2 Accuracy with Logistic Regression}}{130}{subsection*.67}
-\contentsline {table}{\numberline {16}{\ignorespaces Average AlphaSense CO Sensor ####2 Confusion Matrix w/Shuffled K-Fold}}{131}{subsection*.67}
-\contentsline {table}{\numberline {17}{\ignorespaces Top 15 Features from Random Forest for CO Sensor ####2, used in Pruned Logistic Regression}}{132}{subsection*.67}
-\contentsline {table}{\numberline {19}{\ignorespaces Error Rates for Predicting AlphaSense NO2 Accuracy with Logistic Regression}}{137}{subsection*.70}
-\contentsline {table}{\numberline {20}{\ignorespaces Average AlphaSense NO2 Confusion Matrix w/Shuffled K-Fold}}{138}{subsection*.70}
-\contentsline {table}{\numberline {21}{\ignorespaces Top 15 Features from Random Forest for AlphaSense NO2, used in Pruned Logistic Regression}}{139}{subsection*.70}
-\contentsline {table}{\numberline {22}{\ignorespaces Top Features for Predicting AlphaSense NO2}}{141}{subsection*.70}
-\contentsline {table}{\numberline {23}{\ignorespaces Error Rates for Predicting O3 Sensor ####1 Accuracy with Logistic Regression}}{146}{subsection*.73}
-\contentsline {table}{\numberline {24}{\ignorespaces AlphaSense O3 Sensor ####1 Confusion Matrix w/Shuffled K-Fold}}{147}{subsection*.73}
-\contentsline {table}{\numberline {25}{\ignorespaces Top 15 Features from Random Forest for O3 Sensor ####1, used in Pruned Logistic Regression}}{148}{subsection*.73}
-\contentsline {table}{\numberline {26}{\ignorespaces Top Features for Predicting AlphaSense O3 Sensor ####1}}{150}{subsection*.73}
-\contentsline {table}{\numberline {27}{\ignorespaces Error Rates for Predicting O3 Sensor ####2 Accuracy with Logistic Regression}}{150}{subsection*.73}
-\contentsline {table}{\numberline {28}{\ignorespaces AlphaSense O3 Sensor ####2 Confusion Matrix w/Shuffled K-Fold}}{151}{subsection*.73}
-\contentsline {table}{\numberline {29}{\ignorespaces Top 15 Features from Random Forest for O3 Sensor ####2, used in Pruned Logistic Regression}}{152}{subsection*.73}
-\contentsline {table}{\numberline {30}{\ignorespaces Top Features for Predicting AlphaSense O3 Sensor ####2}}{154}{subsection*.73}
+\contentsline {table}{\numberline {1}{\ignorespaces Machine Learning Features used to Predict Sensor Accuracy}}{110}{section*.55}
+\contentsline {table}{\numberline {2}{\ignorespaces Error Rates for Predicting SmartCitizen CO Accuracy with Logistic Regression}}{115}{subsection*.59}
+\contentsline {table}{\numberline {3}{\ignorespaces Average SmartCitizen CO Confusion Matrix w/Shuffled K-Fold}}{115}{subsection*.59}
+\contentsline {table}{\numberline {4}{\ignorespaces Top Features for Predicting SmartCitizen CO}}{116}{subsection*.59}
+\contentsline {table}{\numberline {5}{\ignorespaces Error Rates for Predicting SmartCitizen NO2 Accuracy with Logistic Regression}}{120}{subsection*.62}
+\contentsline {table}{\numberline {6}{\ignorespaces Top Features for Predicting SmartCitizen NO2}}{121}{subsection*.62}
+\contentsline {table}{\numberline {7}{\ignorespaces Average SmartCitizen NO2 Confusion Matrix w/Shuffled K-Fold}}{121}{subsection*.62}
+\contentsline {table}{\numberline {8}{\ignorespaces Error Rates for Predicting Sharp Accuracy with Logistic Regression}}{124}{subsection*.65}
+\contentsline {table}{\numberline {9}{\ignorespaces Average Sharp Particulate Confusion Matrix w/Shuffled K-Fold}}{124}{subsection*.65}
+\contentsline {table}{\numberline {10}{\ignorespaces Top Features for Predicting Sharp Particulate}}{126}{subsection*.65}
+\contentsline {table}{\numberline {11}{\ignorespaces Error Rates for Predicting CO Sensor ####1 Accuracy with Logistic Regression}}{130}{subsection*.68}
+\contentsline {table}{\numberline {12}{\ignorespaces Error Rates for Predicting CO Sensor ####2 Accuracy with Logistic Regression}}{131}{subsection*.68}
+\contentsline {table}{\numberline {13}{\ignorespaces Average AlphaSense CO Sensor ####1 Confusion Matrix w/Shuffled K-Fold}}{131}{subsection*.68}
+\contentsline {table}{\numberline {14}{\ignorespaces Average AlphaSense CO Sensor ####2 Confusion Matrix w/Shuffled K-Fold}}{131}{subsection*.68}
+\contentsline {table}{\numberline {15}{\ignorespaces Top Features for Predicting AlphaSense CO Sensor ####1}}{132}{subsection*.68}
+\contentsline {table}{\numberline {16}{\ignorespaces Top Features for Predicting AlphaSense CO Sensor ####2}}{133}{subsection*.68}
+\contentsline {table}{\numberline {17}{\ignorespaces Error Rates for Predicting AlphaSense NO2 Accuracy with Logistic Regression}}{136}{subsection*.71}
+\contentsline {table}{\numberline {18}{\ignorespaces Average AlphaSense NO2 Confusion Matrix w/Shuffled K-Fold}}{136}{subsection*.71}
+\contentsline {table}{\numberline {19}{\ignorespaces Top Features for Predicting AlphaSense NO2}}{138}{subsection*.71}
+\contentsline {table}{\numberline {20}{\ignorespaces Error Rates for Predicting O3 Sensor ####1 Accuracy with Logistic Regression}}{140}{subsection*.74}
+\contentsline {table}{\numberline {21}{\ignorespaces Error Rates for Predicting O3 Sensor ####2 Accuracy with Logistic Regression}}{140}{subsection*.74}
+\contentsline {table}{\numberline {22}{\ignorespaces AlphaSense O3 Sensor ####1 Confusion Matrix w/Shuffled K-Fold}}{141}{subsection*.74}
+\contentsline {table}{\numberline {23}{\ignorespaces AlphaSense O3 Sensor ####2 Confusion Matrix w/Shuffled K-Fold}}{141}{subsection*.74}
+\contentsline {table}{\numberline {24}{\ignorespaces Top Features for Predicting AlphaSense O3 Sensor ####1}}{142}{subsection*.74}
+\contentsline {table}{\numberline {25}{\ignorespaces Top Features for Predicting AlphaSense O3 Sensor ####2}}{144}{subsection*.74}
+\contentsline {table}{\numberline {26}{\ignorespaces Summary of Machine Learning Results}}{147}{section*.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {31}{\ignorespaces Top 15 Features from Random Forest for SmartCitizen CO, used in Pruned Logistic Regression}}{179}{section*.89}
-\contentsline {table}{\numberline {32}{\ignorespaces Top 15 Features from Random Forest for SmartCitizen NO2, used in Pruned Logistic Regression}}{182}{section*.90}
-\contentsline {table}{\numberline {33}{\ignorespaces Top 15 Features from Random Forest for Sharp Sensor, used in Pruned Logistic Regression}}{184}{section*.91}
+\contentsline {table}{\numberline {27}{\ignorespaces Most Frequent Weather During Co-location Test}}{180}{section*.88}
+\contentsline {table}{\numberline {28}{\ignorespaces Top 15 Features from Random Forest for SmartCitizen CO, used in Pruned Logistic Regression}}{187}{section*.91}
+\contentsline {table}{\numberline {29}{\ignorespaces Top 15 Features from Random Forest for SmartCitizen NO2, used in Pruned Logistic Regression}}{190}{section*.92}
+\contentsline {table}{\numberline {30}{\ignorespaces Top 15 Features from Random Forest for Sharp Sensor, used in Pruned Logistic Regression}}{192}{section*.93}
+\contentsline {table}{\numberline {31}{\ignorespaces Top 15 Features from Random Forest for CO Sensor ####1, used in Pruned Logistic Regression}}{198}{section*.94}
+\contentsline {table}{\numberline {32}{\ignorespaces Top 15 Features from Random Forest for CO Sensor ####2, used in Pruned Logistic Regression}}{199}{section*.94}
+\contentsline {table}{\numberline {33}{\ignorespaces Top 15 Features from Random Forest for AlphaSense NO2, used in Pruned Logistic Regression}}{203}{section*.95}
+\contentsline {table}{\numberline {34}{\ignorespaces Top 15 Features from Random Forest for O3 Sensor ####1, used in Pruned Logistic Regression}}{206}{section*.96}
+\contentsline {table}{\numberline {35}{\ignorespaces Top 15 Features from Random Forest for O3 Sensor ####2, used in Pruned Logistic Regression}}{206}{section*.96}
 \contentsfinish 

@@ -75,12 +75,12 @@
 
 % If there is more than one supervisor, use the \supervisor command
 % once for each.
-\supervisor{Joseph A. Paradiso}{Professor}
+\supervisor{Joseph A. Paradiso}{Professor of Media Arts and Sciences}
 
 % This is the department committee chairman, not the thesis committee
 % chairman.  You should replace this with your Department's Committee
 % Chairman.
-\chairman{Pattie Maes}{Academic Head}
+\chairman{Pattie Maes}{Academic Head\\Program in Media Arts and Sciences}
 
 % Make the titlepage based on the above information.  If you need
 % something special and can't use the standard form, you can specify
@@ -108,8 +108,9 @@
 % abstract and acknowledgments pages.
 \pagestyle{empty}
 \setcounter{savepage}{\thepage}
-\begin{abstractpage}
 
+\newgeometry{bottom=0.1cm}
+\begin{abstractpage}
 %\fancypagestyle{customstyle}{%
 %\fancyhf{}%
 %	\fancyhead[LE]{\thepage\quad\smallcaps{\newlinetospace{}}}% 
@@ -118,7 +119,6 @@
 
 \input{pages/00abstract}
 \end{abstractpage}
-
 % Additional copy: start a new page, and reset the page number.  This way,
 % the second copy of the abstract is not counted as separate pages.
 % Uncomment the next 6 lines if you need two copies of the abstract
@@ -132,11 +132,17 @@
 
 % READER PAGE
 \reader{Steven Hamburg}{Chief Scientist}{Environmental Defense Fund}
-\reader{Ethan Zuckerman}{Professor}{Program in Media Arts and Sciences}
+
+\readerpage
+
+\clearpage
+
+\reader{Ethan Zuckerman}{Associate Professor of the Practice}{Program in Media Arts and Sciences}
 
 \readerpage
 
 \cleardoublepage
+\newgeometry{bottom=5cm}
 
 \section*{Acknowledgments}
 
@@ -144,21 +150,21 @@ Many selfless people advised, guided, and supported me during this thesis.  I'm 
 
 First I'd like to thank my advisor, \textbf{Joe Paradiso}.  He not only laid the groundwork for this thesis with his depth of expertise and strong connections; he has been an incredibly thoughtful, intelligent, and warm advisor.  I will always be grateful for the chance he took on me, to join his lab and represent his vision in the world.  I hope I might one day be half as sharp, capable, and kind.
 
-The Enivornmental Defense Fund- particularly my reader \textbf{Dr. Steven Hamburg} and his collaborator \textbf{Millie Chu Baird}- have been instrumental in shaping the direction of this work, and providing great insight and invaluable community connections.  I'm forever grateful not just for their funding, but for their active engagement from the very beginning.
+The Enivornmental Defense Fund- particularly my reader \textbf{Dr. Steven Hamburg} and his collaborator \textbf{Millie Chu Baird}- have been instrumental in shaping the direction of this work, and providing great insight and invaluable community connections.  They supported my Media Lab appointment and this work; it would not exist without them.  I'm forever grateful not just for their funding, but for their active engagement from the very beginning.
 
 \textbf{Ethan Zuckerman} has been a true mentor to me since this process began.  I've never met a more helpful, brilliant, encouraging, and eloquent professor.  He has been integral in shaping this project, but the most valuable things I've gleaned from him fall far beyond the bounds of this thesis and will stay with me well past its completion.  
 
-Ethan's group shares his spirit, and I'm indebted to the entire Civic Media Team.  \textbf{Emilie Reiser} has been a brilliant collaborator and a wonderful friend throughout this process, investing countless hours helping and challenging me.  \textbf{Don Blair} has also been incredibly warm, thoughtful, and constructive over many hours of conversation.  The extended Civic family has been very generous with their time, and I'd like to thank all of them, particularly \textbf{EPA Dave}, \textbf{Xiuli Wang}, and \textbf{Colin McCormick}.
+Ethan's group shares his spirit, and I'm indebted to the entire Civic Media Team.  \textbf{Emilie Reiser} has been a brilliant collaborator and a wonderful friend throughout this process, investing countless hours helping and challenging me.  \textbf{Don Blair} has also been incredibly warm, thoughtful, and constructive over many hours of conversation.  The extended Civic family has been very generous with their time, and I'd like to thank all of them, particularly \textbf{Dave Mackintosh}, \textbf{Xiuli Wang}, and \textbf{Colin McCormick}.
 
 I've relied on several experts to shape and inform my thinking about this project.  In particular, I'm indebted to Safecast's \textbf{Sean Bonner} and \textbf{Pieter Franken} for their insight, which launched me into this project with a strong foundation.  As I've continued, \textbf{Dr. Jesse Kroll} and \textbf{David Hagan} from MIT's Civil and Environmental Engineering Department have been very unselfish with their time and expertise.  Their technical mastery of the field is truly inspiring.     
 
 I'm completely beholden to MassDEP- particularly \textbf{John Lane} and \textbf{Tom McGrath}- for allowing me 24/7 access to the EPA measurement site.  This thesis wouldn't exist without their flexibility, and they've been delightful, responsive, and accomodating collaborators. 
 
-I'd also like to acknowledge my Responsive Environments family- particularly \textbf{Spencer Russell}, whose CHAIN work forms the basis for much of my contribution here (and who spent a tremendous amount of time helping me understand how to use it), and \textbf{Brian Mayton} for his technical insight and advice throughout the process.  A big thanks goes to \textbf{Nan, Evan, Juliana, Asaf, Artem, Jie, Donald, and Gershon} for useful, fun, and inspiring conversations along the way.  It's a pleasure to work with people I admire so much.
+I'd also like to acknowledge my Responsive Environments family- particularly \textbf{Spencer Russell}, whose CHAIN work forms the basis for much of my contribution here (and who spent a tremendous amount of time helping me understand how to use it), and \textbf{Brian Mayton} for his technical insight and advice throughout the process.  A big thanks goes to \textbf{Nan, Evan, Juliana, Asaf, Artem, Jie, Donald, Vasant, and Gershon} for useful, fun, and inspiring conversations along the way.  It's a pleasure to work with people I admire so much.
 
-\textbf{Amna, Keira, and Linda}- you three have kept me on track and been incredibly flexible and kind throughout the last two years.  Thank you for the support, the smiles, and the gentle reminders.  To my Boston friends - \textbf{Kristy, Will, Chetan, Nate, and Dylan} - thanks for putting up with me and keeping me sane throughout this process.  
+\textbf{Amna, Keira, and Linda}- you three have kept me on track and been incredibly flexible and kind throughout the last two years.  Thank you for the support, the smiles, and the gentle reminders.  To my Boston friends - \textbf{Kristy, Chetan, Will, Nate, and Dylan} - thanks for putting up with me and keeping me sane throughout this process.  
 
-On a personal note, I'd like to thank the mentors that have invested in me, shaped me into who I am, and continue to challenge, guide, and inspire me.  \textbf{Dan Gauger}, \textbf{Neal Lackritz}, \textbf{Ted Burke}, and \textbf{Bunnie Huang} - I can't overstate the impact you each have had on my life- as technical mentors certainly, but more importantly as confidants and role models.  You inspire me to think creatively and make a difference through ambitious, high-quality work.  You motivate me to live a more balanced life and approach the world with kindness and gratitude.  You challenge me to re-examine my priorities, my goals, and my philosophies through your example.  You've each made an indelible impact on my life, and I will continue to strive to follow in your example.   
+On a personal note, I'd like to thank the mentors that have invested in me, shaped me into who I am, and continue to challenge, guide, and inspire me.  \textbf{Dan Gauger}, \textbf{Neal Lackritz}, \textbf{Ted Burke}, and \textbf{bunnie} - I can't overstate the impact you each have had on my life- as technical mentors certainly, but more importantly as confidants and role models.  You inspire me to think creatively and make a difference through ambitious, high-quality work.  You motivate me to live a more balanced life and approach the world with kindness and gratitude.  You challenge me to re-examine my priorities, my goals, and my philosophies through your example.  You've each made an indelible impact on my life, and I will continue to strive to follow in your example.   
 
 Most of all, I'm indebted to my wonderful and supportive family- my parents \textbf{Karen and Brad}, my sister \textbf{Tracy}, and the entire Benson/Ramsay clan.  Thank you for believing in me, pushing me, and guiding me throughout the last 29 years.  I admire you, I love you, and I owe you everything.
 

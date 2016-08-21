@@ -1,20 +1,12 @@
-This is about the alphasense O3 results.
+Two AlphaSense O3 sensors were tested against the EPA reference.  The first sensor was 2.5 years old at the time of installation,  which ran for 38 days (from 4/15 to 5/23 2016 with one 40 minute service interruption).  The second sensor was 2 months old at the time of installation, and ran for 21 days (from 5/23 - 6/13 2016).  Our first test gave 55,589 minute-resolution samples to compare; our second test gave 30,150 samples.
 
-Two AlphaSense O3 sensors were tested against the EPA reference.  The first sensor was 2.5 years old at the time of installation,  which ran for 38 days (from 4/15 to 5/23 2016 with one 40 minute service interruption).  The second sensor was 2 months old at the time of installation, and ran for 21 days (from 5/23 - 6/13 2016).  Our first test gave 55,589 minute-resolution samples to compare, our second test gave 30,150 samples.
-
-Age is an important distinction between the two sensors, which makes this an interesting comparison.  Additionally, while the first O3 sensor was only calibrated for O3 measurement, the second sensor was calibrated as an O3+NO2 sensor (to be used in conjunction with the NO2 sensor on the board).  This presents a different calibration process- while the second sensor should be more accurate (as both are cross-sensitive to NO2), that depends on the accuracy of the NO2 characterization, which complicates the calibration equation and introduces more opportunity for drift in the calibration process.
+Age is an important distinction between the two sensors, which makes this an interesting comparison.  Additionally, while the first O3 sensor was only calibrated for O3 measurement, the second sensor was calibrated as an O3+NO2 sensor (to be used in conjunction with the NO2 sensor on the board).  This presents a different calibration process- while the second sensor should be more accurate (as both are cross-sensitive to NO2), it depends on the accuracy of the NO2 characterization. The second sensor has a more complicated calibration equation, and thus introduces more opportunity for drift in the calibration process.
 
 \subsection{Pre-processing}
 
-Talk about process for taking raw aux/working electrodes and making the basic calibration data.
+The raw data for the O3 sensors is some of the most convincing we've recorded with a sensor at this price-point.  The calibrated values for both sensors track the real values quite well, and even capture a few transients.  A small sample of the datasheet-calibrated values is shown in Figure \ref{fig:as1_o3_raw_zoomed}-- for a look at all of the raw data, please check Appendix D.  
 
-Old sensor, raw data with simple calibration based on datasheet.
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_o3_raw}               
- 	 \caption{AlphaSense O3 Sensor #1 Raw Data}
-  	\label{fig:as1_o3_raw}
-\end{figure}
+The preprocessing step followed similar guiding principles as the other AlphaSense sensors.  The final results for both sensors can be seen in Figure \ref{fig:as_o3_with_7p5_accuracy_zoomed} (Sensor \#1 on the left of the dotted line and Sensor \#2 on the right).  
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as1_o3_raw_zoomed}               
@@ -22,52 +14,22 @@ Old sensor, raw data with simple calibration based on datasheet.
   	\label{fig:as1_o3_raw_zoomed}
 \end{figure}
 
-New sensor all over the map with datasheet calibration because of NO2 calibration using raw calibration values and readings.
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_o3_lmse}               
- 	 \caption{AlphaSense O3 Sensor #1 after LMSE Calibration}
-  	\label{fig:as1_o3_lmse}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_o3_lmse}               
- 	 \caption{AlphaSense O3 Sensor #2 after LMSE Calibration}
-  	\label{fig:as2_o3_lmse}
-\end{figure}
 
 \subsection{Machine Learning}
 
+O3 varies the least of the pollutants we measured, and our 15\% tolerance of full scale works out to be $\pm$15 ppb.  This is extremely tight-- the analog board is only rated for $\pm$10.  The great thing is that a little less than half of our readings actually fall into that very strict tolerance.  It may, however, be unrealistic to demand this level of precision from this sensor.
 
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as_o3_with_7p5_accuracy_zoomed}               
- 	 \caption{AlphaSense O3 Sensor #1 and #2 with 7.5\% Accuracy Threshold}
-  	\label{fig:as_o3_with_7p5_accuracy_zoomed}
-\end{figure}
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/as_o3_with_5_accuracy_zoomed}               
- 	 \caption{AlphaSense O3 Sensor #1 and #2 with 5\% Accuracy Threshold}
-  	\label{fig:as_o3_with_5_accuracy_zoomed}
+ 	 \caption{AlphaSense O3 Sensor #1 and #2 with 15\% Accuracy Threshold}
+  	\label{fig:as_o3_with_15_accuracy_zoomed}
 \end{figure}
 
 
+Our two fold search of the parameter space for both old and new O3 sensor gave an L1 penalty, and C values of 10 and 1000 respectively.  As we can see from Tables \ref{tab:as1_o3_error_rates} and \ref{tab:as2_o3_error_rates}, the errors levels we get when attempting to predict at this tolerance level are pretty extreme.  The confusion matrix and ROC curves back up that assumption.
 
-
-
-
-
-
-
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }, 2-Fold cross validation
-
-===== best ROC\_AUC score 0.725924836928
-
-===== best params {'penalty': 'L1', 'C': 10}
-
-
-
-\begin{table}[H]
+\begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|}
 \toprule
@@ -83,83 +45,75 @@ max & 0.33 & 0.52 & 0.37 & 0.52 \\
 \caption{Error Rates for Predicting O3 Sensor #1 Accuracy with Logistic Regression}
 \end{table}
 
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\toprule
+\multicolumn{5}{|c|}{Error Rates for O3 Sensor #2 with Logistic Regression} \\
+&\multicolumn{2}{|c|}{all features} & \multicolumn{2}{|c|}{top 15 features} \\
+&shuffled & chunked & shuffled & chunked \\
+avg & 0.26 & 0.46 & 0.32 & 0.40 \\
+min & 0.24 & 0.37 & 0.32 & 0.35 \\
+max & 0.26 & 0.54 & 0.33 & 0.49 \\
+\bottomrule
+\end{tabular}
+\label{tab:as2_o3_error_rates}
+\caption{Error Rates for Predicting O3 Sensor #2 Accuracy with Logistic Regression}
+\end{table}
 
+The newer sensor appears to be more predictable, even with less data-- this may (again) be due to slightly more stable weather toward the end of the test.  Both sensors have strong trends between shuffled and chunked validation techniques, especially given the ambitious tolerance.  They are also surprising resilient to feature set reduction.
 
-\begin{table}[H]
+As a next step, it would be useful to increase the tolerance to a more reasonable level and re-train our model for prediction.  The quality of the readings suggests there is some very trustworthy and useful information to be had with this sensor.
+
+\begin{margintable}
 \centering
 \offinterlineskip
-\hspace*{-5cm}\raisebox{-3.5cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace*{1cm}\MyHBox[\dimexpr5.1cm+6\fboxsep\relax]{Predicted Values}\par
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
 \hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
 \MyTBox{0}{4308.2}{1730.2}
-\MyTBox{1}{1931.8}{3147.6}
+\vspace{-.35cm}\MyTBox{1}{1931.8}{3147.6}\raisebox{-1cm}
 }
 \label{tab:as1_o3_confusion}
 \caption{AlphaSense O3 Sensor #1 Confusion Matrix w/Shuffled K-Fold}
-\end{table}
+\end{margintable}
+
+
+
+\begin{margintable}
+\centering
+\offinterlineskip
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
+\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
+\MyTBox{0}{2439.6}{747.4}
+\vspace{-.35cm}\MyTBox{1}{792.2}{2050.8}\raisebox{-1cm}
+}
+\label{tab:as2_o3_confusion}
+\caption{AlphaSense O3 Sensor #2 Confusion Matrix w/Shuffled K-Fold}
+\end{margintable}
 
 
 
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_o3_7p5_roc}               
+ 	\includegraphics[width=\textwidth-1cm]{figs/as1_o3_7p5_roc}               
  	 \caption{AlphaSense O3 Sensor #1 ROC Curve}
   	\label{fig:as1_o3_7p5_roc}
 \end{figure}
 
 
-
-here's text referencing the (Table \ref{tab:as1_o3_randomforest_features}).
-
-\begin{table}[h]
-\centering
-\begin{tabular}{lclc|}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
-lmse\_calib\_as\_o3 & 0.0388052728559 \\
-as\_o3 & 0.038535780326 \\
-alphaS1\_work & 0.0256714422814 \\
-avg\_10\_as\_o3 & 0.0143759967966 \\
-avg\_10\_lmse\_calib\_as\_o3 & 0.0143305118271 \\
-as\_h2s & 0.0131703607364 \\
-avg\_720\_bkcarbon & 0.0131177282572 \\
-avg\_60\_bkcarbon & 0.0128714271405 \\
-avg\_1440\_bkcarbon & 0.0124171125826 \\
-min\_since\_plugged\_in & 0.012288250826 \\
-bkcarbon & 0.0122005264086 \\
-avg\_1440\_lmse\_scaled\_sharpDust & 0.0118815562888 \\
-avg\_720\_lmse\_scaled\_sharpDust & 0.0116399996115 \\
-daily\_avg\_as\_temperature & 0.0116365039598 \\
-alphaS3\_work & 0.0115947138563 \\
-\bottomrule
-\end{tabular}
-\label{tab:as1_o3_randomforest_features}
-\caption{Top 15 Features from Random Forest for O3 Sensor #1, used in Pruned Logistic Regression}
-\end{table}
-
-
-
-
 \begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_o3_7p5_roc_pruned_features}               
- 	 \caption{AlphaSense O3 Sensor #1 ROC Using Top 15 Features}
-  	\label{fig:as1_o3_7p5_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as1_o3_7p5_logistic_predictions}               
- 	 \caption{AlphaSense O3 Sensor #1 Prediction Accuracy}
-  	\label{fig:as1_o3_7p5_logistic_predictions}
+ 	\includegraphics[width=\textwidth-1cm]{figs/as2_o3_7p5_roc}               
+ 	 \caption{AlphaSense O3 Sensor #2 ROC Curve}
+  	\label{fig:as2_o3_7p5_roc}
 \end{figure}
 
 
-
-here's text referencing the (Table \ref{tab:as1_o3_top_features}).
-
-\begin{table}[H]
+\begin{table}
 \centering
+\small
 \begin{tabular}{lllllllll}
 \\
 \\
@@ -198,110 +152,9 @@ as\_o3                                         & 0.04  & 0     & 0          & 0.
 
 
 
-
-
-
-
-
-parameters = {'C':[0.001, 0.1, 10, 1000], 'penalty':('L1', 'L2') }, 2-Fold cross validation
-
-===== best ROC\_AUC score 0.816024265233 
-
-===== best params {'penalty': 'L1', 'C': 1000}
-
-
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\toprule
-\multicolumn{5}{|c|}{Error Rates for O3 Sensor #2 with Logistic Regression} \\
-&\multicolumn{2}{|c|}{all features} & \multicolumn{2}{|c|}{top 15 features} \\
-&shuffled & chunked & shuffled & chunked \\
-avg & 0.26 & 0.46 & 0.32 & 0.40 \\
-min & 0.24 & 0.37 & 0.32 & 0.35 \\
-max & 0.26 & 0.54 & 0.33 & 0.49 \\
-\bottomrule
-\end{tabular}
-\label{tab:as2_o3_error_rates}
-\caption{Error Rates for Predicting O3 Sensor #2 Accuracy with Logistic Regression}
-\end{table}
-
-
-
-\begin{table}[H]
-\centering
-\offinterlineskip
-\hspace*{-5cm}\raisebox{-3.5cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace*{1cm}\MyHBox[\dimexpr5.1cm+6\fboxsep\relax]{Predicted Values}\par
-\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
-\MyTBox{0}{2439.6}{747.4}
-\MyTBox{1}{792.2}{2050.8}
-}
-\label{tab:as2_o3_confusion}
-\caption{AlphaSense O3 Sensor #2 Confusion Matrix w/Shuffled K-Fold}
-\end{table}
-
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_o3_7p5_roc}               
- 	 \caption{AlphaSense O3 Sensor #2 ROC Curve}
-  	\label{fig:as2_o3_7p5_roc}
-\end{figure}
-
-
-
-here's text referencing the (Table \ref{tab:as2_o3_randomforest_features}).
-
-\begin{table}[H]
-\centering
-\begin{tabular}{lllllllll}
-\\
-\\
-\toprule
-Feature & Importance \\
-\midrule
-avg\_720\_bkcarbon & 0.0190323311421 \\
-avg\_1440\_bkcarbon & 0.0186458328226 \\
-avg\_1440\_as\_co & 0.0185435347092 \\
-daily\_avg\_as\_temperature & 0.0177518437915 \\
-lmse\_calib\_as\_o3 & 0.0170424373503 \\
-daily\_avg\_forecastio\_temperature & 0.0170308459472 \\ 
-avg\_60\_bkcarbon & 0.0167897682822 \\
-min\_since\_plugged_in & 0.0166420124401 \\ 
-avg\_60\_forecastio\_pressure & 0.016620265085 \\
-bkcarbon & 0.015766200638 \\
-daily\_avg\_forecastio\_humidity & 0.0147498428636 \\
-avg\_60\_forecastio\_apparentTemperature & 0.0140509238175 \\
-forecastio\_pressure & 0.013926105091 \\
-avg\_60\_forecastio\_temperature_c & 0.0136171116857 \\
-day\_of\_year & 0.0133242379573 \\
-\bottomrule
-\end{tabular}
-\label{tab:as2_o3_randomforest_features}
-\caption{Top 15 Features from Random Forest for O3 Sensor #2, used in Pruned Logistic Regression}
-\end{table}
-
-
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_o3_7p5_roc_pruned_features}               
- 	 \caption{AlphaSense O3 Sensor #2 ROC Using Top 15 Features}
-  	\label{fig:as2_o3_7p5_roc_pruned_features}
-\end{figure}
-
-\begin{figure}[htb]
- 	\includegraphics[width=\textwidth]{figs/as2_o3_7p5_logistic_predictions}               
- 	 \caption{AlphaSense O3 Sensor #2 Prediction Accuracy}
-  	\label{fig:as2_o3_7p5_logistic_predictions}
-\end{figure}
-
-\FloatBarrier
-here's text referencing the (Table \ref{tab:as2_o3_top_features}).
-
 \begin{table}[!htb]
 \centering
+\small
 \begin{tabular}{lllllllll}
 \\
 \\

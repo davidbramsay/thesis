@@ -1,15 +1,17 @@
 One SmartCitizen NO2 sensor was tested against the EPA reference.  Like the SmartCitizen CO test, it was 1 month old at the time of installation, and ran for 52 days (from 4/15 - 6/6 2016) with two ~40 minute service interruptions.  It gave 74,961 samples of minute resolution data.
 
-
-\subsection{Pre-processing}
-
-Like the SmartCitizen CO data, the NO2 sensor comes uncalibrated, as a mV value.  The first step was to run a bounded LMSE minimization on the data in order to scale and offset it appropriately to match the real data.  You can see the final result of such a scaling in Figure \ref{fig:sck_no2_with_10_accuracy_zoomed}.  Once again, the LMSE minimization scaled the sensor values down to a minimal amount of variation.  This suggests that the sensor data itself is relatively useless in this context, which is relatively unsurprising given its working range and the near constant <1 ppm exposure.  This agrees with test spurious findings for three SmartCitizen NO2 sensors tested by SCAQMD.   
-
 \begin{marginfigure}
  	\includegraphics[width=\textwidth]{figs/no2_sck_zoomed}               
  	 \caption{SmartCitizen NO2 Raw Data}
   	\label{fig:sck_no2_raw_zoomed}
 \end{marginfigure}
+
+\subsection{Pre-processing}
+
+\enlargethispage{\baselineskip}
+
+Like the SmartCitizen CO data, the NO2 sensor comes uncalibrated, as a mV value.  The first step was to run a bounded LMSE minimization on the data in order to scale and offset it appropriately to match the real data.  You can see the final result of such a scaling in Figure \ref{fig:sck_no2_with_10_accuracy_zoomed}.  Once again, the LMSE minimization scaled the sensor values down to a minimal amount of variation.  This suggests that the sensor data itself is relatively useless in this context, which is relatively unsurprising given its working range and the near constant <1 ppm exposure.  This agrees with spurious test findings for three SmartCitizen NO2 sensors tested by SCAQMD.   
+
 
 \subsection{Machine Learning}
 
@@ -45,7 +47,7 @@ max & 0.03 & 0.08 & 0.04 & 0.06 \\
 
 We see very low error rates of 3-4\% on average with our predictions, regardless of the size of our feature set and whether the validation was randomized or chunked.  This is corroborated by very strong performance in the average confusion matrix (Table \ref{tab:sck_no2_confusion}).  Our ROC curves show tight agreement for the shuffled test sets of 0.90-0.92 AUC-ROC, while the chunked version lags behind slightly with scores from 0.69-0.83.  These results show evidence of extremely strong predictive power, though they hint that we haven't collected quite enough data to completely account for seasonal variation (even though we're doing well enough with the chunked test sets to predict with good confidence).
 
-
+\enlargethispage{10\baselineskip}
 
 \begin{figure}[htb]
  	\includegraphics[width=\textwidth]{figs/sck_no2_10_roc}               
@@ -55,26 +57,9 @@ We see very low error rates of 3-4\% on average with our predictions, regardless
 
 
 We see similar error rates with all features as for a subset of the top fifteen.  Examining the AUC-ROC shows that when training only with the top features, the score drops from 0.9 to 0.8 -- a substantial drop, but proof that the top fifteen account for a very strong prediction on their own.
- 
-The top features are similar to those that predicted the CO transients, but with a stronger relationship-- black carbon is a leading indicator, as well as humidity, the hour of the day, and CO level.  These all make sense as correlates-- CO and black carbon are produced by traffic, which has a predictable pattern with the time of day.  Table \ref{tab:sck_no2_top_features}) shows the top features given seven feature selection algorithms.
 
-\begin{margintable}
-\centering
-\offinterlineskip
-\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
-\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
-\vspace{-.5cm}
-\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
-\MyTBox{0}{142.0}{427.0}
-\vspace{-.35cm}\MyTBox{1}{52.6}{14370.2}\raisebox{-1cm}
-}
-\label{tab:sck_no2_confusion}
-\caption{Average SmartCitizen NO2 Confusion Matrix w/Shuffled K-Fold}
-\end{margintable}
 
-Once again, there seems to be strong evidence that NO2 transients are highly predictable if there are other, good quality sensors that measure related phenomena (like black carbon and CO) to rely on.  The relationship is a complex one that requires a larger feature set and a lot of training data for optimal performance, but it appears that even in the short two month period we were able to train a model that would work well under realistic conditions.
-
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \small
 \begin{tabular}{lllllllll}
@@ -113,4 +98,22 @@ avg\_720\_lmse\_scaled\_sharpDust          & 0.01  & 0          & 0    & 0.16 & 
 \caption{Top Features for Predicting SmartCitizen NO2}
 \end{table}
 
+ 
+The top features are similar to those that predicted the CO transients, but with a stronger relationship-- black carbon is a leading indicator, as well as humidity, the hour of the day, and CO level.  These all make sense as correlates-- CO and black carbon are produced by traffic, which has a predictable pattern with the time of day.  Table \ref{tab:sck_no2_top_features}) shows the top features given seven feature selection algorithms.
+
+\begin{margintable}
+\centering
+\offinterlineskip
+\hspace*{-5cm}\raisebox{-4cm}[0pt][0pt]{\rotatebox[origin=c]{90}{\parbox[c][0pt][c]{3cm}{\textbf{Actual Values}\\[20pt]}}}\par
+\hspace{.3cm}\MyHBox[\marginparwidth]{Predicted Values}\par
+\vspace{-.5cm}
+\hspace*{1cm}\MyHBox{0}\MyHBox{1}\par
+\MyTBox{0}{142.0}{427.0}
+\vspace{-.35cm}\MyTBox{1}{52.6}{14370.2}\raisebox{-1cm}
+}
+\label{tab:sck_no2_confusion}
+\caption{Average SmartCitizen NO2 Confusion Matrix w/Shuffled K-Fold}
+\end{margintable}
+
+Once again, there seems to be strong evidence that NO2 transients are highly predictable if there are other, good quality sensors that measure related phenomena (like black carbon and CO) to rely on.  The relationship is a complex one that requires a larger feature set and a lot of training data for optimal performance, but it appears that even in the short two month period we were able to train a model that would work well under realistic conditions.
 

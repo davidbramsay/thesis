@@ -1,67 +1,78 @@
 \chapter{8. Conclusions and Future Work}
 
-\begin{quote}
-\textit{The World Health Organization considers air quality to be the single leading environmental cause of death around the world.  One in eight deaths worldwide are linked to poor air quality.} \newline
-\end{quote}
+\section{Insights}
+
+Instead of endeavoring to build a \textit{better} inexpensive sensor, in this work we attempted to \textit{understand} and \textit{predict} the sensors we already had.  These techniques have wide implications for the heterogeneous, dense, and dynamic sensing ecosystem of the future. 
+
+We tested a machine learning approach to this problem on six different sensor types, and found strong predictive results in some cases. In other cases, we discovered hopeful results, so long as the sensors provided useful information.  The cheapest sensors-- the Smart Citizen CO and NO2 sensors-- did not provide any useful data.  The Sharp particulate sensor clearly followed trends with some large divergences-- it showed very strong predictability with a reasonably large tolerance.  The AlphaSense sensors exhibited interesting behavior-- in every case, they moved from one temperature-dependent regime to another throughout the day.  This switch in temperature overlays a large step behavior on top of the measured signal which otherwise appears to track real pollution concentration.  This extent of this temperature dependent 'quantization' has an adverse effect on data quality for the concentrations we observed.  
+
+Though strong predictability was observed in several cases, the inexpensive sensors failed to record most transient phenomena.  This trend is likely related to airflow around the device.  For CO and O3, a few small transients were recorded by our sensors.  A comparison of transient duration and the sensor time constants also supports the hypothesis that these sensors can detect such events.  The NO2 transients were much faster, and the underlying problem is harder to dissect.  New designs that promote airflow should be built to test, understand, and mitigate this issue in the future.
+
+Contrasting 'chunked' and 'shuffled' cross-validation emerged in this work as an interesting technique. The differences between the two helped us understand whether we had collected enough data to predict future or past data reliability given seasonal variation.  When these results align, it is a strong indication that we have captured enough data to make meaningful predictions across measured seasons.  This test's two month window limited our capacity to fully characterize and predict the sensor reliability across season.  This is unsurprising given the dynamic weather and the short, early exposure to cold.  In some instances the chunked cases show one or two poorly predicted major outliers.  These may correspond to the majority of temperate weather data training a model to predict the coldest week at the beginning of the test, or generally dry and clear weather sections predicting the rainiest and most humid week.  By applying this cross-validation strategy, we provide an automatic, quantifiable, and objective measure of the dataset integrity.
+
+Furthermore, the machine learning can be used as a tool to quantify sensor quality.  The predictability of failure is a strong indicator of the quality of the device's underlying physics and design.  Additionally, by varying the threshold of what we consider an 'accurate' reading and seeing how the quality of our model's predictions change, we can tease out the precision of a device.  We expect a steep decline in predictive power of our model when we cross the threshold from systematic, predictable errors to the inherent resolution limit of the device.  By characterizing this break-point, we can make objective claims about a device's precision.
+
+Feature reduction gives us an idea of the failure modes and/or correlates for each sensor.  In our tests, the top features were mostly in line with expectations, which is a strong indicator that the results we have observed are meaningful.  For instance, the most relevant Sharp particulate sensor features suggested it has (1) an operating range for which it works well, and one for which it is less reliable, (2) covaries with other pollutants, especially NO2, and (3) is sensitive to rain and humidity.  Clusters of similar features arising from different feature reduction algorithms corroborate these conclusions.
+  
+Interestingly, the black carbon sensor reading-- one of the only readings from the EPA reference set to appear as a training feature-- was revealed to be the strongest predictor in nearly every case in which it was included.  This provides fundamental insight into system design-- one, high quality sensor on a device may be invaluable at predicting and validating cheaper sensors on that same device.  We can use these machine learning techniques to test possible combinations of expensive and cheap sensors, and thus optimize and inform our system design.  
+
+By selectively removing these accurate data points taken by an expensive sensor, we move away from using our tool (1) to understand the underlying mechanisms of how the device breaks down and (2) as a method to inform future system design.  Instead, we can use it to characterize a pre-existing system, and explore whether we can extract more accurate results simply by using multiple low-cost sensors.  The applications of these machine learning techniques for sensor characterization, system characterization, system design, data analysis, and data quality assurance are numerous.
+
+Beyond the machine learning and data itself, there are other important insights to consider from this work.  In this thesis, we built multiple hardware platforms.  In the first, we found airflow to be a likely issue for directional selectivity and sensitivity of the device.  We tested an inexpensive, custom wind sensor using differential pressure techniques and showed both the complexity and the promise of such a design.  For our purposes it was a useful proxy for local airflow, but there are many open questions and future applications for this wind sensing modality.   
+
+Finally, there are insights regarding the backend design of the learnAir system itself.  The implementation exposed some weakness in the HAL/JSON standard and ChainAPI implementation for these applications-- namely, (1) that resources do not have a self-description of their type (i.e., they are defined through link relationships, so you must maintain state as you traverse to know what type of resource you have), (2) that plural and singular forms are implemented when grouping like resources as lists, which can exacerbate confusion when traversing, querying, working with code, and defining ontologies, and (3) data storage as it is implemented in ChainAPI serves data in small date-range page chunks, with no clear start or end date (i.e., it is currently impossible to distinguish a large break in data from the beginning or end of data collection without external context).  
+
+Although these issues warrant attention, none are indictments of the system as a whole. In fact, ChainAPI addresses many important concerns facing the air quality community, while also providing provocative benefits over standard database solutions.  ChainAPI lowers the barrier to entry, allowing for simple distributed hosting, sharing, and ontology curation.  Beyond that, it enables separate concerns so that raw data is transparent, data processing can be centralized, and best practices can emerge in an open ecosystem.  This represents an important paradigm shift away from opaque self-curation and publishing of data towards a world where data is automatically uploaded, calibrated, and processed directly from hardware.  With this thesis, that platform has been expanded using tools to take advantage of ChainAPI as an easily discoverable, scalable, dynamic, and browsable system (a la the world wide web).  There are many important architectural insights inherent in this structure-- pushing away from the standard static monolithic solutions, and towards a dynamic, open system. 
 
 
 \section{Applications}
--example and provocation to citizen sensing community.
--datastore for big data sharing.  
--extensible for any type of algorithm, particularly designed for learning algorithms to intelligently calibrate and predict accuracy.
--EPA data sharing.  Data sharing in general.
--AWS into processing scripts.
--EPA testing of cheap sensors.
--2 months of dynamic weather change, appears not enough time.  Want to repeat.
--towards personal tracking, intelligent systems.  highly scalable.
--sell as platform/stamp of approval, change/define a new validation process for new sensors.  all new consumer sensors push data to chain and are independently verified.  Verified for regions of the country, verified for conditions, verified with a ranking of accuracy not just a yes or no.
 
+The applications for this work are numerous.  The algorithms themselves show promise for quantifying and standardizing many decisions in the real-world--  they can be used to rigorously and automatically characterize sensor failure modes and sensor quality.  They can objectively show us when we have enough data to understand how a sensor reacts in a given climate.  When paired with a reasonable quality sensor, they can give a probability of data accuracy for each reading, priming researchers to use and explore new, large, distributed datasets and novel air quality models that factor in data uncertainty.
 
-\section{Insights}
+The data backend has many applications for the issues facing air quality sensor networks.  The air quality community has been debating approaches to share data, define a common ontology, and engage groups with lower quality sensor distributions.   With the latest implementation, ChainAPI has been adapted and expanded to support the needs of this diverse, dynamic air quality ecosystem.   It enables new modes of interaction with large datasets beyond the basic needs of air quality, and points to architectural advances for large scale distributed sensor networks in general. 
 
--insight into shuffled vs. folded data, whether you've tested long enough in one climate.
--insights into how these things break down
--insight into tolerance vs. model robustness.  Chart the two, break point suggests precision of sensor.
--insights into feature reduction - explore how to build a cheap system, look at how strong a relationship is, and if it breaks in a statistically reliable way, inform our decisions moving forward.  Is it corroborated across multiple feature reduction methods?
--insight into feature reduction - explore the underlying mechanisms that might break a system down 
--insight into speed of sensor reaction, and what that means for building a system like this, how it interacts with health.
--insight into cheap sensors, contrast SQMD with my results.
--insight into windspeed.
--insight into data sharing and backend design.
--usefulness of accuracy of predictions?  not large now.  Would have to be statistical techniques.
--insight into overall system feasibility.
+Beyond the obvious architectural features, the tools for ChainAPI represent one of the first scalable semantic web toolkits.  It allows basic discovery, collection, and manipulation of data in a dynamic, web-based data structure.   It provides a framework for learning models that automatically find relevant data to update their state, as well as crawl through the web and process/publish data automatically.  This is extensible to any type of algorithm, not only machine learning ones.  
 
+There are many potential applications for such a system.  The obvious example is learnAir itself-- a network of variable quality sensors that automatically learn from their neighbors, as well as similar distant sensors of a similar make and model.  From this network, it would be possible to blend the data and create a highly resolved and accurate pollution map.  Other useful applications are not hard to find, though.  This system could also enable a simple tool that automatically characterizes and ranks new consumer devices-- similar to the process SCAQMD and EPA are doing now.  This would save manual labor, provide a more nuanced picture of the sensor in different climates and conditions (i.e., instead of a simple overall ranking), and standardize test procedures.  Furthermore, as consumer devices connect to ChainAPI, it is simple to build a map that uses the latest data to display the best sensors for each location, based on its climate.  Sensors could be certified for regions, conditions, or climates, all using real-world test data.
+
+While the backend is ripe for simple tasks like automatic calibration, learning algorithms are still at a stage where it is important for a human to be in the loop.  It is important to check outputs and feature relationships against sophisticated intuition of the device physics to ensure reliability.  In the future, this could change with meta-analysis and classification of common modes of failure (i.e., teaching an algorithm to recognize and validate common failure modes such as cross-sensitivity errors or commonly co-variant pollutants, etc.).  This second level machine learning task is an interesting future direction to explore in the context of ChainAPI.
+
+Overall, the backend system for learnAir provides interesting, novel ways to explore large-scale ecosystems with variable quality data.  ChainAPI and the new ChainAPI tools demonstrate a unique and compelling vision for the future of large scale, distributed, dynamic data storage and interaction systems where data quality varies and data processing is complex and decentralized.    
+
+Finally, the learnAir hardware represents a step forward for data assurance in the cheap, mobile space.  The algorithms we have used can intelligently inform hardware system design-- for example, which sensors work best together to create a trustworthy system.  It is likely, for instance, that one slightly nicer sensor can significantly improve the reliability estimates for cheaper sensors that measure correlated pollutants.  Compared with similarly priced and designed systems, learnAir has better data quality.  Although obstacles remain in translating the outcomes of this work from a static context to a mobile one, we have demonstrated in this thesis that the core principles are sound.  A device of this type can empower users to improve their health with data that they can trust.  It also provokes a conversation in the citizen sensing community-- inherent to the design are questions of data quality and complex sensor modalities.  LearnAir could play a small role in educating the population about under-appreciated challenges with air quality sensing.
 
 \section{Future Work}
 
-as with any good project, this thesis begets as many questions as it answers.
--wind sensing.
--pollen, scrape. no api.  realtime Traffic data a la google maps.  Traffic type data based on road type (estimate of heavy deasel etc).  Construction.  Map and distance from a street, buildings, etc.  Age of infrastructure.  SES of neighborhood as a predictor of car age and emissions.  Aeris.
--mount on Aclima car.
--more intelligent input data - distance to road, vibration, speed traveling, traffic pattern data.
--approached by a few people will to test.
--more data, test with newer sensors.
--try other machine learning techniques, time-dependent, deep-learning.  all possible.
--data backend infrastructure buildout, promote in community.
--more tools for backend crawling.
--help educate communities.
--help automate testing for big organizations.
--build out recommedation system for devices that perform well in different environments.
--build out trustworthiness system for devices based on make/model to characterize interpart variability.
--statistical tools for combining sensor data - spikes missing?  is there a way to predict frequency/intensity in an area by looking at closest high quality sensor?
+LearnAir begets as many questions as it answers.  There are many steps to take in the future to advance this work.
+
+Questions pertaining to core sensor technology and data quality remain unanswered.  For example: is there a way to promote the capture of the pollution transients we missed?  This requires more co-location tests, new device geometries, and new airflow systems, since we hypothesize airflow is largely to blame.  Additionally, we discovered that two months was not an optimal length of time to collect data capable of strong cross-seasonal predictions.  It would be useful to run an extended co-location test, with additional sensors.
+
+Airflow measurement is extremely important for the designs.  While we showed promise using our differential pressure design, a great deal of work remains if we intend to optimize and/or orthogonalize this cheap wind sensor and corroborate its accuracy.
+
+Taking this work from a stationary context to a mobile one is also an important goal.  It may be possible to take this test on the road by mounting one of our sensors to a trustworthy mobile reference, like one of the Google-Aclima cars.  Our partnership with EDF suggests this is not unreasonable.  It would also be possible to purchase or rent high quality (>\$15k) portable sensors as a reference, and walk or bike with both.  It would also be possible to spin or shake one of our sensors around a fixed sensor at different speeds with a test rig to simulate motion and airflow at different walking and biking rates.
+
+Besides the questions of data collection and hardware design, ChainAPI could use more tools and visualizations for air quality data.  In the short term, many of these machine learning scripts take hours to run on a laptop (and this is a reduced test, with just one sensor and two months of data).  We are implementing these algorithms on Amazon Web Services cloud clusters, and it would be very useful to tie in these massively parallelized resources to ChainAPI with simple tools. Other next steps include designing ways to handle and integrate laboratory test data in ChainAPI, building out examples of calibration and manufacturer scripts (to check sensor data for the spec'ed operating range or service schedule), and to build out more tools and algorithms to simplify interaction with the data.  The most important next steps around ChainAPI involve socializing it in the air quality community and soliciting feedback about the ontology and usability of the system.
+
+On top of the ChainAPI backend, a few new websites or services could be created.  We believe this infrastructure could help automate device testing for large air quality organizations, and drive a data-rich display of tested devices.  Using this information, it would be simple to build out a user-friendly recommendation system for devices that perform well in different environments.  It would also be trivial to apply this logic to the sensor level (looking at cost and performance under various conditions) in addition to the device level.
+
+There are many potential next steps and explorations to engage in with machine learning itself.  We started with a straightforward approach to error-- a binary classification task.  Regression analysis provides the ability to predict the magnitude of the error instead of just the existence of one.  This could move us closer to true improvement in the data quality instead of just quality control.  Additionally, deep-learning, time-dependent techniques could provide important insights into the effect of time variant phenomena.  Much of the machine learning landscape is still left to explore.  We have built our tools using scikit learn (a python library), and started basic exploration of tools such as Weka and Google's Tensor Flow-- it would be an interesting next step to build that into our ChainAPI infrastructure.   Additionally, there are open questions about the best way to approach calibration and pre-processing, as well as its automation.  While we attempted several algorithms, we have not arrived at a strong solution; and this part of the process was more laborious and unintuitive than the actual application of machine learning.  There is promise for intelligent, automatic techniques, but it would require an intense research effort to bring it to fruition. 
+
+Additionally, our API data is not yet fully inclusive.  Pollen level, for instance, is extremely important for particulate sensing, though no public pollen API exists at the time of this writing.  There are opportunities to scrape this data, however.  While things like pollen are  obvious, the sophistication of publicly available derived features can easily grow.  Real time traffic data, traffic type (percentage heavy diesel) based on road type, location, and time of day, construction information, road age/type/condition, distance to the nearest street, nearby building density and height, etc., could all be inferred from public map data and GPS coordinates.  These features could have a profound effect on predictive accuracy.
+
+At the end of all of this is a very fundamental question, which we have not examined in this thesis-- how useful is data with a probabilistic quality indication?  Certainly for individuals, it will give a measure of trustworthiness and a better personal prediction.  It can even pull and plot trustworthy data from the closest reference sensor when it detects an unreliable measurement.   For researchers, however, this type of dataset requires using new techniques to deal with datasets probabilistically, instead of the current approach which assumes all data is of high quality.  It is important to explore the types of analyses and conclusions this work might enable, as we move towards more advanced statistical analyses, based on larger, distributed datasets.
+
+Finally, a large part of this work deals with community engagement and interaction.  In the short term, this means writing articles and journal papers on this topic, engaging community organizations, and advancing the dialogue around sensor quality using learnAir as an anchor point.  Ultimately, as the pieces of this project are further refined, we would like to build a production-quality, mobile device that is trustworthy and useful to individuals, as well as an ecosystem where they can engage with and ground the air quality data they have collected.
 
 
 \section{Summary}
 
--hand waving goal - a sensor that learns when it's around a better sensor what conditions it can be trusted.  As you carry it away from that sensor, it predicts what measurements it makes are trustworthy, and what measurements are not.
+The goal of this thesis was to create an affordable device that knows when it is within a given radius of a higher quality reference, compares itself to that reference, and learns when it is reliable and when it is not based on the context of its measurement.  To build such a system, we needed to (1) test machine learning algorithms to ensure the fundamental approach would work, (2) build an infrastructure for this device to post data, find nearby sensors, and automatically update a machine learning model of itself, and (3) create the hardware that captures contextual data about a measurement and talks to that infrastructure through a GPS enabled phone application.
 
-we set out to achieve x.  we did.  This shows promise, this was lacking.  many future directions.
+We succeeded to build out all of these pieces.  We built hardware with six affordable sensors, and ran a two-month co-location test to verify that machine learning could be used to predict sensor error.  Results were mixed based on the sensor, but in general there is a lot of promise for these techniques to provide meaningful context to a sensor reading.  We also found that machine learning could be used to draw conclusions about sensor quality and seasonal variation.  
 
-Did (1). Did (2).  Did (3).  Steps toward an interesting system.
+We built a database structure that can automatically apply these algorithms to sensors in the network and learn as more devices are added.  This structure may also serve as a valuable tool for general issues of data sharing in the air quality community.
 
-Right now this is immediately useful for automatic calibration, and for showing systemic errors and correlates.  There needs to be a human in the loop that looks and understands the physics right now, but with enough training and another layer of abstraction it may be possible for the machine to identify common issues (common cross-sensitivities, optical issues around fog or road dust, typical deficiencies for certain types of sensors to temperature/humidity/response time).
-
-
+Finally, we built a provocative piece of mobile hardware that uses these core principles.  There is still work to verify these principles in a mobile context-- however, this hardware should serve as a simple way to test those principles, as well as a provocative tool to engage citizen groups in a meaningful dialogue around sensor quality.  It is our hope and belief that in the near future a full characterization of the mobile system-- together with data leveraged from other, nearby sensors-- will enable the highest quality, truly mobile sensor system on the market.  
 
 
 
@@ -70,46 +81,3 @@ Right now this is immediately useful for automatic calibration, and for showing 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%here's text referencing the (Table \ref{tab:sample_table}).
-%
-%\begin{table}
-%  \centering
-%  \begin{tabular}{l l l l l}
-%    Column A & Column B & Column C & Column D & Column E \\
-%    \toprule
-%    A & B & C & D & E
-%  \end{tabular}
-%  \caption{A meaningless table}
-%  \label{tab:sample_table}
-%\end{table}
-
-%Here's text referencing the margin figure (Figure \ref{fig:spin_margin}).
-%
-%\marginnote{\textbf{Margin Note:} Check it out, here's a margin note.}
-%
-%\begin{marginfigure}[{-10cm}]
-% 	\includegraphics[width=\textwidth]{chap1/spin}               
-% 	 \caption{Check it out, it's a Spin margin figure \url{spin.media.mit.edu}}
-%  	\label{fig:spin_margin}
-%\end{marginfigure}
-
-%\begin{figure}[htb]
-% 	\includegraphics[width=\textwidth]{chap1/spin}               
-% 	 \caption{Check it out, it's a Spin \url{spin.media.mit.edu}}
-%  	\label{fig:spin}
-%\end{figure}
