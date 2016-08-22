@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.17)  21 AUG 2016 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.17)  22 AUG 2016 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,433 +1479,433 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [16]
 Overfull \hbox (23.00977pt too wide) in paragraph at lines 90--90
  [][] [][]\T1/pplj/m/n/10 48-hour Av-er-age Sharp Par-tic-u-late ROC Us-ing Top
- 15 Fea-tures[] 194 
+ 15 Fea-tures[] 193 
  []
 
 
 Overfull \hbox (33.55975pt too wide) in paragraph at lines 92--92
  [][] [][]\T1/pplj/m/n/10 Reduced Tol-er-ance Sharp Par-tic-u-late ROC Us-ing T
-op 15 Fea-tures[] 195 
+op 15 Fea-tures[] 194 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######1 Raw Data}}\hyper@l...
-l.93 ... Sensor ####1 Raw Data}}{196}{section*.94}
+l.93 ... Sensor ####1 Raw Data}}{195}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####1 Raw Data}}\hyper@lin...
-l.93 ... Sensor ####1 Raw Data}}{196}{section*.94}
+l.93 ... Sensor ####1 Raw Data}}{195}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##1 Raw Data}}\hyper@linkend 
-l.93 ... Sensor ####1 Raw Data}}{196}{section*.94}
+l.93 ... Sensor ####1 Raw Data}}{195}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   1 Raw Data}}\hyper@linkend 
-l.93 ... Sensor ####1 Raw Data}}{196}{section*.94}
+l.93 ... Sensor ####1 Raw Data}}{195}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######1 after LMSE Calibra...
-l.94 ...after LMSE Calibration}}{197}{section*.94}
+l.94 ...after LMSE Calibration}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####1 after LMSE Calibrati...
-l.94 ...after LMSE Calibration}}{197}{section*.94}
+l.94 ...after LMSE Calibration}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##1 after LMSE Calibration...
-l.94 ...after LMSE Calibration}}{197}{section*.94}
+l.94 ...after LMSE Calibration}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   1 after LMSE Calibration}}...
-l.94 ...after LMSE Calibration}}{197}{section*.94}
+l.94 ...after LMSE Calibration}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######1 and ########2 with...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####1 and ########2 with 7...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##1 and ########2 with 7.5...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   1 and ########2 with 7.5\%...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...lphaSense CO Sensor ########1 and ##
                                                   ######2 with 7.5\% Accurac...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...haSense CO Sensor ########1 and ####
                                                   ####2 with 7.5\% Accuracy ...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Sense CO Sensor ########1 and ######
                                                   ##2 with 7.5\% Accuracy Th...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...nse CO Sensor ########1 and ########
                                                   2 with 7.5\% Accuracy Thre...
-l.95 ...5\% Accuracy Threshold}}{197}{section*.94}
+l.95 ...5\% Accuracy Threshold}}{196}{section*.94}
                                                   
 ? 
 
 Overfull \hbox (21.5398pt too wide) in paragraph at lines 95--95
  [][] [][]\T1/pplj/m/n/10 AlphaSense CO Sen-sor 1 and 2 with 7.5% Ac-cu-racy Th
-resh-old[] 197 
+resh-old[] 196 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######1 Prediction Accurac...
-l.96 ...#1 Prediction Accuracy}}{198}{section*.94}
+l.96 ...#1 Prediction Accuracy}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####1 Prediction Accuracy}...
-l.96 ...#1 Prediction Accuracy}}{198}{section*.94}
+l.96 ...#1 Prediction Accuracy}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##1 Prediction Accuracy}}\...
-l.96 ...#1 Prediction Accuracy}}{198}{section*.94}
+l.96 ...#1 Prediction Accuracy}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   1 Prediction Accuracy}}\hy...
-l.96 ...#1 Prediction Accuracy}}{198}{section*.94}
+l.96 ...#1 Prediction Accuracy}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######1 ROC Using Top 15 F...
-l.97 ... Using Top 15 Features}}{199}{section*.94}
+l.97 ... Using Top 15 Features}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####1 ROC Using Top 15 Fea...
-l.97 ... Using Top 15 Features}}{199}{section*.94}
+l.97 ... Using Top 15 Features}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##1 ROC Using Top 15 Featu...
-l.97 ... Using Top 15 Features}}{199}{section*.94}
+l.97 ... Using Top 15 Features}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   1 ROC Using Top 15 Feature...
-l.97 ... Using Top 15 Features}}{199}{section*.94}
+l.97 ... Using Top 15 Features}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######2 ROC Using Top 15 F...
-l.98 ... Using Top 15 Features}}{200}{section*.94}
+l.98 ... Using Top 15 Features}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####2 ROC Using Top 15 Fea...
-l.98 ... Using Top 15 Features}}{200}{section*.94}
+l.98 ... Using Top 15 Features}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##2 ROC Using Top 15 Featu...
-l.98 ... Using Top 15 Features}}{200}{section*.94}
+l.98 ... Using Top 15 Features}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   2 ROC Using Top 15 Feature...
-l.98 ... Using Top 15 Features}}{200}{section*.94}
+l.98 ... Using Top 15 Features}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense CO Sensor ##
                                                   ######2 Prediction Accurac...
-l.99 ...#2 Prediction Accuracy}}{200}{section*.94}
+l.99 ...#2 Prediction Accuracy}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense CO Sensor ####
                                                   ####2 Prediction Accuracy}...
-l.99 ...#2 Prediction Accuracy}}{200}{section*.94}
+l.99 ...#2 Prediction Accuracy}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense CO Sensor ######
                                                   ##2 Prediction Accuracy}}\...
-l.99 ...#2 Prediction Accuracy}}{200}{section*.94}
+l.99 ...#2 Prediction Accuracy}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense CO Sensor ########
                                                   2 Prediction Accuracy}}\hy...
-l.99 ...#2 Prediction Accuracy}}{200}{section*.94}
+l.99 ...#2 Prediction Accuracy}}{199}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######1 Raw Data}}\hyper@l...
-l.105 ...Sensor ####1 Raw Data}}{205}{section*.96}
+l.105 ...Sensor ####1 Raw Data}}{204}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####1 Raw Data}}\hyper@lin...
-l.105 ...Sensor ####1 Raw Data}}{205}{section*.96}
+l.105 ...Sensor ####1 Raw Data}}{204}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##1 Raw Data}}\hyper@linkend 
-l.105 ...Sensor ####1 Raw Data}}{205}{section*.96}
+l.105 ...Sensor ####1 Raw Data}}{204}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   1 Raw Data}}\hyper@linkend 
-l.105 ...Sensor ####1 Raw Data}}{205}{section*.96}
+l.105 ...Sensor ####1 Raw Data}}{204}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######1 after LMSE Calibra...
-l.106 ...fter LMSE Calibration}}{207}{section*.96}
+l.106 ...fter LMSE Calibration}}{206}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####1 after LMSE Calibrati...
-l.106 ...fter LMSE Calibration}}{207}{section*.96}
+l.106 ...fter LMSE Calibration}}{206}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##1 after LMSE Calibration...
-l.106 ...fter LMSE Calibration}}{207}{section*.96}
+l.106 ...fter LMSE Calibration}}{206}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   1 after LMSE Calibration}}...
-l.106 ...fter LMSE Calibration}}{207}{section*.96}
+l.106 ...fter LMSE Calibration}}{206}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######2 after LMSE Calibra...
-l.107 ...fter LMSE Calibration}}{208}{section*.96}
+l.107 ...fter LMSE Calibration}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####2 after LMSE Calibrati...
-l.107 ...fter LMSE Calibration}}{208}{section*.96}
+l.107 ...fter LMSE Calibration}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##2 after LMSE Calibration...
-l.107 ...fter LMSE Calibration}}{208}{section*.96}
+l.107 ...fter LMSE Calibration}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   2 after LMSE Calibration}}...
-l.107 ...fter LMSE Calibration}}{208}{section*.96}
+l.107 ...fter LMSE Calibration}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######1 and ########2 with...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####1 and ########2 with 7...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##1 and ########2 with 7.5...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   1 and ########2 with 7.5\%...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...lphaSense O3 Sensor ########1 and ##
                                                   ######2 with 7.5\% Accurac...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...haSense O3 Sensor ########1 and ####
                                                   ####2 with 7.5\% Accuracy ...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Sense O3 Sensor ########1 and ######
                                                   ##2 with 7.5\% Accuracy Th...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...nse O3 Sensor ########1 and ########
                                                   2 with 7.5\% Accuracy Thre...
-l.108 ...\% Accuracy Threshold}}{208}{section*.96}
+l.108 ...\% Accuracy Threshold}}{207}{section*.96}
                                                   
 ? 
 
 Overfull \hbox (19.4498pt too wide) in paragraph at lines 108--108
  [][] [][]\T1/pplj/m/n/10 AlphaSense O3 Sen-sor 1 and 2 with 7.5% Ac-cu-racy Th
-resh-old[] 208 
+resh-old[] 207 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######1 Prediction Accurac...
-l.109 ...1 Prediction Accuracy}}{209}{section*.96}
+l.109 ...1 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####1 Prediction Accuracy}...
-l.109 ...1 Prediction Accuracy}}{209}{section*.96}
+l.109 ...1 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##1 Prediction Accuracy}}\...
-l.109 ...1 Prediction Accuracy}}{209}{section*.96}
+l.109 ...1 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   1 Prediction Accuracy}}\hy...
-l.109 ...1 Prediction Accuracy}}{209}{section*.96}
+l.109 ...1 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######2 Prediction Accurac...
-l.110 ...2 Prediction Accuracy}}{209}{section*.96}
+l.110 ...2 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####2 Prediction Accuracy}...
-l.110 ...2 Prediction Accuracy}}{209}{section*.96}
+l.110 ...2 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##2 Prediction Accuracy}}\...
-l.110 ...2 Prediction Accuracy}}{209}{section*.96}
+l.110 ...2 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   2 Prediction Accuracy}}\hy...
-l.110 ...2 Prediction Accuracy}}{209}{section*.96}
+l.110 ...2 Prediction Accuracy}}{208}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######1 ROC Using Top 15 F...
-l.111 ...Using Top 15 Features}}{210}{section*.96}
+l.111 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####1 ROC Using Top 15 Fea...
-l.111 ...Using Top 15 Features}}{210}{section*.96}
+l.111 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##1 ROC Using Top 15 Featu...
-l.111 ...Using Top 15 Features}}{210}{section*.96}
+l.111 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   1 ROC Using Top 15 Feature...
-l.111 ...Using Top 15 Features}}{210}{section*.96}
+l.111 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...ignorespaces AlphaSense O3 Sensor ##
                                                   ######2 ROC Using Top 15 F...
-l.112 ...Using Top 15 Features}}{210}{section*.96}
+l.112 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...norespaces AlphaSense O3 Sensor ####
                                                   ####2 ROC Using Top 15 Fea...
-l.112 ...Using Top 15 Features}}{210}{section*.96}
+l.112 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...respaces AlphaSense O3 Sensor ######
                                                   ##2 ROC Using Top 15 Featu...
-l.112 ...Using Top 15 Features}}{210}{section*.96}
+l.112 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...spaces AlphaSense O3 Sensor ########
                                                   2 ROC Using Top 15 Feature...
-l.112 ...Using Top 15 Features}}{210}{section*.96}
+l.112 ...Using Top 15 Features}}{209}{section*.96}
                                                   
 ? 
 )
@@ -2329,25 +2329,25 @@ or, used in Pruned
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ... from Random Forest for CO Sensor ##
                                                   ######1, used in Pruned Lo...
-l.43 ...ed Logistic Regression}}{198}{section*.94}
+l.43 ...ed Logistic Regression}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...rom Random Forest for CO Sensor ####
                                                   ####1, used in Pruned Logi...
-l.43 ...ed Logistic Regression}}{198}{section*.94}
+l.43 ...ed Logistic Regression}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...m Random Forest for CO Sensor ######
                                                   ##1, used in Pruned Logist...
-l.43 ...ed Logistic Regression}}{198}{section*.94}
+l.43 ...ed Logistic Regression}}{197}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Random Forest for CO Sensor ########
                                                   1, used in Pruned Logistic...
-l.43 ...ed Logistic Regression}}{198}{section*.94}
+l.43 ...ed Logistic Regression}}{197}{section*.94}
                                                   
 ? 
 
@@ -2359,25 +2359,25 @@ Overfull \hbox (21.34972pt too wide) in paragraph at lines 43--43
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ... from Random Forest for CO Sensor ##
                                                   ######2, used in Pruned Lo...
-l.44 ...ed Logistic Regression}}{199}{section*.94}
+l.44 ...ed Logistic Regression}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...rom Random Forest for CO Sensor ####
                                                   ####2, used in Pruned Logi...
-l.44 ...ed Logistic Regression}}{199}{section*.94}
+l.44 ...ed Logistic Regression}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...m Random Forest for CO Sensor ######
                                                   ##2, used in Pruned Logist...
-l.44 ...ed Logistic Regression}}{199}{section*.94}
+l.44 ...ed Logistic Regression}}{198}{section*.94}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Random Forest for CO Sensor ########
                                                   2, used in Pruned Logistic...
-l.44 ...ed Logistic Regression}}{199}{section*.94}
+l.44 ...ed Logistic Regression}}{198}{section*.94}
                                                   
 ? 
 
@@ -2395,25 +2395,25 @@ Overfull \hbox (6.90974pt too wide) in paragraph at lines 45--45
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ... from Random Forest for O3 Sensor ##
                                                   ######1, used in Pruned Lo...
-l.46 ...ed Logistic Regression}}{206}{section*.96}
+l.46 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...rom Random Forest for O3 Sensor ####
                                                   ####1, used in Pruned Logi...
-l.46 ...ed Logistic Regression}}{206}{section*.96}
+l.46 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...m Random Forest for O3 Sensor ######
                                                   ##1, used in Pruned Logist...
-l.46 ...ed Logistic Regression}}{206}{section*.96}
+l.46 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Random Forest for O3 Sensor ########
                                                   1, used in Pruned Logistic...
-l.46 ...ed Logistic Regression}}{206}{section*.96}
+l.46 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 
@@ -2425,25 +2425,25 @@ Overfull \hbox (19.25972pt too wide) in paragraph at lines 46--46
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ... from Random Forest for O3 Sensor ##
                                                   ######2, used in Pruned Lo...
-l.47 ...ed Logistic Regression}}{206}{section*.96}
+l.47 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...rom Random Forest for O3 Sensor ####
                                                   ####2, used in Pruned Logi...
-l.47 ...ed Logistic Regression}}{206}{section*.96}
+l.47 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...m Random Forest for O3 Sensor ######
                                                   ##2, used in Pruned Logist...
-l.47 ...ed Logistic Regression}}{206}{section*.96}
+l.47 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 <argument> ...Random Forest for O3 Sensor ########
                                                   2, used in Pruned Logistic...
-l.47 ...ed Logistic Regression}}{206}{section*.96}
+l.47 ...ed Logistic Regression}}{205}{section*.96}
                                                   
 ? 
 
@@ -2603,11 +2603,7 @@ nted
 
 
 
-]
-
-LaTeX Warning: Citation `hansen2012_2' on page 40 undefined on input line 23.
-
-[40] [41] [42]
+] [40] [41] [42]
 ! You can't use `macro parameter character #' in horizontal mode.
 l.52 ...ate-object.  An example would be 'device #
                                                   1 includes sensor #5', whi...
@@ -2643,14 +2639,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51]
-<visuals/learnairV1.png, id=952, 1173.38374pt x 786.94pt>
+<visuals/learnairV1.png, id=954, 1173.38374pt x 786.94pt>
 File: visuals/learnairV1.png Graphic file (type png)
 
 <use visuals/learnairV1.png>
 Package pdftex.def Info: visuals/learnairV1.png used on input line 21.
 (pdftex.def)             Requested size: 143.98694pt x 96.5661pt.
 
-<visuals/learnairV1_labeled.png, id=953, 707.64375pt x 567.62062pt>
+<visuals/learnairV1_labeled.png, id=955, 707.64375pt x 567.62062pt>
 File: visuals/learnairV1_labeled.png Graphic file (type png)
 
 <use visuals/learnairV1_labeled.png>
@@ -2662,7 +2658,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
  []
 
 [52 <./visuals/learnairV1.png>]
-<visuals/sck_conformal.jpg, id=962, 1103.12125pt x 717.68124pt>
+<visuals/sck_conformal.jpg, id=964, 1103.12125pt x 717.68124pt>
 File: visuals/sck_conformal.jpg Graphic file (type jpg)
 
 <use visuals/sck_conformal.jpg>
@@ -2681,7 +2677,7 @@ l.50 ...l \$150 in cost.  These sensors have t$_9_
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
-<visuals/epa.png, id=976, 524.96124pt x 349.305pt>
+<visuals/epa.png, id=978, 524.96124pt x 349.305pt>
 File: visuals/epa.png Graphic file (type png)
  <use visuals/epa.png>
 Package pdftex.def Info: visuals/epa.png used on input line 64.
@@ -2691,7 +2687,7 @@ Overfull \hbox (2.32832pt too wide) in paragraph at lines 63--65
  []  
  []
 
-<visuals/learnairV1_installed_zoomed.jpg, id=977, 820.06375pt x 999.735pt>
+<visuals/learnairV1_installed_zoomed.jpg, id=979, 820.06375pt x 999.735pt>
 File: visuals/learnairV1_installed_zoomed.jpg Graphic file (type jpg)
 
 <use visuals/learnairV1_installed_zoomed.jpg>
@@ -2703,7 +2699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
-<visuals/epa_zoom.png, id=978, 514.92375pt x 770.88pt>
+<visuals/epa_zoom.png, id=980, 514.92375pt x 770.88pt>
 File: visuals/epa_zoom.png Graphic file (type png)
 
 <use visuals/epa_zoom.png>
@@ -2738,7 +2734,7 @@ l.93 ...ed.  It has a 0.5\% precision, and a t$_9_
 
 ? 
 [57] [58 <./visuals/epa_zoom.png>]
-<visuals/learnairV2_out.png, id=999, 676.5275pt x 398.48875pt>
+<visuals/learnairV2_out.png, id=1001, 676.5275pt x 398.48875pt>
 File: visuals/learnairV2_out.png Graphic file (type png)
 
 <use visuals/learnairV2_out.png>
@@ -2752,7 +2748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
 [59
 
  <./visuals/learnairV2_out.png>]
-<visuals/learnairV2.png, id=1006, 548.0475pt x 393.47pt>
+<visuals/learnairV2.png, id=1008, 548.0475pt x 393.47pt>
 File: visuals/learnairV2.png Graphic file (type png)
 
 <use visuals/learnairV2.png>
@@ -2770,7 +2766,7 @@ LaTeX Warning: Marginpar on page 60 moved.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60 <./visuals/learnairV2.png>]
-<visuals/learnairV2box.png, id=1013, 767.86874pt x 528.97626pt>
+<visuals/learnairV2box.png, id=1015, 767.86874pt x 528.97626pt>
 File: visuals/learnairV2box.png Graphic file (type png)
 
 <use visuals/learnairV2box.png>
@@ -2781,7 +2777,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-<visuals/layouts.png, id=1014, 1071.00125pt x 653.44125pt>
+<visuals/layouts.png, id=1016, 1071.00125pt x 653.44125pt>
 File: visuals/layouts.png Graphic file (type png)
 
 <use visuals/layouts.png>
@@ -2793,14 +2789,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--143
  []
 
 [61 <./visuals/learnairV2box.png>] [62 <./visuals/layouts.png>]
-<visuals/learnairV3.png, id=1026, 834.11626pt x 509.905pt>
+<visuals/learnairV3.png, id=1028, 834.11626pt x 509.905pt>
 File: visuals/learnairV3.png Graphic file (type png)
 
 <use visuals/learnairV3.png>
 Package pdftex.def Info: visuals/learnairV3.png used on input line 163.
 (pdftex.def)             Requested size: 312.00372pt x 190.7315pt.
  [63 <./visuals/learnairV3.png>]
-<figs/humidity_zoomed.png, id=1032, 724.8681pt x 520.344pt>
+<figs/humidity_zoomed.png, id=1034, 724.8681pt x 520.344pt>
 File: figs/humidity_zoomed.png Graphic file (type png)
 
 <use figs/humidity_zoomed.png>
@@ -2811,7 +2807,7 @@ Overfull \hbox (2.32571pt too wide) in paragraph at lines 183--185
  []  
  []
 
-<figs/humidity_sck_v_forecastio.png, id=1034, 566.5968pt x 582.85754pt>
+<figs/humidity_sck_v_forecastio.png, id=1036, 566.5968pt x 582.85754pt>
 File: figs/humidity_sck_v_forecastio.png Graphic file (type png)
 
 <use figs/humidity_sck_v_forecastio.png>
@@ -2831,7 +2827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--195
 [64
 
  <./figs/humidity_zoomed.png>]
-<figs/temp_alphasense.png, id=1040, 724.8681pt x 520.344pt>
+<figs/temp_alphasense.png, id=1042, 724.8681pt x 520.344pt>
 File: figs/temp_alphasense.png Graphic file (type png)
 
 <use figs/temp_alphasense.png>
@@ -2845,7 +2841,7 @@ Overfull \hbox (2.32571pt too wide) in paragraph at lines 197--199
 
 LaTeX Warning: Marginpar on page 65 moved.
 
-<figs/temp_zoomed.png, id=1043, 724.8681pt x 520.344pt>
+<figs/temp_zoomed.png, id=1045, 724.8681pt x 520.344pt>
 File: figs/temp_zoomed.png Graphic file (type png)
 
 <use figs/temp_zoomed.png>
@@ -2857,7 +2853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--210
  []
 
 [65 <./figs/humidity_sck_v_forecastio.png> <./figs/temp_alphasense.png>]
-<figs/temp_forecastio_v_sck.png, id=1050, 577.4373pt x 582.85754pt>
+<figs/temp_forecastio_v_sck.png, id=1052, 577.4373pt x 582.85754pt>
 File: figs/temp_forecastio_v_sck.png Graphic file (type png)
 
 <use figs/temp_forecastio_v_sck.png>
@@ -2872,30 +2868,27 @@ Overfull \hbox (2.32571pt too wide) in paragraph at lines 212--214
 
 LaTeX Warning: Marginpar on page 66 moved.
 
-
-LaTeX Warning: Citation `wind' on page 66 undefined on input line 221.
-
 [66 <./figs/temp_zoomed.png> <./figs/temp_forecastio_v_sck.png>]
-<visuals/windtest.png, id=1057, 1007.765pt x 671.50874pt>
+<visuals/windtest.png, id=1061, 1007.765pt x 671.50874pt>
 File: visuals/windtest.png Graphic file (type png)
 
 <use visuals/windtest.png>
 Package pdftex.def Info: visuals/windtest.png used on input line 230.
 (pdftex.def)             Requested size: 143.99243pt x 95.94714pt.
 
-<figs/wind_polar_1.png, id=1060, 1094.0875pt x 587.19376pt>
+<figs/wind_polar_1.png, id=1064, 1094.0875pt x 587.19376pt>
 File: figs/wind_polar_1.png Graphic file (type png)
 
 <use figs/wind_polar_1.png>
 Package pdftex.def Info: figs/wind_polar_1.png used on input line 241.
 (pdftex.def)             Requested size: 312.00182pt x 167.45052pt.
 
-<figs/wind_polar_2.png, id=1061, 1094.0875pt x 587.19376pt>
+<figs/wind_polar_2.png, id=1065, 1053.9375pt x 537.00626pt>
 File: figs/wind_polar_2.png Graphic file (type png)
 
 <use figs/wind_polar_2.png>
 Package pdftex.def Info: figs/wind_polar_2.png used on input line 242.
-(pdftex.def)             Requested size: 312.00182pt x 167.45052pt.
+(pdftex.def)             Requested size: 312.00243pt x 158.97266pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 241--245
 
@@ -2905,7 +2898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--245
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67 <./visuals/windtest.png>]
-<figs/ws_with_10_accuracy_zoomed.png, id=1069, 724.8681pt x 520.344pt>
+<figs/ws_with_10_accuracy_zoomed.png, id=1073, 724.8681pt x 520.344pt>
 File: figs/ws_with_10_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/ws_with_10_accuracy_zoomed.png>
@@ -2918,10 +2911,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--259
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2165) has occurred while \output is active []
 
  [68 <./figs/wind_polar_1.png> <./figs/wind_polar_2.png>]
-<figs/ws_error_vs_wd.png, id=1078, 553.5882pt x 582.85754pt>
+<figs/ws_error_vs_wd.png, id=1083, 553.5882pt x 582.85754pt>
 File: figs/ws_error_vs_wd.png Graphic file (type png)
 
 <use figs/ws_error_vs_wd.png>
@@ -2945,7 +2938,7 @@ Overfull \hbox (1.11984pt too wide) in paragraph at lines 3--4
  Things'. 
  []
 
-<visuals/chainSummary.png, id=1092, 402.50375pt x 360.34625pt>
+<visuals/chainSummary.png, id=1096, 402.50375pt x 360.34625pt>
 File: visuals/chainSummary.png Graphic file (type png)
 
 <use visuals/chainSummary.png>
@@ -3113,7 +3106,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 (./pages/ml_conditions.tex
-<figs/weather.png, id=1942, 720.5319pt x 529.7391pt>
+<figs/weather.png, id=1946, 720.5319pt x 529.7391pt>
 File: figs/weather.png Graphic file (type png)
  <use figs/weather.png>
 Package pdftex.def Info: figs/weather.png used on input line 7.
@@ -3125,7 +3118,7 @@ haSense
  []
 
 [100 <./figs/weather.png>]
-<figs/weather_summary.png, id=1948, 759.19635pt x 529.7391pt>
+<figs/weather_summary.png, id=1952, 759.19635pt x 529.7391pt>
 File: figs/weather_summary.png Graphic file (type png)
 
 <use figs/weather_summary.png>
@@ -3144,28 +3137,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105])
 (./pages/ml_features.tex
-<figs/humidity_derivative.png, id=1974, 729.927pt x 520.344pt>
+<figs/humidity_derivative.png, id=1978, 729.927pt x 520.344pt>
 File: figs/humidity_derivative.png Graphic file (type png)
 
 <use figs/humidity_derivative.png>
 Package pdftex.def Info: figs/humidity_derivative.png used on input line 6.
 (pdftex.def)             Requested size: 144.00029pt x 102.65366pt.
  [106 <./figs/humidity_derivative.png>]
-<figs/temp_derivative.png, id=1980, 726.67485pt x 520.344pt>
+<figs/temp_derivative.png, id=1984, 726.67485pt x 520.344pt>
 File: figs/temp_derivative.png Graphic file (type png)
 
 <use figs/temp_derivative.png>
 Package pdftex.def Info: figs/temp_derivative.png used on input line 16.
 (pdftex.def)             Requested size: 255.094pt x 182.66302pt.
 
-<figs/temp_daily.png, id=1981, 720.89325pt x 529.7391pt>
+<figs/temp_daily.png, id=1985, 720.89325pt x 529.7391pt>
 File: figs/temp_daily.png Graphic file (type png)
 
 <use figs/temp_daily.png>
 Package pdftex.def Info: figs/temp_daily.png used on input line 29.
 (pdftex.def)             Requested size: 255.0884pt x 187.44841pt.
 
-<figs/humidity_daily.png, id=1982, 723.4227pt x 529.7391pt>
+<figs/humidity_daily.png, id=1986, 723.4227pt x 529.7391pt>
 File: figs/humidity_daily.png Graphic file (type png)
 
 <use figs/humidity_daily.png>
@@ -3185,7 +3178,7 @@ LaTeX Warning: Float too large for page by 105.13887pt on input line 118.
 LaTeX Warning: Reference `fig:repa_ref_measures' on page 111 undefined on input
  line 1.
 
-<figs/epa_ref_measures.png, id=2006, 734.9859pt x 738.96075pt>
+<figs/epa_ref_measures.png, id=2010, 734.9859pt x 738.96075pt>
 File: figs/epa_ref_measures.png Graphic file (type png)
 
 <use figs/epa_ref_measures.png>
@@ -3198,7 +3191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
 [111
 
-] <figs/epa_ref_measures_zoomed2.png, id=2015, 736.06995pt x 720.17055pt>
+] <figs/epa_ref_measures_zoomed2.png, id=2019, 736.06995pt x 720.17055pt>
 File: figs/epa_ref_measures_zoomed2.png Graphic file (type png)
 
 <use figs/epa_ref_measures_zoomed2.png>
@@ -3206,7 +3199,7 @@ Package pdftex.def Info: figs/epa_ref_measures_zoomed2.png used on input line 1
 7.
 (pdftex.def)             Requested size: 143.99916pt x 140.88873pt.
 
-<figs/epa_ref_measures_zoomed.png, id=2016, 734.9859pt x 720.17055pt>
+<figs/epa_ref_measures_zoomed.png, id=2020, 734.9859pt x 720.17055pt>
 File: figs/epa_ref_measures_zoomed.png Graphic file (type png)
 
 <use figs/epa_ref_measures_zoomed.png>
@@ -3222,14 +3215,14 @@ Underfull \vbox (badness 6741) has occurred while \output is active []
 
  [112 <./figs/epa_ref_measures.png> <./figs/epa_ref_measures_zoomed2.png> <./fi
 gs/epa_ref_measures_zoomed.png>]) (./pages/ml_sck_co.tex
-<figs/co_sck_zoomed.png, id=2024, 732.8178pt x 519.98265pt>
+<figs/co_sck_zoomed.png, id=2028, 732.8178pt x 519.98265pt>
 File: figs/co_sck_zoomed.png Graphic file (type png)
 
 <use figs/co_sck_zoomed.png>
 Package pdftex.def Info: figs/co_sck_zoomed.png used on input line 7.
 (pdftex.def)             Requested size: 144.0003pt x 102.17773pt.
  [113 <./figs/co_sck_zoomed.png>]
-<figs/sck_co_with_7p5_accuracy_zoomed.png, id=2031, 741.12885pt x 529.7391pt>
+<figs/sck_co_with_7p5_accuracy_zoomed.png, id=2035, 741.12885pt x 529.7391pt>
 File: figs/sck_co_with_7p5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/sck_co_with_7p5_accuracy_zoomed.png>
@@ -3287,7 +3280,7 @@ l.62 }
 l.62 }
       
 ? 
-<figs/sck_co_7p5_roc.png, id=2039, 556.11765pt x 564.06735pt>
+<figs/sck_co_7p5_roc.png, id=2043, 556.11765pt x 564.06735pt>
 File: figs/sck_co_7p5_roc.png Graphic file (type png)
 
 <use figs/sck_co_7p5_roc.png>
@@ -3312,14 +3305,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [115]
 [116] [117 <./figs/sck_co_7p5_roc.png>]) (./pages/ml_sck_no2.tex
-<figs/no2_sck_zoomed.png, id=2055, 727.0362pt x 519.98265pt>
+<figs/no2_sck_zoomed.png, id=2059, 727.0362pt x 519.98265pt>
 File: figs/no2_sck_zoomed.png Graphic file (type png)
 
 <use figs/no2_sck_zoomed.png>
 Package pdftex.def Info: figs/no2_sck_zoomed.png used on input line 4.
 (pdftex.def)             Requested size: 143.99576pt x 102.98703pt.
  [118 <./figs/no2_sck_zoomed.png>]
-<figs/sck_no2_with_10_accuracy_zoomed.png, id=2063, 741.12885pt x 529.7391pt>
+<figs/sck_no2_with_10_accuracy_zoomed.png, id=2067, 741.12885pt x 529.7391pt>
 File: figs/sck_no2_with_10_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/sck_no2_with_10_accuracy_zoomed.png>
@@ -3344,7 +3337,7 @@ LaTeX Warning: No positions in optional float specifier.
 Package hyperref Warning: Suppressing empty link on input line 48.
 
 [119 <./figs/sck_no2_with_10_accuracy_zoomed.png>]
-<figs/sck_no2_10_roc.png, id=2070, 557.9244pt x 564.06735pt>
+<figs/sck_no2_10_roc.png, id=2074, 557.9244pt x 564.06735pt>
 File: figs/sck_no2_10_roc.png Graphic file (type png)
 
 <use figs/sck_no2_10_roc.png>
@@ -3384,7 +3377,7 @@ l.113 }
 LaTeX Warning: Marginpar on page 121 moved.
 
 ) (./pages/ml_sharp.tex [121]
-<figs/sharpDust_lmse.png, id=2084, 841.9455pt x 904.0977pt>
+<figs/sharpDust_lmse.png, id=2088, 841.9455pt x 904.0977pt>
 File: figs/sharpDust_lmse.png Graphic file (type png)
 
 <use figs/sharpDust_lmse.png>
@@ -3401,7 +3394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
  []
 
 [122 <./figs/sharpDust_lmse.png>]
-<figs/sharpDust_avg_48_lmse.png, id=2091, 841.9455pt x 904.0977pt>
+<figs/sharpDust_avg_48_lmse.png, id=2095, 841.9455pt x 904.0977pt>
 File: figs/sharpDust_avg_48_lmse.png Graphic file (type png)
 
 <use figs/sharpDust_avg_48_lmse.png>
@@ -3418,7 +3411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--20
  []
 
 [123 <./figs/sharpDust_avg_48_lmse.png>]
-<figs/sharpDust_with_accuracy_zoomed.png, id=2098, 738.23805pt x 529.7391pt>
+<figs/sharpDust_with_accuracy_zoomed.png, id=2102, 738.23805pt x 529.7391pt>
 File: figs/sharpDust_with_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/sharpDust_with_accuracy_zoomed.png>
@@ -3454,7 +3447,7 @@ l.62 }
       
 ? 
 [124 <./figs/sharpDust_with_accuracy_zoomed.png>]
-<figs/sharp_48_avg_goals_30_roc.png, id=2105, 646.0938pt x 565.51276pt>
+<figs/sharp_48_avg_goals_30_roc.png, id=2109, 646.0938pt x 565.51276pt>
 File: figs/sharp_48_avg_goals_30_roc.png Graphic file (type png)
 
 <use figs/sharp_48_avg_goals_30_roc.png>
@@ -3465,7 +3458,7 @@ Package pdftex.def Info: figs/sharp_48_avg_goals_30_roc.png used on input line
 
 LaTeX Warning: Marginpar on page 125 moved.
 
-<figs/sharp_goals_30_roc.png, id=2106, 561.17654pt x 564.06735pt>
+<figs/sharp_goals_30_roc.png, id=2110, 561.17654pt x 564.06735pt>
 File: figs/sharp_goals_30_roc.png Graphic file (type png)
 
 <use figs/sharp_goals_30_roc.png>
@@ -3491,7 +3484,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [126]
 (./pages/ml_as_co.tex
-<figs/as_co_raw_zoomed.png, id=2119, 732.8178pt x 520.344pt>
+<figs/as_co_raw_zoomed.png, id=2123, 732.8178pt x 520.344pt>
 File: figs/as_co_raw_zoomed.png Graphic file (type png)
 
 <use figs/as_co_raw_zoomed.png>
@@ -3548,7 +3541,7 @@ l.15 \end{figure}
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [128 <./figs/as_co_raw_zoomed.png>]
-<figs/as2_co_lmse.png, id=2132, 850.6179pt x 902.6523pt>
+<figs/as2_co_lmse.png, id=2136, 850.6179pt x 902.6523pt>
 File: figs/as2_co_lmse.png Graphic file (type png)
 
 <use figs/as2_co_lmse.png>
@@ -3605,7 +3598,7 @@ l.27 \end{figure}
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [129 <./figs/as2_co_lmse.png>]
-<figs/as_co_with_5_accuracy_zoomed.png, id=2139, 741.12885pt x 529.7391pt>
+<figs/as_co_with_5_accuracy_zoomed.png, id=2143, 741.12885pt x 529.7391pt>
 File: figs/as_co_with_5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_co_with_5_accuracy_zoomed.png>
@@ -3888,7 +3881,7 @@ l.106 ...or #2 Confusion Matrix w/Shuffled K-Fold}
 
 LaTeX Warning: Marginpar on page 131 moved.
 
-<figs/as1_co_5_roc.png, id=2147, 554.67226pt x 564.06735pt>
+<figs/as1_co_5_roc.png, id=2151, 554.67226pt x 564.06735pt>
 File: figs/as1_co_5_roc.png Graphic file (type png)
 
 <use figs/as1_co_5_roc.png>
@@ -3931,7 +3924,7 @@ l.115 \end{figure}
 l.115 \end{figure}
                   
 ? 
-<figs/as2_co_5_roc.png, id=2148, 554.67226pt x 564.06735pt>
+<figs/as2_co_5_roc.png, id=2152, 554.67226pt x 564.06735pt>
 File: figs/as2_co_5_roc.png Graphic file (type png)
 
 <use figs/as2_co_5_roc.png>
@@ -4063,14 +4056,14 @@ Overfull \hbox (23.01976pt too wide) in paragraph at lines 6--7
 counterpart-- 
  []
 
-<figs/as_no2_raw_zoomed.png, id=2168, 732.8178pt x 520.344pt>
+<figs/as_no2_raw_zoomed.png, id=2172, 732.8178pt x 520.344pt>
 File: figs/as_no2_raw_zoomed.png Graphic file (type png)
 
 <use figs/as_no2_raw_zoomed.png>
 Package pdftex.def Info: figs/as_no2_raw_zoomed.png used on input line 9.
 (pdftex.def)             Requested size: 144.0003pt x 102.24873pt.
 
-<figs/as_no2_with_10_accuracy_zoomed.png, id=2170, 741.12885pt x 529.7391pt>
+<figs/as_no2_with_10_accuracy_zoomed.png, id=2174, 741.12885pt x 529.7391pt>
 File: figs/as_no2_with_10_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_no2_with_10_accuracy_zoomed.png>
@@ -4112,7 +4105,7 @@ l.57 }
 
 LaTeX Warning: Marginpar on page 136 moved.
 
-<figs/as_no2_10_roc.png, id=2178, 555.7563pt x 564.06735pt>
+<figs/as_no2_10_roc.png, id=2182, 555.7563pt x 564.06735pt>
 File: figs/as_no2_10_roc.png Graphic file (type png)
 
 <use figs/as_no2_10_roc.png>
@@ -4137,7 +4130,7 @@ Overfull \hbox (111.6658pt too wide) in paragraph at lines 77--110
  []
 
 ) [137 <./figs/as_no2_10_roc.png>] [138] (./pages/ml_as_o3.tex
-<figs/as1_o3_raw_zoomed.png, id=2196, 732.8178pt x 520.344pt>
+<figs/as1_o3_raw_zoomed.png, id=2200, 732.8178pt x 520.344pt>
 File: figs/as1_o3_raw_zoomed.png Graphic file (type png)
 
 <use figs/as1_o3_raw_zoomed.png>
@@ -4191,7 +4184,7 @@ l.15 \end{figure}
                  
 ? 
 [139]
-<figs/as_o3_with_5_accuracy_zoomed.png, id=2202, 741.12885pt x 529.7391pt>
+<figs/as_o3_with_5_accuracy_zoomed.png, id=2206, 741.12885pt x 529.7391pt>
 File: figs/as_o3_with_5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_o3_with_5_accuracy_zoomed.png>
@@ -4446,7 +4439,7 @@ l.95 ...sor #2 Confusion Matrix w/Shuffled K-Fold}
 
 LaTeX Warning: Marginpar on page 141 moved.
 
-<figs/as1_o3_7p5_roc.png, id=2210, 572.3784pt x 564.06735pt>
+<figs/as1_o3_7p5_roc.png, id=2214, 572.3784pt x 564.06735pt>
 File: figs/as1_o3_7p5_roc.png Graphic file (type png)
 
 <use figs/as1_o3_7p5_roc.png>
@@ -4489,7 +4482,7 @@ l.104 \end{figure}
 l.104 \end{figure}
                   
 ? 
-<figs/as2_o3_7p5_roc.png, id=2211, 572.3784pt x 564.06735pt>
+<figs/as2_o3_7p5_roc.png, id=2215, 572.3784pt x 564.06735pt>
 File: figs/as2_o3_7p5_roc.png Graphic file (type png)
 
 <use figs/as2_o3_7p5_roc.png>
@@ -4666,14 +4659,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<visuals/prevwork1a.png, id=2292, 423.5825pt x 361.35pt>
+<visuals/prevwork1a.png, id=2296, 423.5825pt x 361.35pt>
 File: visuals/prevwork1a.png Graphic file (type png)
 
 <use visuals/prevwork1a.png>
 Package pdftex.def Info: visuals/prevwork1a.png used on input line 10.
 (pdftex.def)             Requested size: 155.99918pt x 133.07986pt.
 
-<visuals/prevwork1b.png, id=2293, 300.12125pt x 320.19624pt>
+<visuals/prevwork1b.png, id=2297, 300.12125pt x 320.19624pt>
 File: visuals/prevwork1b.png Graphic file (type png)
 
 <use visuals/prevwork1b.png>
@@ -4689,14 +4682,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-<visuals/prevwork2a.png, id=2294, 630.355pt x 433.62pt>
+<visuals/prevwork2a.png, id=2298, 630.355pt x 433.62pt>
 File: visuals/prevwork2a.png Graphic file (type png)
 
 <use visuals/prevwork2a.png>
 Package pdftex.def Info: visuals/prevwork2a.png used on input line 20.
 (pdftex.def)             Requested size: 156.00131pt x 107.313pt.
 
-<visuals/prevwork2b.png, id=2295, 354.32375pt x 435.6275pt>
+<visuals/prevwork2b.png, id=2299, 354.32375pt x 435.6275pt>
 File: visuals/prevwork2b.png Graphic file (type png)
 
 <use visuals/prevwork2b.png>
@@ -4731,7 +4724,7 @@ a.png> <./visuals/prevwork2b.png>] [161])
 
 
 ]
-<schematics/la_schematic1.png, id=2316, 1011.78pt x 731.73375pt>
+<schematics/la_schematic1.png, id=2320, 1011.78pt x 731.73375pt>
 File: schematics/la_schematic1.png Graphic file (type png)
 
 <use schematics/la_schematic1.png>
@@ -4742,14 +4735,14 @@ Overfull \hbox (144.00696pt too wide) in paragraph at lines 11--12
 [][] 
  []
 
-<schematics/la_schematic2.png, id=2317, 990.70125pt x 788.9475pt>
+<schematics/la_schematic2.png, id=2321, 990.70125pt x 788.9475pt>
 File: schematics/la_schematic2.png Graphic file (type png)
 
 <use schematics/la_schematic2.png>
 Package pdftex.def Info: schematics/la_schematic2.png used on input line 14.
 (pdftex.def)             Requested size: 456.00021pt x 363.13693pt.
 
-<schematics/la_schematic3.png, id=2318, 990.70125pt x 788.9475pt>
+<schematics/la_schematic3.png, id=2322, 990.70125pt x 788.9475pt>
 File: schematics/la_schematic3.png Graphic file (type png)
 
 <use schematics/la_schematic3.png>
@@ -4768,14 +4761,14 @@ Overfull \hbox (144.00021pt too wide) in paragraph at lines 14--16
 
 LaTeX Warning: Float too large for page by 112.27386pt on input line 16.
 
-<schematics/la_schematic4.png, id=2319, 990.70125pt x 788.9475pt>
+<schematics/la_schematic4.png, id=2323, 990.70125pt x 788.9475pt>
 File: schematics/la_schematic4.png Graphic file (type png)
 
 <use schematics/la_schematic4.png>
 Package pdftex.def Info: schematics/la_schematic4.png used on input line 19.
 (pdftex.def)             Requested size: 456.00021pt x 363.13693pt.
 
-<schematics/la_schematic5.png, id=2320, 990.70125pt x 788.9475pt>
+<schematics/la_schematic5.png, id=2324, 990.70125pt x 788.9475pt>
 File: schematics/la_schematic5.png Graphic file (type png)
 
 <use schematics/la_schematic5.png>
@@ -4794,7 +4787,7 @@ Overfull \hbox (144.00021pt too wide) in paragraph at lines 19--21
 
 LaTeX Warning: Float too large for page by 112.27386pt on input line 21.
 
-<schematics/la_schematic6.png, id=2321, 990.70125pt x 789.95125pt>
+<schematics/la_schematic6.png, id=2325, 990.70125pt x 789.95125pt>
 File: schematics/la_schematic6.png Graphic file (type png)
 
 <use schematics/la_schematic6.png>
@@ -4808,7 +4801,7 @@ Overfull \hbox (144.00021pt too wide) in paragraph at lines 23--24
 [163 <./schematics/la_schematic1.png>] [164 <./schematics/la_schematic2.png> <.
 /schematics/la_schematic3.png>] [165 <./schematics/la_schematic4.png> <./schema
 tics/la_schematic5.png>] [166 <./schematics/la_schematic6.png>]
-<schematics/l3_schematic1.png, id=2345, 1011.78pt x 731.73375pt>
+<schematics/l3_schematic1.png, id=2349, 1011.78pt x 731.73375pt>
 File: schematics/l3_schematic1.png Graphic file (type png)
 
 <use schematics/l3_schematic1.png>
@@ -4819,7 +4812,7 @@ Overfull \hbox (144.00696pt too wide) in paragraph at lines 31--32
 [][] 
  []
 
-<schematics/l3_schematic2.png, id=2346, 990.70125pt x 788.9475pt>
+<schematics/l3_schematic2.png, id=2350, 990.70125pt x 788.9475pt>
 File: schematics/l3_schematic2.png Graphic file (type png)
 
 <use schematics/l3_schematic2.png>
@@ -4851,7 +4844,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [174]
-<figs/ws_with_10_accuracy.png, id=2660, 720.89325pt x 529.7391pt>
+<figs/ws_with_10_accuracy.png, id=2664, 720.89325pt x 529.7391pt>
 File: figs/ws_with_10_accuracy.png Graphic file (type png)
 
 <use figs/ws_with_10_accuracy.png>
@@ -4862,7 +4855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
-<figs/wd_with_10_accuracy_zoomed.png, id=2662, 726.3135pt x 519.98265pt>
+<figs/wd_with_10_accuracy_zoomed.png, id=2666, 726.3135pt x 519.98265pt>
 File: figs/wd_with_10_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/wd_with_10_accuracy_zoomed.png>
@@ -4892,7 +4885,7 @@ png>])
 
 
 ]
-<figs/precip_intensity.png, id=2719, 729.927pt x 529.7391pt>
+<figs/precip_intensity.png, id=2723, 729.927pt x 529.7391pt>
 File: figs/precip_intensity.png Graphic file (type png)
 
 <use figs/precip_intensity.png>
@@ -4903,7 +4896,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
-<figs/ambient_pressure.png, id=2720, 732.45645pt x 529.7391pt>
+<figs/ambient_pressure.png, id=2724, 732.45645pt x 529.7391pt>
 File: figs/ambient_pressure.png Graphic file (type png)
 
 <use figs/ambient_pressure.png>
@@ -4919,7 +4912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--39
 
  []
 
-<figs/cloud_cover.png, id=2721, 724.1454pt x 529.37775pt>
+<figs/cloud_cover.png, id=2725, 724.1454pt x 529.37775pt>
 File: figs/cloud_cover.png Graphic file (type png)
 
 <use figs/cloud_cover.png>
@@ -4930,7 +4923,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--45
 
  []
 
-<figs/dew.png, id=2722, 721.61595pt x 529.7391pt>
+<figs/dew.png, id=2726, 721.61595pt x 529.7391pt>
 File: figs/dew.png Graphic file (type png)
  <use figs/dew.png>
 Package pdftex.def Info: figs/dew.png used on input line 48.
@@ -4940,7 +4933,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-<figs/lux.png, id=2723, 731.73375pt x 529.7391pt>
+<figs/lux.png, id=2727, 731.73375pt x 529.7391pt>
 File: figs/lux.png Graphic file (type png)
  <use figs/lux.png>
 Package pdftex.def Info: figs/lux.png used on input line 54.
@@ -4950,7 +4943,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-<figs/lux_zoomed.png, id=2724, 731.73375pt x 520.344pt>
+<figs/lux_zoomed.png, id=2728, 731.73375pt x 520.344pt>
 File: figs/lux_zoomed.png Graphic file (type png)
 
 <use figs/lux_zoomed.png>
@@ -4963,68 +4956,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--63
 
 [179 <./figs/precip_intensity.png>] [180 <./figs/ambient_pressure.png>]
 [181 <./figs/cloud_cover.png> <./figs/dew.png>] [182 <./figs/lux.png> <./figs/l
-ux_zoomed.png>] <weka/features1.png, id=2748, 1209.51875pt x 701.62125pt>
+ux_zoomed.png>] <weka/features1.png, id=2752, 1209.51875pt x 701.62125pt>
 File: weka/features1.png Graphic file (type png)
 
 <use weka/features1.png>
-Package pdftex.def Info: weka/features1.png used on input line 78.
-(pdftex.def)             Requested size: 283.53563pt x 164.47418pt.
+Package pdftex.def Info: weka/features1.png used on input line 72.
+(pdftex.def)             Requested size: 260.63205pt x 151.1882pt.
 
-<weka/features2.png, id=2749, 1209.51875pt x 699.61375pt>
+<weka/features2.png, id=2753, 1209.51875pt x 699.61375pt>
 File: weka/features2.png Graphic file (type png)
 
 <use weka/features2.png>
-Package pdftex.def Info: weka/features2.png used on input line 79.
-(pdftex.def)             Requested size: 283.53563pt x 164.00359pt.
+Package pdftex.def Info: weka/features2.png used on input line 73.
+(pdftex.def)             Requested size: 260.63205pt x 150.75563pt.
 
-<weka/features3.png, id=2750, 1211.52625pt x 700.6175pt>
+<weka/features3.png, id=2754, 1211.52625pt x 700.6175pt>
 File: weka/features3.png Graphic file (type png)
 
 <use weka/features3.png>
-Package pdftex.def Info: weka/features3.png used on input line 80.
-(pdftex.def)             Requested size: 283.54407pt x 163.97162pt.
+Package pdftex.def Info: weka/features3.png used on input line 74.
+(pdftex.def)             Requested size: 260.63945pt x 150.72603pt.
 
-<weka/features4.png, id=2751, 1210.5225pt x 396.48125pt>
+<weka/features4.png, id=2755, 1210.5225pt x 396.48125pt>
 File: weka/features4.png Graphic file (type png)
 
 <use weka/features4.png>
-Package pdftex.def Info: weka/features4.png used on input line 81.
-(pdftex.def)             Requested size: 283.54927pt x 92.8706pt.
+Package pdftex.def Info: weka/features4.png used on input line 75.
+(pdftex.def)             Requested size: 260.62668pt x 85.3628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 []
  []
 
+[183
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [183
-
-]
-[184 <./weka/features1.png> <./weka/features2.png> <./weka/features3.png> <./we
-ka/features4.png>] <figs/sck_co_lmse.png, id=2764, 850.6179pt x 904.0977pt>
+ <./weka/features1.png> <./weka/features2.png> <./weka/features3.png> <./weka/f
+eatures4.png>] <figs/sck_co_lmse.png, id=2764, 850.6179pt x 904.0977pt>
 File: figs/sck_co_lmse.png Graphic file (type png)
 
 <use figs/sck_co_lmse.png>
-Package pdftex.def Info: figs/sck_co_lmse.png used on input line 95.
+Package pdftex.def Info: figs/sck_co_lmse.png used on input line 96.
 (pdftex.def)             Requested size: 311.99803pt x 331.61388pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
@@ -5033,15 +5022,15 @@ File: figs/sck_co_with_5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/sck_co_with_5_accuracy_zoomed.png>
 Package pdftex.def Info: figs/sck_co_with_5_accuracy_zoomed.png used on input l
-ine 101.
+ine 102.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
 
  []
 
@@ -5050,10 +5039,10 @@ File: figs/sck_co_7p5_logistic_predictions.png Graphic file (type png)
 
 <use figs/sck_co_7p5_logistic_predictions.png>
 Package pdftex.def Info: figs/sck_co_7p5_logistic_predictions.png used on input
- line 107.
+ line 108.
 (pdftex.def)             Requested size: 312.00436pt x 225.87573pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
@@ -5062,84 +5051,84 @@ File: figs/sck_co_7p5_roc_pruned_features.png Graphic file (type png)
 
 <use figs/sck_co_7p5_roc_pruned_features.png>
 Package pdftex.def Info: figs/sck_co_7p5_roc_pruned_features.png used on input 
-line 142.
+line 143.
 (pdftex.def)             Requested size: 312.01219pt x 285.49298pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
 
  []
 
-[185 <./figs/sck_co_lmse.png>] [186 <./figs/sck_co_with_5_accuracy_zoomed.png> 
-<./figs/sck_co_7p5_logistic_predictions.png>] [187 <./figs/sck_co_7p5_roc_prune
-d_features.png>] <figs/sck_no2_lmse.png, id=2785, 839.0547pt x 904.0977pt>
+[184 <./figs/sck_co_lmse.png>] [185 <./figs/sck_co_with_5_accuracy_zoomed.png> 
+<./figs/sck_co_7p5_logistic_predictions.png>] [186 <./figs/sck_co_7p5_roc_prune
+d_features.png>] <figs/sck_no2_lmse.png, id=2784, 839.0547pt x 904.0977pt>
 File: figs/sck_no2_lmse.png Graphic file (type png)
 
 <use figs/sck_no2_lmse.png>
-Package pdftex.def Info: figs/sck_no2_lmse.png used on input line 154.
+Package pdftex.def Info: figs/sck_no2_lmse.png used on input line 155.
 (pdftex.def)             Requested size: 312.00734pt x 336.19395pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
-<figs/sck_no2_with_4_accuracy_zoomed.png, id=2786, 741.12885pt x 529.7391pt>
+<figs/sck_no2_with_4_accuracy_zoomed.png, id=2785, 741.12885pt x 529.7391pt>
 File: figs/sck_no2_with_4_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/sck_no2_with_4_accuracy_zoomed.png>
 Package pdftex.def Info: figs/sck_no2_with_4_accuracy_zoomed.png used on input 
-line 160.
+line 161.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
-<figs/sck_no2_10_logistic_predictions.png, id=2787, 726.3135pt x 529.7391pt>
+<figs/sck_no2_10_logistic_predictions.png, id=2786, 726.3135pt x 529.7391pt>
 File: figs/sck_no2_10_logistic_predictions.png Graphic file (type png)
 
 <use figs/sck_no2_10_logistic_predictions.png>
 Package pdftex.def Info: figs/sck_no2_10_logistic_predictions.png used on input
- line 166.
+ line 167.
 (pdftex.def)             Requested size: 312.00949pt x 227.56512pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
 
  []
 
-<figs/sck_no2_10_roc_pruned_features.png, id=2788, 619.71526pt x 564.06735pt>
+<figs/sck_no2_10_roc_pruned_features.png, id=2787, 619.71526pt x 564.06735pt>
 File: figs/sck_no2_10_roc_pruned_features.png Graphic file (type png)
 
 <use figs/sck_no2_10_roc_pruned_features.png>
 Package pdftex.def Info: figs/sck_no2_10_roc_pruned_features.png used on input 
-line 202.
+line 203.
 (pdftex.def)             Requested size: 312.01285pt x 283.99536pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 
  []
 
-[188
+[187
 
- <./figs/sck_no2_lmse.png>] [189 <./figs/sck_no2_with_4_accuracy_zoomed.png> <.
-/figs/sck_no2_10_logistic_predictions.png>] [190 <./figs/sck_no2_10_roc_pruned_
+ <./figs/sck_no2_lmse.png>] [188 <./figs/sck_no2_with_4_accuracy_zoomed.png> <.
+/figs/sck_no2_10_logistic_predictions.png>] [189 <./figs/sck_no2_10_roc_pruned_
 features.png>] <figs/sharp_raw.png, id=2805, 730.6497pt x 529.7391pt>
 File: figs/sharp_raw.png Graphic file (type png)
 
 <use figs/sharp_raw.png>
-Package pdftex.def Info: figs/sharp_raw.png used on input line 215.
+Package pdftex.def Info: figs/sharp_raw.png used on input line 216.
 (pdftex.def)             Requested size: 311.99924pt x 226.20715pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
 
  []
 
@@ -5149,1193 +5138,1193 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--218
 File: figs/sharp_goals_30_logistic_predictions.png Graphic file (type png)
  <use figs/sharp_goals_30_logistic_predictions.png>
 Package pdftex.def Info: figs/sharp_goals_30_logistic_predictions.png used on i
-nput line 222.
+nput line 223.
 (pdftex.def)             Requested size: 312.00397pt x 228.47043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
 
  []
 
 
-<figs/sharp_goals_30_roc_pruned_features.png, id=2808, 626.5809pt x 564.06735pt
+<figs/sharp_goals_30_roc_pruned_features.png, id=2807, 626.5809pt x 564.06735pt
 >
 File: figs/sharp_goals_30_roc_pruned_features.png Graphic file (type png)
  <use figs/sharp_goals_30_roc_pruned_features.png>
 Package pdftex.def Info: figs/sharp_goals_30_roc_pruned_features.png used on in
-put line 261.
+put line 260.
 (pdftex.def)             Requested size: 311.99896pt x 280.87103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--264
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
 File: figs/sharp_48_avg_goals_30_roc.png Graphic file (type png)
 <use figs/sharp_48_avg_goals_30_roc.png>
 Package pdftex.def Info: figs/sharp_48_avg_goals_30_roc.png used on input line 
-268.
+267.
 (pdftex.def)             Requested size: 312.00449pt x 273.09117pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 
  []
 
 
-<figs/sharp_48_avg_goals_30_roc_pruned_features.png, id=2809, 749.4399pt x 565.
+<figs/sharp_48_avg_goals_30_roc_pruned_features.png, id=2808, 749.4399pt x 565.
 51276pt>
 File: figs/sharp_48_avg_goals_30_roc_pruned_features.png Graphic file (type png
 )
  <use figs/sharp_48_avg_goals_30_roc_pruned_features.png>
 Package pdftex.def Info: figs/sharp_48_avg_goals_30_roc_pruned_features.png use
-d on input line 274.
+d on input line 273.
 (pdftex.def)             Requested size: 311.99521pt x 235.4255pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
 
  []
 
-<figs/sharp_goals_15_roc.png, id=2810, 588.2778pt x 565.51276pt>
+<figs/sharp_goals_15_roc.png, id=2809, 588.2778pt x 565.51276pt>
 File: figs/sharp_goals_15_roc.png Graphic file (type png)
 
 <use figs/sharp_goals_15_roc.png>
-Package pdftex.def Info: figs/sharp_goals_15_roc.png used on input line 280.
+Package pdftex.def Info: figs/sharp_goals_15_roc.png used on input line 279.
 (pdftex.def)             Requested size: 312.01015pt x 299.93605pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--283
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
 
  []
 
 
-<figs/sharp_goals_15_roc_pruned_features.png, id=2811, 686.92635pt x 565.51276p
+<figs/sharp_goals_15_roc_pruned_features.png, id=2810, 686.92635pt x 565.51276p
 t>
 File: figs/sharp_goals_15_roc_pruned_features.png Graphic file (type png)
  <use figs/sharp_goals_15_roc_pruned_features.png>
 Package pdftex.def Info: figs/sharp_goals_15_roc_pruned_features.png used on in
-put line 286.
+put line 285.
 (pdftex.def)             Requested size: 312.00693pt x 256.85999pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 
  []
 
-[191
+[190
 
- <./figs/sharp_raw.png>] [192 <./figs/sharp_goals_30_logistic_predictions.png>]
- [193 <./figs/sharp_goals_30_roc_pruned_features.png>] [194 <./figs/sharp_48_av
+ <./figs/sharp_raw.png>] [191 <./figs/sharp_goals_30_logistic_predictions.png>]
+ [192 <./figs/sharp_goals_30_roc_pruned_features.png>] [193 <./figs/sharp_48_av
 g_goals_30_roc_pruned_features.png> <./figs/sharp_goals_15_roc.png>]
-[195 <./figs/sharp_goals_15_roc_pruned_features.png>]
-<figs/as_co_raw.png, id=2839, 738.5994pt x 529.7391pt>
+[194 <./figs/sharp_goals_15_roc_pruned_features.png>]
+<figs/as_co_raw.png, id=2838, 738.5994pt x 529.7391pt>
 File: figs/as_co_raw.png Graphic file (type png)
 
 <use figs/as_co_raw.png>
-Package pdftex.def Info: figs/as_co_raw.png used on input line 298.
+Package pdftex.def Info: figs/as_co_raw.png used on input line 297.
 (pdftex.def)             Requested size: 312.00157pt x 223.77412pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.299 ...caption{AlphaSense CO Sensor #1 Raw Data}
+l.298 ...caption{AlphaSense CO Sensor #1 Raw Data}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.299 ...caption{AlphaSense CO Sensor #1 Raw Data}
+l.298 ...caption{AlphaSense CO Sensor #1 Raw Data}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--301
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.301 \end{figure}
+l.300 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.301 \end{figure}
+l.300 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.301 \end{figure}
+l.300 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 1 Raw Data
-l.301 \end{figure}
+l.300 \end{figure}
                   
 ? 
-<figs/as1_co_lmse.png, id=2840, 850.6179pt x 904.0977pt>
+<figs/as1_co_lmse.png, id=2839, 850.6179pt x 904.0977pt>
 File: figs/as1_co_lmse.png Graphic file (type png)
 
 <use figs/as1_co_lmse.png>
-Package pdftex.def Info: figs/as1_co_lmse.png used on input line 304.
+Package pdftex.def Info: figs/as1_co_lmse.png used on input line 303.
 (pdftex.def)             Requested size: 311.99803pt x 331.61388pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.305 ...ense CO Sensor #1 after LMSE Calibration}
+l.304 ...ense CO Sensor #1 after LMSE Calibration}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.305 ...ense CO Sensor #1 after LMSE Calibration}
+l.304 ...ense CO Sensor #1 after LMSE Calibration}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--307
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--307
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.307 \end{figure}
+l.306 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.307 \end{figure}
+l.306 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.307 \end{figure}
+l.306 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 1 after LMSE Calibration
-l.307 \end{figure}
+l.306 \end{figure}
                   
 ? 
-<figs/as_co_with_7p5_accuracy_zoomed.png, id=2841, 741.12885pt x 529.7391pt>
+<figs/as_co_with_7p5_accuracy_zoomed.png, id=2840, 741.12885pt x 529.7391pt>
 File: figs/as_co_with_7p5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_co_with_7p5_accuracy_zoomed.png>
 Package pdftex.def Info: figs/as_co_with_7p5_accuracy_zoomed.png used on input 
-line 310.
+line 309.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.311 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.310 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.311 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.310 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.311 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.310 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.311 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.310 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 1 and ##2 with 7.5\% Accurac...
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ...nse CO Sensor ##1 and ##
                                                   2 with 7.5\% Accuracy Thre...
-l.313 \end{figure}
+l.312 \end{figure}
                   
 ? 
-<figs/as1_co_5_logistic_predictions.png, id=2842, 731.73375pt x 529.7391pt>
+<figs/as1_co_5_logistic_predictions.png, id=2841, 731.73375pt x 529.7391pt>
 File: figs/as1_co_5_logistic_predictions.png Graphic file (type png)
 
 <use figs/as1_co_5_logistic_predictions.png>
 Package pdftex.def Info: figs/as1_co_5_logistic_predictions.png used on input l
-ine 316.
+ine 315.
 (pdftex.def)             Requested size: 312.00436pt x 225.87573pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.317 ...haSense CO Sensor #1 Prediction Accuracy}
+l.316 ...haSense CO Sensor #1 Prediction Accuracy}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.317 ...haSense CO Sensor #1 Prediction Accuracy}
+l.316 ...haSense CO Sensor #1 Prediction Accuracy}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
+Underfull \hbox (badness 10000) in paragraph at lines 315--318
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.319 \end{figure}
+l.318 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.319 \end{figure}
+l.318 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.319 \end{figure}
+l.318 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 1 Prediction Accuracy
-l.319 \end{figure}
+l.318 \end{figure}
                   
 ? 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 321.
+               Default added (so using `tbp') on input line 320.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.337 avg\_60\_forecastio\_temperature_
+l.336 avg\_60\_forecastio\_temperature_
                                        c & 0.0207050630804 \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.337 avg\_60\_forecastio\_temperature_c &
+l.336 avg\_60\_forecastio\_temperature_c &
                                            0.0207050630804 \\
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.348 ...r #1, used in Pruned Logistic Regression}
+l.347 ...r #1, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.348 ...r #1, used in Pruned Logistic Regression}
+l.347 ...r #1, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.349 \end{table}
+l.348 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.349 \end{table}
+l.348 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.349 \end{table}
+l.348 \end{table}
                  
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ... Forest for CO Sensor ##
                                                   1, used in Pruned Logistic...
-l.349 \end{table}
+l.348 \end{table}
                  
 ? 
-<figs/as1_co_5_roc_pruned_features.png, id=2843, 602.37045pt x 564.06735pt>
+<figs/as1_co_5_roc_pruned_features.png, id=2842, 602.37045pt x 564.06735pt>
 File: figs/as1_co_5_roc_pruned_features.png Graphic file (type png)
 
 <use figs/as1_co_5_roc_pruned_features.png>
 Package pdftex.def Info: figs/as1_co_5_roc_pruned_features.png used on input li
-ne 354.
+ne 353.
 (pdftex.def)             Requested size: 312.01198pt x 292.17198pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.355 ...e CO Sensor #1 ROC Using Top 15 Features}
+l.354 ...e CO Sensor #1 ROC Using Top 15 Features}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.355 ...e CO Sensor #1 ROC Using Top 15 Features}
+l.354 ...e CO Sensor #1 ROC Using Top 15 Features}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--357
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.357 \end{figure}
+l.356 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.357 \end{figure}
+l.356 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.357 \end{figure}
+l.356 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 1 ROC Using Top 15 Features
-l.357 \end{figure}
+l.356 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.387 ...r #2, used in Pruned Logistic Regression}
+l.386 ...r #2, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.387 ...r #2, used in Pruned Logistic Regression}
+l.386 ...r #2, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.388 \end{table}
+l.387 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.388 \end{table}
+l.387 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.388 \end{table}
+l.387 \end{table}
                  
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ... Forest for CO Sensor ##
                                                   2, used in Pruned Logistic...
-l.388 \end{table}
+l.387 \end{table}
                  
 ? 
-<figs/as2_co_5_roc_pruned_features.png, id=2844, 602.37045pt x 564.06735pt>
+<figs/as2_co_5_roc_pruned_features.png, id=2843, 602.37045pt x 564.06735pt>
 File: figs/as2_co_5_roc_pruned_features.png Graphic file (type png)
 
 <use figs/as2_co_5_roc_pruned_features.png>
 Package pdftex.def Info: figs/as2_co_5_roc_pruned_features.png used on input li
-ne 392.
+ne 391.
 (pdftex.def)             Requested size: 312.01198pt x 292.17198pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.393 ...e CO Sensor #2 ROC Using Top 15 Features}
+l.392 ...e CO Sensor #2 ROC Using Top 15 Features}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.393 ...e CO Sensor #2 ROC Using Top 15 Features}
+l.392 ...e CO Sensor #2 ROC Using Top 15 Features}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--395
+Underfull \hbox (badness 10000) in paragraph at lines 391--394
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.395 \end{figure}
+l.394 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.395 \end{figure}
+l.394 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.395 \end{figure}
+l.394 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 2 ROC Using Top 15 Features
-l.395 \end{figure}
+l.394 \end{figure}
                   
 ? 
-<figs/as2_co_5_logistic_predictions.png, id=2845, 738.5994pt x 529.7391pt>
+<figs/as2_co_5_logistic_predictions.png, id=2844, 738.5994pt x 529.7391pt>
 File: figs/as2_co_5_logistic_predictions.png Graphic file (type png)
 
 <use figs/as2_co_5_logistic_predictions.png>
 Package pdftex.def Info: figs/as2_co_5_logistic_predictions.png used on input l
-ine 398.
+ine 397.
 (pdftex.def)             Requested size: 312.00157pt x 223.77412pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.399 ...haSense CO Sensor #2 Prediction Accuracy}
+l.398 ...haSense CO Sensor #2 Prediction Accuracy}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.399 ...haSense CO Sensor #2 Prediction Accuracy}
+l.398 ...haSense CO Sensor #2 Prediction Accuracy}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.401 \end{figure}
+l.400 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.401 \end{figure}
+l.400 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.401 \end{figure}
+l.400 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense CO Sensor ##
                                                 2 Prediction Accuracy
-l.401 \end{figure}
+l.400 \end{figure}
                   
 ? 
-[196
+[195
 
- <./figs/as_co_raw.png>] [197 <./figs/as1_co_lmse.png> <./figs/as_co_with_7p5_a
-ccuracy_zoomed.png>] [198 <./figs/as1_co_5_logistic_predictions.png>]
-[199 <./figs/as1_co_5_roc_pruned_features.png>] [200 <./figs/as2_co_5_roc_prune
+ <./figs/as_co_raw.png>] [196 <./figs/as1_co_lmse.png> <./figs/as_co_with_7p5_a
+ccuracy_zoomed.png>] [197 <./figs/as1_co_5_logistic_predictions.png>]
+[198 <./figs/as1_co_5_roc_pruned_features.png>] [199 <./figs/as2_co_5_roc_prune
 d_features.png> <./figs/as2_co_5_logistic_predictions.png>]
-<figs/as_no2_raw.png, id=2875, 741.12885pt x 529.7391pt>
+<figs/as_no2_raw.png, id=2874, 741.12885pt x 529.7391pt>
 File: figs/as_no2_raw.png Graphic file (type png)
 
 <use figs/as_no2_raw.png>
-Package pdftex.def Info: figs/as_no2_raw.png used on input line 412.
+Package pdftex.def Info: figs/as_no2_raw.png used on input line 411.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 411--414
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 411--414
 
  []
 
-<figs/as_no2_lmse.png, id=2876, 844.8363pt x 902.6523pt>
+<figs/as_no2_lmse.png, id=2875, 844.8363pt x 902.6523pt>
 File: figs/as_no2_lmse.png Graphic file (type png)
 
 <use figs/as_no2_lmse.png>
-Package pdftex.def Info: figs/as_no2_lmse.png used on input line 418.
+Package pdftex.def Info: figs/as_no2_lmse.png used on input line 417.
 (pdftex.def)             Requested size: 312.00444pt x 333.35632pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--421
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
 
  []
 
-<figs/as_no2_with_4_accuracy_zoomed.png, id=2877, 741.12885pt x 529.7391pt>
+<figs/as_no2_with_4_accuracy_zoomed.png, id=2876, 741.12885pt x 529.7391pt>
 File: figs/as_no2_with_4_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_no2_with_4_accuracy_zoomed.png>
 Package pdftex.def Info: figs/as_no2_with_4_accuracy_zoomed.png used on input l
-ine 425.
+ine 424.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--428
+Underfull \hbox (badness 10000) in paragraph at lines 424--427
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--428
+Underfull \hbox (badness 10000) in paragraph at lines 424--427
 
  []
 
-<figs/as_no2_10_logistic_predictions.png, id=2878, 738.5994pt x 529.7391pt>
+<figs/as_no2_10_logistic_predictions.png, id=2877, 738.5994pt x 529.7391pt>
 File: figs/as_no2_10_logistic_predictions.png Graphic file (type png)
 
 <use figs/as_no2_10_logistic_predictions.png>
 Package pdftex.def Info: figs/as_no2_10_logistic_predictions.png used on input 
-line 432.
+line 431.
 (pdftex.def)             Requested size: 312.00157pt x 223.77412pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--435
+Underfull \hbox (badness 10000) in paragraph at lines 431--434
 
  []
 
-<figs/as_no2_10_roc_pruned_features.png, id=2880, 615.7404pt x 564.06735pt>
+<figs/as_no2_10_roc_pruned_features.png, id=2879, 615.7404pt x 564.06735pt>
 File: figs/as_no2_10_roc_pruned_features.png Graphic file (type png)
 
 <use figs/as_no2_10_roc_pruned_features.png>
 Package pdftex.def Info: figs/as_no2_10_roc_pruned_features.png used on input l
-ine 471.
+ine 470.
 (pdftex.def)             Requested size: 312.00343pt x 285.82004pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
 
  []
 
-[201
+[200
 
- <./figs/as_no2_raw.png>] [202 <./figs/as_no2_lmse.png> <./figs/as_no2_with_4_a
-ccuracy_zoomed.png>] [203 <./figs/as_no2_10_logistic_predictions.png>]
-[204 <./figs/as_no2_10_roc_pruned_features.png>]
-<figs/as1_o3_raw.png, id=2902, 732.8178pt x 529.7391pt>
+ <./figs/as_no2_raw.png>] [201 <./figs/as_no2_lmse.png> <./figs/as_no2_with_4_a
+ccuracy_zoomed.png>] [202 <./figs/as_no2_10_logistic_predictions.png>]
+[203 <./figs/as_no2_10_roc_pruned_features.png>]
+<figs/as1_o3_raw.png, id=2901, 732.8178pt x 529.7391pt>
 File: figs/as1_o3_raw.png Graphic file (type png)
 
 <use figs/as1_o3_raw.png>
-Package pdftex.def Info: figs/as1_o3_raw.png used on input line 484.
+Package pdftex.def Info: figs/as1_o3_raw.png used on input line 483.
 (pdftex.def)             Requested size: 311.99695pt x 225.53624pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.485 ...caption{AlphaSense O3 Sensor #1 Raw Data}
+l.484 ...caption{AlphaSense O3 Sensor #1 Raw Data}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.485 ...caption{AlphaSense O3 Sensor #1 Raw Data}
+l.484 ...caption{AlphaSense O3 Sensor #1 Raw Data}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--487
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--487
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.487 \end{figure}
+l.486 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.487 \end{figure}
+l.486 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.487 \end{figure}
+l.486 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 1 Raw Data
-l.487 \end{figure}
+l.486 \end{figure}
                   
 ? 
-<figs/as1_o3_lmse.png, id=2903, 844.8363pt x 904.0977pt>
+<figs/as1_o3_lmse.png, id=2902, 844.8363pt x 904.0977pt>
 File: figs/as1_o3_lmse.png Graphic file (type png)
 
 <use figs/as1_o3_lmse.png>
-Package pdftex.def Info: figs/as1_o3_lmse.png used on input line 490.
+Package pdftex.def Info: figs/as1_o3_lmse.png used on input line 489.
 (pdftex.def)             Requested size: 312.00444pt x 333.89012pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.491 ...ense O3 Sensor #1 after LMSE Calibration}
+l.490 ...ense O3 Sensor #1 after LMSE Calibration}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.491 ...ense O3 Sensor #1 after LMSE Calibration}
+l.490 ...ense O3 Sensor #1 after LMSE Calibration}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--493
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.493 \end{figure}
+l.492 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.493 \end{figure}
+l.492 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.493 \end{figure}
+l.492 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 1 after LMSE Calibration
-l.493 \end{figure}
+l.492 \end{figure}
                   
 ? 
-<figs/as2_o3_lmse.png, id=2904, 844.8363pt x 902.6523pt>
+<figs/as2_o3_lmse.png, id=2903, 844.8363pt x 902.6523pt>
 File: figs/as2_o3_lmse.png Graphic file (type png)
 
 <use figs/as2_o3_lmse.png>
-Package pdftex.def Info: figs/as2_o3_lmse.png used on input line 496.
+Package pdftex.def Info: figs/as2_o3_lmse.png used on input line 495.
 (pdftex.def)             Requested size: 312.00444pt x 333.35632pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.497 ...ense O3 Sensor #2 after LMSE Calibration}
+l.496 ...ense O3 Sensor #2 after LMSE Calibration}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.497 ...ense O3 Sensor #2 after LMSE Calibration}
+l.496 ...ense O3 Sensor #2 after LMSE Calibration}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.499 \end{figure}
+l.498 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.499 \end{figure}
+l.498 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.499 \end{figure}
+l.498 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 2 after LMSE Calibration
-l.499 \end{figure}
+l.498 \end{figure}
                   
 ? 
-<figs/as_o3_with_7p5_accuracy_zoomed.png, id=2905, 741.12885pt x 529.7391pt>
+<figs/as_o3_with_7p5_accuracy_zoomed.png, id=2904, 741.12885pt x 529.7391pt>
 File: figs/as_o3_with_7p5_accuracy_zoomed.png Graphic file (type png)
 
 <use figs/as_o3_with_7p5_accuracy_zoomed.png>
 Package pdftex.def Info: figs/as_o3_with_7p5_accuracy_zoomed.png used on input 
-line 503.
+line 502.
 (pdftex.def)             Requested size: 311.99574pt x 223.00621pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.504 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.503 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.504 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.503 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.504 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.503 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.504 ... #1 and #2 with 7.5\% Accuracy Threshold}
+l.503 ... #1 and #2 with 7.5\% Accuracy Threshold}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--506
+Underfull \hbox (badness 10000) in paragraph at lines 502--505
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--506
+Underfull \hbox (badness 10000) in paragraph at lines 502--505
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 1 and ##2 with 7.5\% Accurac...
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ...nse O3 Sensor ##1 and ##
                                                   2 with 7.5\% Accuracy Thre...
-l.506 \end{figure}
+l.505 \end{figure}
                   
 ? 
-<figs/as1_o3_7p5_logistic_predictions.png, id=2906, 726.3135pt x 529.7391pt>
+<figs/as1_o3_7p5_logistic_predictions.png, id=2905, 726.3135pt x 529.7391pt>
 File: figs/as1_o3_7p5_logistic_predictions.png Graphic file (type png)
 
 <use figs/as1_o3_7p5_logistic_predictions.png>
 Package pdftex.def Info: figs/as1_o3_7p5_logistic_predictions.png used on input
- line 510.
+ line 509.
 (pdftex.def)             Requested size: 312.00949pt x 227.56512pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.511 ...haSense O3 Sensor #1 Prediction Accuracy}
+l.510 ...haSense O3 Sensor #1 Prediction Accuracy}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.511 ...haSense O3 Sensor #1 Prediction Accuracy}
+l.510 ...haSense O3 Sensor #1 Prediction Accuracy}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--513
+Underfull \hbox (badness 10000) in paragraph at lines 509--512
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.513 \end{figure}
+l.512 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.513 \end{figure}
+l.512 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.513 \end{figure}
+l.512 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 1 Prediction Accuracy
-l.513 \end{figure}
+l.512 \end{figure}
                   
 ? 
-<figs/as2_o3_7p5_logistic_predictions.png, id=2907, 738.5994pt x 529.7391pt>
+<figs/as2_o3_7p5_logistic_predictions.png, id=2906, 738.5994pt x 529.7391pt>
 File: figs/as2_o3_7p5_logistic_predictions.png Graphic file (type png)
 
 <use figs/as2_o3_7p5_logistic_predictions.png>
 Package pdftex.def Info: figs/as2_o3_7p5_logistic_predictions.png used on input
- line 517.
+ line 516.
 (pdftex.def)             Requested size: 312.00157pt x 223.77412pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.518 ...haSense O3 Sensor #2 Prediction Accuracy}
+l.517 ...haSense O3 Sensor #2 Prediction Accuracy}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.518 ...haSense O3 Sensor #2 Prediction Accuracy}
+l.517 ...haSense O3 Sensor #2 Prediction Accuracy}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--520
+Underfull \hbox (badness 10000) in paragraph at lines 516--519
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.520 \end{figure}
+l.519 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.520 \end{figure}
+l.519 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.520 \end{figure}
+l.519 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 2 Prediction Accuracy
-l.520 \end{figure}
+l.519 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.550 ...r #1, used in Pruned Logistic Regression}
+l.549 ...r #1, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.550 ...r #1, used in Pruned Logistic Regression}
+l.549 ...r #1, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.551 \end{table}
+l.550 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.551 \end{table}
+l.550 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.551 \end{table}
+l.550 \end{table}
                  
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ... Forest for O3 Sensor ##
                                                   1, used in Pruned Logistic...
-l.551 \end{table}
+l.550 \end{table}
                  
 ? 
-<figs/as1_o3_7p5_roc_pruned_features.png, id=2908, 648.62325pt x 564.06735pt>
+<figs/as1_o3_7p5_roc_pruned_features.png, id=2907, 648.62325pt x 564.06735pt>
 File: figs/as1_o3_7p5_roc_pruned_features.png Graphic file (type png)
 
 <use figs/as1_o3_7p5_roc_pruned_features.png>
 Package pdftex.def Info: figs/as1_o3_7p5_roc_pruned_features.png used on input 
-line 557.
+line 556.
 (pdftex.def)             Requested size: 312.00862pt x 271.33452pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    1
-l.558 ...e O3 Sensor #1 ROC Using Top 15 Features}
+l.557 ...e O3 Sensor #1 ROC Using Top 15 Features}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    1
-l.558 ...e O3 Sensor #1 ROC Using Top 15 Features}
+l.557 ...e O3 Sensor #1 ROC Using Top 15 Features}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--560
+Underfull \hbox (badness 10000) in paragraph at lines 556--559
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    1
-l.560 \end{figure}
+l.559 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    1
-l.560 \end{figure}
+l.559 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    1
-l.560 \end{figure}
+l.559 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 1 ROC Using Top 15 Features
-l.560 \end{figure}
+l.559 \end{figure}
                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.580 min\_since\_plugged_
+l.579 min\_since\_plugged_
                           in & 0.0166420124401 \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.580 min\_since\_plugged_in &
+l.579 min\_since\_plugged_in &
                                0.0166420124401 \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.586 avg\_60\_forecastio\_temperature_
+l.585 avg\_60\_forecastio\_temperature_
                                        c & 0.0136171116857 \\
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.586 avg\_60\_forecastio\_temperature_c &
+l.585 avg\_60\_forecastio\_temperature_c &
                                            0.0136171116857 \\
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.591 ...r #2, used in Pruned Logistic Regression}
+l.590 ...r #2, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.591 ...r #2, used in Pruned Logistic Regression}
+l.590 ...r #2, used in Pruned Logistic Regression}
                                                   
 ? 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.592 \end{table}
+l.591 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.592 \end{table}
+l.591 \end{table}
                  
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.592 \end{table}
+l.591 \end{table}
                  
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ... Forest for O3 Sensor ##
                                                   2, used in Pruned Logistic...
-l.592 \end{table}
+l.591 \end{table}
                  
 ? 
-<figs/as2_o3_7p5_roc_pruned_features.png, id=2909, 648.62325pt x 564.06735pt>
+<figs/as2_o3_7p5_roc_pruned_features.png, id=2908, 648.62325pt x 564.06735pt>
 File: figs/as2_o3_7p5_roc_pruned_features.png Graphic file (type png)
 
 <use figs/as2_o3_7p5_roc_pruned_features.png>
 Package pdftex.def Info: figs/as2_o3_7p5_roc_pruned_features.png used on input 
-line 597.
+line 596.
 (pdftex.def)             Requested size: 312.00862pt x 271.33452pt.
 
 ! Illegal parameter number in definition of \@tufte@stored@shortcaption.
 <to be read again> 
                    2
-l.598 ...e O3 Sensor #2 ROC Using Top 15 Features}
+l.597 ...e O3 Sensor #2 ROC Using Top 15 Features}
                                                   
 ? 
 ! Illegal parameter number in definition of \@tufte@stored@caption.
 <to be read again> 
                    2
-l.598 ...e O3 Sensor #2 ROC Using Top 15 Features}
+l.597 ...e O3 Sensor #2 ROC Using Top 15 Features}
                                                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--600
+Underfull \hbox (badness 10000) in paragraph at lines 596--599
 
  []
 
 ! Illegal parameter number in definition of \@gtempa.
 <to be read again> 
                    2
-l.600 \end{figure}
+l.599 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \@tempa.
 <to be read again> 
                    2
-l.600 \end{figure}
+l.599 \end{figure}
                   
 ? 
 ! Illegal parameter number in definition of \reserved@a.
 <to be read again> 
                    2
-l.600 \end{figure}
+l.599 \end{figure}
                   
 ? 
 ! You can't use `macro parameter character #' in horizontal mode.
 \@tufte@stored@caption ->AlphaSense O3 Sensor ##
                                                 2 ROC Using Top 15 Features
-l.600 \end{figure}
+l.599 \end{figure}
                   
 ? 
-[205
+[204
 
- <./figs/as1_o3_raw.png>] [206] [207 <./figs/as1_o3_lmse.png>] [208 <./figs/as2
-_o3_lmse.png> <./figs/as_o3_with_7p5_accuracy_zoomed.png>] [209 <./figs/as1_o3_
-7p5_logistic_predictions.png> <./figs/as2_o3_7p5_logistic_predictions.png>] [21
-0 <./figs/as1_o3_7p5_roc_pruned_features.png> <./figs/as2_o3_7p5_roc_pruned_fea
+ <./figs/as1_o3_raw.png>] [205] [206 <./figs/as1_o3_lmse.png>] [207 <./figs/as2
+_o3_lmse.png> <./figs/as_o3_with_7p5_accuracy_zoomed.png>] [208 <./figs/as1_o3_
+7p5_logistic_predictions.png> <./figs/as2_o3_7p5_logistic_predictions.png>] [20
+9 <./figs/as1_o3_7p5_roc_pruned_features.png> <./figs/as2_o3_7p5_roc_pruned_fea
 tures.png>])
 \openout2 = `pages/XX_biblio.aux'.
 
- (./pages/XX_biblio.tex (./main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [211
+ (./pages/XX_biblio.tex (./main.bbl [210
 
 
 
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [211]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [212]
@@ -6368,7 +6357,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [216]
 ! Misplaced alignment tab character &.
-l.422 \newblock {\em Journal of the Air &
+l.433 \newblock {\em Journal of the Air &
                                           Waste Management Association},
 ? 
 )) [217]
@@ -6401,9 +6390,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
 ### simple group (level 1) entered at line 136 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18454 strings out of 494522
- 270221 string characters out of 6167205
- 669413 words of memory out of 5000000
+ 18456 strings out of 494522
+ 270245 string characters out of 6167205
+ 669487 words of memory out of 5000000
  19711 multiletter control sequences out of 15000+600000
  101741 words of font info for 155 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -6428,10 +6417,10 @@ ino/uplb8a.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/urw/palatin
 o/uplbi8a.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/urw/palatino
 /uplr8a.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on main.pdf (217 pages, 53725327 bytes).
+Output written on main.pdf (217 pages, 53726825 bytes).
 PDF statistics:
- 3365 PDF objects out of 3580 (max. 8388607)
- 2818 compressed objects within 29 object streams
- 1394 named destinations out of 1440 (max. 500000)
+ 3368 PDF objects out of 3580 (max. 8388607)
+ 2821 compressed objects within 29 object streams
+ 1396 named destinations out of 1440 (max. 500000)
  2043 words of extra memory for PDF output out of 10000 (max. 10000000)
 

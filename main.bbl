@@ -277,6 +277,11 @@ Aclima.
 Copenhagen wheel.
 \newblock \url{http://superpedestrian.com}, 2009.
 
+\bibitem{hasen2012_2}
+David Hasenfratz et~al.
+\newblock Participatory air pollution monitoring using smartphones.
+\newblock {\em Mobile Sensing}, 2012.
+
 \bibitem{hasen2012}
 David Hasenfratz, Olga Saukh, and Lothar Thiele.
 \newblock On-the-fly calibration of low-cost gas sensors.
@@ -408,6 +413,12 @@ QianSheng Li, Gershon Dublon, Brian Mayton, and Joseph~A. Paradiso.
 \newblock Marshvis: Visualizing real-time and historical ecological data from a
   wireless sensor network.
 \newblock {\em IEEE VIS}, 2015.
+
+\bibitem{wind}
+Cheng Liu et~al.
+\newblock A directional anemometer based on mems differential pressure sensors.
+\newblock {\em 9th International Conference on Nano/Micro Engineered and
+  Molecular Systems (NEMS)}, pages 517--520, 2014.
 
 \bibitem{ozonehouston}
 Steven~G. Brown, Paul~T. Roberts, et~al.

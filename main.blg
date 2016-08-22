@@ -26,7 +26,6 @@ Warning--entry type for "who2014_2" isn't style-file defined
 --line 730 of file main.bib
 Warning--entry type for "who2014" isn't style-file defined
 --line 739 of file main.bib
-Warning--I didn't find a database entry for "hansen2012_2"
 Warning--can't use both author and editor fields in particulate
 Warning--empty note in epa2014
 Warning--empty author and editor in dep1999
@@ -63,45 +62,45 @@ Warning--empty author in jsonld
 Warning--empty author in hal
 Warning--empty author in iot
 Warning--empty author in alljoyn
-You've used 81 entries,
+You've used 83 entries,
             1791 wiz_defined-function locations,
-            825 strings with 14016 characters,
-and the built_in function-call counts, 12780 in all, are:
-= -- 1146
-> -- 457
-< -- 8
-+ -- 194
-- -- 113
-* -- 748
-:= -- 2053
-add.period$ -- 209
-call.type$ -- 81
-change.case$ -- 82
+            832 strings with 14266 characters,
+and the built_in function-call counts, 13246 in all, are:
+= -- 1191
+> -- 473
+< -- 9
++ -- 200
+- -- 117
+* -- 766
+:= -- 2122
+add.period$ -- 215
+call.type$ -- 83
+change.case$ -- 84
 chr.to.int$ -- 0
-cite$ -- 117
-duplicate$ -- 593
-empty$ -- 1295
-format.name$ -- 113
-if$ -- 2866
+cite$ -- 119
+duplicate$ -- 619
+empty$ -- 1338
+format.name$ -- 117
+if$ -- 2979
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 41
-newline$ -- 374
-num.names$ -- 52
-pop$ -- 159
+int.to.str$ -- 83
+missing$ -- 43
+newline$ -- 384
+num.names$ -- 54
+pop$ -- 165
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 272
+skip$ -- 292
 stack$ -- 0
-substring$ -- 643
-swap$ -- 95
-text.length$ -- 8
+substring$ -- 671
+swap$ -- 106
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 36
-while$ -- 86
-width$ -- 83
-write$ -- 774
+while$ -- 90
+width$ -- 85
+write$ -- 795
 (There was 1 error message)

@@ -62,28 +62,29 @@ foggy hours & 11 \\
   	\label{fig:lux_zoomed}
 \end{figure}
 
-\FloatBarrier
-\section{Data Pre-Processing}
-\FloatBarrier
+\clearpage
 
 \FloatBarrier
-\section{Features}
-\FloatBarrier
 
-\enlargethispage{10\baselineskip}
+\enlargethispage{2.5cm}
 
-Below are many of the machine learning feature distributions plotted using Weka.
-
-\begin{figure}
- 	\includegraphics[width=\textwidth-1cm]{weka/features1}  
-	\includegraphics[width=\textwidth-1cm]{weka/features2}  
-	\includegraphics[width=\textwidth-1cm]{weka/features3}  
-	\includegraphics[width=\textwidth-1cm]{weka/features4}                 
+\begin{figure}[!b]
+ 	\includegraphics[width=\textwidth-4cc]{weka/features1}  
+	\includegraphics[width=\textwidth-4cc]{weka/features2}    
+	\includegraphics[width=\textwidth-4cc]{weka/features3}  
+	\includegraphics[width=\textwidth-4cc]{weka/features4}                  
          \caption{ML feature histograms plotted with WEKA Tool}
  	 \label{fig:weka_features}
 \end{figure}
 
-\pagebreak
+
+
+\section{Data Pre-Processing}
+
+\section{Features}
+
+
+The figure below includes most of the machine learning feature distributions plotted using Weka.
 
 \FloatBarrier
 \section{SmartCitizen CO}
@@ -91,7 +92,7 @@ Below are many of the machine learning feature distributions plotted using Weka.
 
 Following are additional plots from the SmartCitizen CO test outlining in more detail the LMSE calibration, the accuracy with a tighter 5\% threshold, a visualization of the prediction accuracy and confidence, and the top 15 random forest selected features.
 
-\begin{figure}[htb]
+\begin{figure}[!htb]
  	\includegraphics[width=\textwidth]{figs/sck_co_lmse}               
  	 \caption{SmartCitizen CO after LMSE Calibration}
   	\label{fig:sck_co_lmse}
@@ -223,8 +224,6 @@ Following are additional plots from the Sharp dust sensor test outlining the com
  	 \caption{Sharp Particulate Prediction Accuracy}
   	\label{fig:sharp_30_logistic_predictions}
 \end{figure}
-
-here's text referencing the (Table \ref{tab:sharp_randomforest_features}).
 
 \begin{table}[H]
 \centering
